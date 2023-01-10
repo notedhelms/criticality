@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.canonicalvocabularymodel="http:///com/corticon/rulesemf/canonicalvocabularymodel.ecore" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="root" nsURI="http://root/1.0" nsPrefix="root">
+  <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+    <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:RootExtension" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_uyr80pD0Ee2f85O3StaEXQ" externalChecksum="2722078124:507989954" studioType="Java" customDataTypeDisplayCount="49">
+      <languageCode>en_US</languageCode>
+      <databaseAccess databasePropertyDisplayCount="50"/>
+      <customDataTypeList enumerationDisplayCount="50" eDataType="#//measure_categories">
+        <dataTypeName manuallyCreated="true" value="measure_categories"/>
+        <baseDataType manuallyCreated="true" value="String"/>
+        <enumeration value="true"/>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Safety Impact'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Environmental Impact'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Generation Impact'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Maintenance Impact'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Spare availability'"/>
+        </enumerationElements>
+      </customDataTypeList>
+      <customDataTypeList enumerationDisplayCount="50" eDataType="#//measure_names">
+        <dataTypeName manuallyCreated="true" value="measure_names"/>
+        <baseDataType manuallyCreated="true" value="String"/>
+        <enumeration value="true"/>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Injury from failure'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Injury during repair'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Air emissions'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Chemical spills'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Water and Process Water Impacts'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Solid and Hazardous Waste'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Capacity Impact'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Downtime Impact'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Equpment Utilization'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Frequency of Failure'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Equipment Redundancy'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Mean time to repair'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Maintenace schedule compliance'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Repair costs'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Spares availability'"/>
+        </enumerationElements>
+      </customDataTypeList>
+    </contents>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="Asset">
+    <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+      <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:EntityExtension">
+        <name manuallyCreated="true" value="Asset"/>
+        <datastorePersistent manuallyCreated="true" value="false"/>
+        <datastoreCaching manuallyCreated="true" value="false"/>
+      </contents>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="inspection" upperBound="-1" eType="#//Inspection" eOpposite="#//Inspection/asset">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AssociationEndExtension">
+          <name manuallyCreated="true" value="inspection"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="id"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="location" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="location"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="name"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Inspection">
+    <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+      <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:EntityExtension">
+        <name manuallyCreated="true" value="Inspection"/>
+        <datastorePersistent manuallyCreated="true" value="false"/>
+        <datastoreCaching manuallyCreated="true" value="false"/>
+      </contents>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="risk_score" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="risk_score"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="score_description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="score_description"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="score_classification" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="score_classification"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="measure" upperBound="-1" eType="#//Measure" eOpposite="#//Measure/inspection">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AssociationEndExtension">
+          <name manuallyCreated="true" value="measure"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="asset" lowerBound="1" eType="#//Asset" eOpposite="#//Asset/inspection">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AssociationEndExtension">
+          <name manuallyCreated="true" value="asset"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Measure">
+    <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+      <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:EntityExtension">
+        <name manuallyCreated="true" value="Measure"/>
+        <datastorePersistent manuallyCreated="true" value="false"/>
+        <datastoreCaching manuallyCreated="true" value="false"/>
+      </contents>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="inspection" lowerBound="1" eType="#//Inspection" eOpposite="#//Inspection/measure">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AssociationEndExtension">
+          <name manuallyCreated="true" value="inspection"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="category" eType="#//measure_categories">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension" customDataType="#//%http:%2F%2F%2Fcom%2Fcorticon%2Frulesemf%2Fcanonicalvocabularymodel%2FVocabularyExtension%/@contents.0/@customDataTypeList.0">
+          <name manuallyCreated="true" value="category"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="#//measure_names">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension" customDataType="#//%http:%2F%2F%2Fcom%2Fcorticon%2Frulesemf%2Fcanonicalvocabularymodel%2FVocabularyExtension%/@contents.0/@customDataTypeList.1">
+          <name manuallyCreated="true" value="name"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="category_weight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="category_weight"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="question_weight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="question_weight"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="description"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="final_score" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="final_score"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="selection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="selection"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="measure_categories">
+    <eLiterals name="V0" literal="'Safety Impact'"/>
+    <eLiterals name="V1" value="1" literal="'Environmental Impact'"/>
+    <eLiterals name="V2" value="2" literal="'Generation Impact'"/>
+    <eLiterals name="V3" value="3" literal="'Maintenance Impact'"/>
+    <eLiterals name="V4" value="4" literal="'Spare availability'"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="measure_names">
+    <eLiterals name="V0" literal="'Injury from failure'"/>
+    <eLiterals name="V1" value="1" literal="'Injury during repair'"/>
+    <eLiterals name="V2" value="2" literal="'Air emissions'"/>
+    <eLiterals name="V3" value="3" literal="'Chemical spills'"/>
+    <eLiterals name="V4" value="4" literal="'Water and Process Water Impacts'"/>
+    <eLiterals name="V5" value="5" literal="'Solid and Hazardous Waste'"/>
+    <eLiterals name="V6" value="6" literal="'Capacity Impact'"/>
+    <eLiterals name="V7" value="7" literal="'Downtime Impact'"/>
+    <eLiterals name="V8" value="8" literal="'Equpment Utilization'"/>
+    <eLiterals name="V9" value="9" literal="'Frequency of Failure'"/>
+    <eLiterals name="V10" value="10" literal="'Equipment Redundancy'"/>
+    <eLiterals name="V11" value="11" literal="'Mean time to repair'"/>
+    <eLiterals name="V12" value="12" literal="'Maintenace schedule compliance'"/>
+    <eLiterals name="V13" value="13" literal="'Repair costs'"/>
+    <eLiterals name="V14" value="14" literal="'Spares availability'"/>
+  </eClassifiers>
+</ecore:EPackage>
