@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.canonicalvocabularymodel="http:///com/corticon/rulesemf/canonicalvocabularymodel.ecore" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="root" nsURI="http://root/1.0" nsPrefix="root">
   <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
-    <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:RootExtension" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_2h5GYJEDEe2f85O3StaEXQ" externalChecksum="2722078124:507989954" studioType="Java" customDataTypeDisplayCount="49">
+    <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:RootExtension" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_yas6oZEbEe2d88WYEwJcUQ" externalChecksum="3391387159:507989954" studioType="Java" customDataTypeDisplayCount="49">
       <languageCode>en_US</languageCode>
       <databaseAccess databasePropertyDisplayCount="50"/>
-      <customDataTypeList enumerationDisplayCount="50" eDataType="#//measure_categories">
-        <dataTypeName manuallyCreated="true" value="measure_categories"/>
+      <customDataTypeList enumerationDisplayCount="50" eDataType="#//criticality_categories">
+        <dataTypeName manuallyCreated="true" value="criticality_categories"/>
         <baseDataType manuallyCreated="true" value="String"/>
         <enumeration value="true"/>
         <enumerationElements>
@@ -24,8 +24,8 @@
           <value manuallyCreated="true" value="'Spare availability'"/>
         </enumerationElements>
       </customDataTypeList>
-      <customDataTypeList enumerationDisplayCount="50" eDataType="#//measure_names">
-        <dataTypeName manuallyCreated="true" value="measure_names"/>
+      <customDataTypeList enumerationDisplayCount="50" eDataType="#//criticality_names">
+        <dataTypeName manuallyCreated="true" value="criticality_names"/>
         <baseDataType manuallyCreated="true" value="String"/>
         <enumeration value="true"/>
         <enumerationElements>
@@ -72,6 +72,84 @@
         </enumerationElements>
         <enumerationElements>
           <value manuallyCreated="true" value="'Spares availability'"/>
+        </enumerationElements>
+      </customDataTypeList>
+      <customDataTypeList enumerationDisplayCount="50" eDataType="#//condition_indicator">
+        <dataTypeName manuallyCreated="true" value="condition_indicator"/>
+        <baseDataType manuallyCreated="true" value="String"/>
+        <enumeration value="true"/>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Oil Analysis'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Power Factor and Excitation Current Tests'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Operation and Maintenance History'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Age'"/>
+        </enumerationElements>
+      </customDataTypeList>
+      <customDataTypeList enumerationDisplayCount="50" eDataType="#//test">
+        <dataTypeName manuallyCreated="true" value="test"/>
+        <baseDataType manuallyCreated="true" value="String"/>
+        <enumeration value="true"/>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Turns Ratio Test'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Short Circuit Impedance Test'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Core-to-Ground Resistance (Megger) Test'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Winding DC Resistance measurement'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Ultrasonic and Sonic Fault Detection'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Vibration Analysis'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Frequency Response Analysis'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Internal Inspection'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Degree of Polymerization'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Other Specialized Diagnostic Tests'"/>
+        </enumerationElements>
+      </customDataTypeList>
+      <customDataTypeList enumerationDisplayCount="50" eDataType="#//gas">
+        <dataTypeName manuallyCreated="true" value="gas"/>
+        <baseDataType manuallyCreated="true" value="String"/>
+        <enumeration value="true"/>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Hydrogen'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Carbon Monoxide'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Carbon Dioxide'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Methane'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Ethane'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Ethylene'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Acetylene'"/>
         </enumerationElements>
       </customDataTypeList>
     </contents>
@@ -185,7 +263,7 @@
         </contents>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="category" eType="#//measure_categories">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="category" eType="#//criticality_categories">
       <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
         <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension" customDataType="#//%http:%2F%2F%2Fcom%2Fcorticon%2Frulesemf%2Fcanonicalvocabularymodel%2FVocabularyExtension%/@contents.0/@customDataTypeList.0">
           <name manuallyCreated="true" value="category"/>
@@ -193,7 +271,7 @@
         </contents>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="#//measure_names">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="#//criticality_names">
       <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
         <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension" customDataType="#//%http:%2F%2F%2Fcom%2Fcorticon%2Frulesemf%2Fcanonicalvocabularymodel%2FVocabularyExtension%/@contents.0/@customDataTypeList.1">
           <name manuallyCreated="true" value="name"/>
@@ -209,10 +287,10 @@
         </contents>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="question_weight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="measure_weight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal">
       <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
         <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
-          <name manuallyCreated="true" value="question_weight"/>
+          <name manuallyCreated="true" value="measure_weight"/>
           <mode manuallyCreated="true" value="Base"/>
         </contents>
       </eAnnotations>
@@ -241,15 +319,79 @@
         </contents>
       </eAnnotations>
     </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="condition_indicator" eType="#//condition_indicator">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension" customDataType="#//%http:%2F%2F%2Fcom%2Fcorticon%2Frulesemf%2Fcanonicalvocabularymodel%2FVocabularyExtension%/@contents.0/@customDataTypeList.2">
+          <name manuallyCreated="true" value="condition_indicator"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="indicator_score" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="indicator_score"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="test" eType="#//test">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension" customDataType="#//%http:%2F%2F%2Fcom%2Fcorticon%2Frulesemf%2Fcanonicalvocabularymodel%2FVocabularyExtension%/@contents.0/@customDataTypeList.3">
+          <name manuallyCreated="true" value="test"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="observed_value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="observed_value"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="condition_sub_indicator" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="condition_sub_indicator"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="unit" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="unit"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="chemical" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="chemical"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="interval" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="interval"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="measure_categories">
+  <eClassifiers xsi:type="ecore:EEnum" name="criticality_categories">
     <eLiterals name="V0" literal="'Safety Impact'"/>
     <eLiterals name="V1" value="1" literal="'Environmental Impact'"/>
     <eLiterals name="V2" value="2" literal="'Generation Impact'"/>
     <eLiterals name="V3" value="3" literal="'Maintenance Impact'"/>
     <eLiterals name="V4" value="4" literal="'Spare availability'"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="measure_names">
+  <eClassifiers xsi:type="ecore:EEnum" name="criticality_names">
     <eLiterals name="V0" literal="'Injury from failure'"/>
     <eLiterals name="V1" value="1" literal="'Injury during repair'"/>
     <eLiterals name="V2" value="2" literal="'Air emissions'"/>
@@ -305,5 +447,32 @@
         </contents>
       </eAnnotations>
     </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="condition_indicator">
+    <eLiterals name="V0" literal="'Oil Analysis'"/>
+    <eLiterals name="V1" value="1" literal="'Power Factor and Excitation Current Tests'"/>
+    <eLiterals name="V2" value="2" literal="'Operation and Maintenance History'"/>
+    <eLiterals name="V3" value="3" literal="'Age'"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="test">
+    <eLiterals name="V0" literal="'Turns Ratio Test'"/>
+    <eLiterals name="V1" value="1" literal="'Short Circuit Impedance Test'"/>
+    <eLiterals name="V2" value="2" literal="'Core-to-Ground Resistance (Megger) Test'"/>
+    <eLiterals name="V3" value="3" literal="'Winding DC Resistance measurement'"/>
+    <eLiterals name="V4" value="4" literal="'Ultrasonic and Sonic Fault Detection'"/>
+    <eLiterals name="V5" value="5" literal="'Vibration Analysis'"/>
+    <eLiterals name="V6" value="6" literal="'Frequency Response Analysis'"/>
+    <eLiterals name="V7" value="7" literal="'Internal Inspection'"/>
+    <eLiterals name="V8" value="8" literal="'Degree of Polymerization'"/>
+    <eLiterals name="V9" value="9" literal="'Other Specialized Diagnostic Tests'"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="gas">
+    <eLiterals name="V0" literal="'Hydrogen'"/>
+    <eLiterals name="V1" value="1" literal="'Carbon Monoxide'"/>
+    <eLiterals name="V2" value="2" literal="'Carbon Dioxide'"/>
+    <eLiterals name="V3" value="3" literal="'Methane'"/>
+    <eLiterals name="V4" value="4" literal="'Ethane'"/>
+    <eLiterals name="V5" value="5" literal="'Ethylene'"/>
+    <eLiterals name="V6" value="6" literal="'Acetylene'"/>
   </eClassifiers>
 </ecore:EPackage>
