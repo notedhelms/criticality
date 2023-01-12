@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_kC0tw5EpEe2d88WYEwJcUQ" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
   <languageCode>en_US</languageCode>
-  <ruleset vocabularyUpdateStamp="_IxoC4ZEoEe2d88WYEwJcUQ" vocabulary="../Rule%20Vocabulary.ecore#/">
+  <ruleset vocabularyUpdateStamp="_NAyHgZHDEe2QyOKgHQ6vuQ" vocabulary="../Rule%20Vocabulary.ecore#/">
     <rule>
       <action/>
       <action>
@@ -114,6 +114,7 @@
         </opaqueExpression>
         <viewExpressions lhs="power.observed_string" rhs="'Power factor results show minor degradation. (Deteriorated – D)'"/>
       </condition>
+      <condition/>
       <action>
         <opaqueExpression expression="table_two_measure.indicator_score = 2">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="table_two_measure.indicator_score = 2" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
@@ -148,6 +149,7 @@
         </opaqueExpression>
         <viewExpressions lhs="power.observed_string" rhs="'Power factor results show significant deterioration. (Investigate – I)'"/>
       </condition>
+      <condition/>
       <action>
         <opaqueExpression expression="table_two_measure.indicator_score = 1">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="table_two_measure.indicator_score = 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
@@ -182,6 +184,7 @@
         </opaqueExpression>
         <viewExpressions lhs="power.observed_string" rhs="'Power factor results show severe degradation. (Bad – B)'"/>
       </condition>
+      <condition/>
       <action>
         <opaqueExpression expression="table_two_measure.indicator_score = 0">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="table_two_measure.indicator_score = 0" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
@@ -365,7 +368,7 @@
       </extension>
     </logicalVariable>
   </ruleset>
-  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="26" sashWeightConditionsActions="60" sashWeightConditionsIf="32">
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="50" sashWeightConditionsActions="60" sashWeightConditionsIf="32">
     <actionSection rowCount="50" columnWidthFactor="0.5">
       <actionItemList>
         <valueSetCell/>
