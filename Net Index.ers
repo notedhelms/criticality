@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_pERAYpHDEe2QyOKgHQ6vuQ" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_a99AI6ulEe2dU-aSgLK5sQ" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
   <languageCode>en_US</languageCode>
-  <ruleset vocabularyUpdateStamp="_NAyHgZHDEe2QyOKgHQ6vuQ" vocabulary="Rule%20Vocabulary.ecore#/">
+  <ruleset vocabularyUpdateStamp="_iLl0IJKOEe2yV9_RIafW5w" vocabulary="Rule%20Vocabulary.ecore#/">
     <rule>
-      <action>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
         <opaqueExpression expression="Inspection.net_condition_index = Inspection.tier1_condition_index - (Inspection.tier2_adjustments.absVal)">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Inspection.net_condition_index = Inspection.tier1_condition_index - ( Inspection.tier2_adjustments.absVal )" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
@@ -26,7 +26,14 @@
         </opaqueExpression>
       </action>
     </rule>
-    <logicalVariable entity="Rule%20Vocabulary.ecore#//Inspection">
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.0/@actions.0" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Inspection net condition index set to the tier 1 condition index - the tier 2 adjustments.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Inspection net condition index set to the tier 1 condition index - the tier 2 adjustments." expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable entity="Rule%20Vocabulary.ecore#//Inspection" ruleStatements="#//@ruleset/@ruleStatements.0">
       <referencedAttributes attribute="Rule%20Vocabulary.ecore#//Inspection/net_condition_index"/>
       <referencedAttributes attribute="Rule%20Vocabulary.ecore#//Inspection/tier1_condition_index"/>
       <referencedAttributes attribute="Rule%20Vocabulary.ecore#//Inspection/tier2_adjustments"/>
@@ -57,7 +64,16 @@
       </rootNode>
     </scopeSection>
     <filterSection rowCount="50"/>
-    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList rowHeight="105" ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="A0"/>
+        <text external="Inspection net condition index set to the tier 1 condition index - the tier 2 adjustments.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Inspection net condition index set to the tier 1 condition index - the tier 2 adjustments." expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
     <conditionSection rowCount="50" columnWidthFactor="0.5"/>
     <ruleSection columnCount="20">
       <ruleColumnList ruleId="0" columnWidth="534" pRule="#//@ruleset/@rules.0">

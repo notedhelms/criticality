@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_lRLgoJEQEe2f85O3StaEXQ" externalChecksum="2722078124:507989954:2614682131" studioType="Java">
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_VE8v9KumEe2dU-aSgLK5sQ" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
   <languageCode>en_US</languageCode>
-  <ruleset vocabularyUpdateStamp="_lMGzYZEQEe2f85O3StaEXQ" vocabulary="../Rule%20Vocabulary.ecore#/">
+  <ruleset vocabularyUpdateStamp="_iLl0IJKOEe2yV9_RIafW5w" vocabulary="../Rule%20Vocabulary.ecore#/">
     <rule>
       <condition/>
       <condition/>
@@ -109,7 +109,7 @@
         </opaqueExpression>
       </action>
     </rule>
-    <rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
       <condition>
         <opaqueExpression expression="Injury_Failure.description = 'None'">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.description = 'None'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
@@ -149,7 +149,7 @@
       <action/>
       <action/>
     </rule>
-    <rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
       <condition>
         <opaqueExpression expression="Injury_Failure.description = 'Minor Injury (First Aid/Minor Medical Aid)'">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.description = 'Minor Injury (First Aid/Minor Medical Aid)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
@@ -189,7 +189,7 @@
       <action/>
       <action/>
     </rule>
-    <rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
       <condition>
         <opaqueExpression expression="Injury_Failure.description = 'Major Injury (Lost Time)'">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.description = 'Major Injury (Lost Time)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
@@ -229,7 +229,7 @@
       <action/>
       <action/>
     </rule>
-    <rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.2">
       <condition>
         <opaqueExpression expression="Injury_Failure.description = 'Fatality or Permanent Disability'">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.description = 'Fatality or Permanent Disability'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
@@ -269,7 +269,7 @@
       <action/>
       <action/>
     </rule>
-    <rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.3">
       <condition/>
       <condition>
         <opaqueExpression expression="Injury_Repair.description = 'None'">
@@ -309,7 +309,7 @@
       <action/>
       <action/>
     </rule>
-    <rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.3">
       <condition/>
       <condition>
         <opaqueExpression expression="Injury_Repair.description = 'Low Risk (First Aid/Minor Medical Aid)'">
@@ -349,7 +349,7 @@
       <action/>
       <action/>
     </rule>
-    <rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.4">
       <condition/>
       <condition>
         <opaqueExpression expression="Injury_Repair.description = 'Medium Risk (Rigging, Fall Arrest, Confined Space)'">
@@ -389,7 +389,7 @@
       <action/>
       <action/>
     </rule>
-    <rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.5">
       <condition/>
       <condition>
         <opaqueExpression expression="Injury_Repair.description = 'High Risk (Critical Lift, Permit Required Confined Space)'">
@@ -469,6 +469,114 @@
         </parserOutput>
       </opaqueExpression>
     </filter>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1 #//@ruleset/@rules.2" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1">
+      <text expression="When Safety Impact measure of Injury from Failure has description [{Injury_Failure.description}], set its corresponding selection value to [{Injury_Failure.selection}]">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury from Failure has description [ + Injury_Failure.description + ], set its corresponding selection value to [ + Injury_Failure.selection + ]" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.description">
+              <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+            <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Failure.selection">
+              <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Warning" ruleModelElements="#//@ruleset/@rules.3" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1">
+      <text expression="When Safety Impact measure of Injury from Failure has description [{Injury_Failure.description}], set its corresponding selection value to [{Injury_Failure.selection}]">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury from Failure has description [ + Injury_Failure.description + ], set its corresponding selection value to [ + Injury_Failure.selection + ]" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.description">
+              <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+            <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Failure.selection">
+              <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Violation" ruleModelElements="#//@ruleset/@rules.4" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1">
+      <text expression="When Safety Impact measure of Injury from Failure has description [{Injury_Failure.description}], set its corresponding selection value to [{Injury_Failure.selection}]">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury from Failure has description [ + Injury_Failure.description + ], set its corresponding selection value to [ + Injury_Failure.selection + ]" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.description">
+              <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+            <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Failure.selection">
+              <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.5 #//@ruleset/@rules.6" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.2">
+      <text expression="When Safety Impact measure of Injury during Repair has description [{Injury_Repair.description}], set its corresponding selection value to [{Injury_Repair.selection}]">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury during Repair has description [ + Injury_Repair.description + ], set its corresponding selection value to [ + Injury_Repair.selection + ]" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.description">
+              <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+            <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Repair.selection">
+              <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Warning" ruleModelElements="#//@ruleset/@rules.7" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.2">
+      <text expression="When Safety Impact measure of Injury during Repair has description [{Injury_Repair.description}], set its corresponding selection value to [{Injury_Repair.selection}]">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury during Repair has description [ + Injury_Repair.description + ], set its corresponding selection value to [ + Injury_Repair.selection + ]" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.description">
+              <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+            <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Repair.selection">
+              <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Violation" ruleModelElements="#//@ruleset/@rules.8" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.2">
+      <text expression="When Safety Impact measure of Injury during Repair has description [{Injury_Repair.description}], set its corresponding selection value to [{Injury_Repair.selection}]">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury during Repair has description [ + Injury_Repair.description + ], set its corresponding selection value to [ + Injury_Repair.selection + ]" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.description">
+              <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+            <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Repair.selection">
+              <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
     <logicalVariable entity="../Rule%20Vocabulary.ecore#//Inspection" filters="#//@ruleset/@filters.0 #//@ruleset/@filters.2 #//@ruleset/@filters.3">
       <extension explicit="true" association="true" entity="../Rule%20Vocabulary.ecore#//Measure" traversedAssocRole="../Rule%20Vocabulary.ecore#//Inspection/measure" filters="#//@ruleset/@filters.0">
         <alias value="safety_measures"/>
@@ -476,14 +584,14 @@
         <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Measure/measure_weight"/>
         <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Measure/category_weight"/>
       </extension>
-      <extension explicit="true" association="true" entity="../Rule%20Vocabulary.ecore#//Measure" traversedAssocRole="../Rule%20Vocabulary.ecore#//Inspection/measure" filters="#//@ruleset/@filters.2">
+      <extension explicit="true" association="true" entity="../Rule%20Vocabulary.ecore#//Measure" traversedAssocRole="../Rule%20Vocabulary.ecore#//Inspection/measure" ruleStatements="#//@ruleset/@ruleStatements.0 #//@ruleset/@ruleStatements.1 #//@ruleset/@ruleStatements.2" filters="#//@ruleset/@filters.2">
         <alias value="Injury_Failure"/>
         <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Measure/selection"/>
         <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Measure/final_score"/>
         <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Measure/name"/>
         <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Measure/description"/>
       </extension>
-      <extension explicit="true" association="true" entity="../Rule%20Vocabulary.ecore#//Measure" traversedAssocRole="../Rule%20Vocabulary.ecore#//Inspection/measure" filters="#//@ruleset/@filters.3">
+      <extension explicit="true" association="true" entity="../Rule%20Vocabulary.ecore#//Measure" traversedAssocRole="../Rule%20Vocabulary.ecore#//Inspection/measure" ruleStatements="#//@ruleset/@ruleStatements.3 #//@ruleset/@ruleStatements.4 #//@ruleset/@ruleStatements.5" filters="#//@ruleset/@filters.3">
         <alias value="Injury_Repair"/>
         <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Measure/selection"/>
         <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Measure/final_score"/>
@@ -507,7 +615,7 @@
     </logicalVariable>
   </ruleset>
   <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="35" sashWeightConditionsActions="24" sashWeightConditionsIf="45">
-    <actionSection rowCount="50" scrollRowTop="3" columnWidthFactor="0.5">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
       <actionItemList>
         <valueSetCell/>
         <expressionCell external="Injury_Failure.selection">
@@ -691,9 +799,124 @@
         </expressionCell>
       </filterItemList>
     </filterSection>
-    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList rowHeight="74" ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="{1, 2}"/>
+        <text external="When Safety Impact measure of Injury from Failure has description [{Injury_Failure.description}], set its corresponding selection value to [{Injury_Failure.selection}]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury from Failure has description [ + Injury_Failure.description + ], set its corresponding selection value to [ + Injury_Failure.selection + ]" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.description">
+                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Failure.selection">
+                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="3"/>
+        <text external="When Safety Impact measure of Injury from Failure has description [{Injury_Failure.description}], set its corresponding selection value to [{Injury_Failure.selection}]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury from Failure has description [ + Injury_Failure.description + ], set its corresponding selection value to [ + Injury_Failure.selection + ]" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.description">
+                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Failure.selection">
+                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.2">
+        <reference external="4"/>
+        <text external="When Safety Impact measure of Injury from Failure has description [{Injury_Failure.description}], set its corresponding selection value to [{Injury_Failure.selection}]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury from Failure has description [ + Injury_Failure.description + ], set its corresponding selection value to [ + Injury_Failure.selection + ]" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.description">
+                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Failure.selection">
+                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList rowHeight="66" ruleStatement="#//@ruleset/@ruleStatements.3">
+        <reference external="{5, 6}"/>
+        <text external="When Safety Impact measure of Injury during Repair has description [{Injury_Repair.description}], set its corresponding selection value to [{Injury_Repair.selection}]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury during Repair has description [ + Injury_Repair.description + ], set its corresponding selection value to [ + Injury_Repair.selection + ]" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.description">
+                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Repair.selection">
+                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.4">
+        <reference external="7"/>
+        <text external="When Safety Impact measure of Injury during Repair has description [{Injury_Repair.description}], set its corresponding selection value to [{Injury_Repair.selection}]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury during Repair has description [ + Injury_Repair.description + ], set its corresponding selection value to [ + Injury_Repair.selection + ]" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.description">
+                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Repair.selection">
+                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.5">
+        <reference external="8"/>
+        <text external="When Safety Impact measure of Injury during Repair has description [{Injury_Repair.description}], set its corresponding selection value to [{Injury_Repair.selection}]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury during Repair has description [ + Injury_Repair.description + ], set its corresponding selection value to [ + Injury_Repair.selection + ]" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.description">
+                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Repair.selection">
+                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
     <conditionSection rowCount="50" columnWidthFactor="0.5">
-      <conditionItemList>
+      <conditionItemList rowHeight="74">
         <valueSetCell/>
         <expressionCell external="Injury_Failure.description">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.description" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
