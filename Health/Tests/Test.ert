@@ -1,194 +1,156 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.canonicaltestmodel.testsheet="http:///com/corticon/rulesemf/canonicaltestmodel/testsheet.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_T71e9JKQEe2yV9_RIafW5w" externalChecksum="3391387159:507989954" studioType="Java">
-  <testsheetAssets majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_r3X1k5KREe2yV9_RIafW5w" externalChecksum="3391387159:507989954">
-    <testsheet ruleActivityUpdateStamp="_IyEvupEoEe2d88WYEwJcUQ" ruleActivity="../Insulating%20Oil%20Analysis.ers#//@ruleset" locale="">
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_T71e9JKQEe2yV9_RIafW5w" externalChecksum="3391387159:507989954" studioType="Java">
+  <testsheetAssets majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_1qU-4rhYEe2Gad3MA-icQg" externalChecksum="3391387159:507989954">
+    <testsheet ruleActivityUpdateStamp="_0_erErhYEe2Gad3MA-icQg" ruleActivity="../Insulating%20Oil%20Analysis.ers#//@ruleset" locale="">
       <input/>
       <output>
-        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceEntityData" sequence="9" rulesheet="MyRule" rule="E0" entityname="Result" entityidentity="" entityid="Result_id_1" action="New"/>
-        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceEntityData" sequence="21" rulesheet="MyRule" rule="B0" entityname="Result" entityidentity="" entityid="Result_id_2" action="New"/>
-        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="1" rulesheet="MyRule" rule="A0" entityname="Measure" entityidentity="" entityid="Measure_id_1" name="measure_weight" oldvalue="" newvalue="1.143"/>
-        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="2" rulesheet="MyRule" rule="A0" entityname="Measure" entityidentity="" entityid="Measure_id_4" name="measure_weight" oldvalue="" newvalue="1.143"/>
-        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="3" rulesheet="MyRule" rule="A0" entityname="Measure" entityidentity="" entityid="Measure_id_8" name="measure_weight" oldvalue="" newvalue="1.143"/>
-        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="4" rulesheet="MyRule" rule="A0" entityname="Measure" entityidentity="" entityid="Measure_id_2" name="measure_weight" oldvalue="" newvalue="1.143"/>
-        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="5" rulesheet="MyRule" rule="A0" entityname="Measure" entityidentity="" entityid="Measure_id_6" name="measure_weight" oldvalue="" newvalue="1.143"/>
-        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="6" rulesheet="MyRule" rule="A0" entityname="Measure" entityidentity="" entityid="Measure_id_3" name="measure_weight" oldvalue="" newvalue="1.143"/>
-        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="7" rulesheet="MyRule" rule="A0" entityname="Measure" entityidentity="" entityid="Measure_id_7" name="measure_weight" oldvalue="" newvalue="1.143"/>
-        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="8" rulesheet="MyRule" rule="A0" entityname="Measure" entityidentity="" entityid="Measure_id_5" name="measure_weight" oldvalue="" newvalue="1.143"/>
-        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="10" rulesheet="MyRule" rule="E0" entityname="Result" entityidentity="" entityid="Result_id_1" name="measure_net_score" oldvalue="" newvalue="6.995"/>
-        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="11" rulesheet="MyRule" rule="E0" entityname="Result" entityidentity="" entityid="Result_id_1" name="measure_category" oldvalue="" newvalue="TDCG Generation Rate"/>
-        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="13" rulesheet="MyRule" rule="5" entityname="Measure" entityidentity="" entityid="Measure_id_2" name="indicator_score" oldvalue="" newvalue="1"/>
-        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="14" rulesheet="MyRule" rule="5" entityname="Measure" entityidentity="" entityid="Measure_id_5" name="indicator_score" oldvalue="" newvalue="1"/>
-        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="15" rulesheet="MyRule" rule="5" entityname="Measure" entityidentity="" entityid="Measure_id_7" name="indicator_score" oldvalue="" newvalue="1"/>
-        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="16" rulesheet="MyRule" rule="5" entityname="Measure" entityidentity="" entityid="Measure_id_8" name="indicator_score" oldvalue="" newvalue="1"/>
-        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="17" rulesheet="MyRule" rule="5" entityname="Measure" entityidentity="" entityid="Measure_id_6" name="indicator_score" oldvalue="" newvalue="1"/>
-        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="18" rulesheet="MyRule" rule="5" entityname="Measure" entityidentity="" entityid="Measure_id_3" name="indicator_score" oldvalue="" newvalue="1"/>
-        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="19" rulesheet="MyRule" rule="5" entityname="Measure" entityidentity="" entityid="Measure_id_1" name="indicator_score" oldvalue="" newvalue="1"/>
-        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="20" rulesheet="MyRule" rule="5" entityname="Measure" entityidentity="" entityid="Measure_id_4" name="indicator_score" oldvalue="" newvalue="1"/>
-        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="22" rulesheet="MyRule" rule="B0" entityname="Result" entityidentity="" entityid="Result_id_2" name="measure_category" oldvalue="" newvalue="Oil Analysis Condition Score"/>
-        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="23" rulesheet="MyRule" rule="B0" entityname="Result" entityidentity="" entityid="Result_id_2" name="measure_net_score" oldvalue="" newvalue="7.995"/>
-        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="12" rulesheet="MyRule" rule="E0" entityname="Inspection" entityidentity="" entityid="Inspection_id_1" name="result" action="Add" targetentity="Result" targetentityidentity="" targetentityid="Result_id_1"/>
-        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="24" rulesheet="MyRule" rule="B0" entityname="Inspection" entityidentity="" entityid="Inspection_id_1" name="result" action="Add" targetentity="Result" targetentityidentity="" targetentityid="Result_id_2"/>
+        <PostedMessage severity="Info" text="2FAL furans between 200 ppb and 250 ppb for 65 °C rise."/>
+        <PostedMessage severity="Info" text="2FAL furans between 200 ppb and 250 ppb for 65 °C rise."/>
+        <PostedMessage severity="Info" text="2FAL furans between 200 ppb and 250 ppb for 65 °C rise."/>
+        <PostedMessage severity="Info" text="2FAL furans between 200 ppb and 250 ppb for 65 °C rise."/>
+        <PostedMessage severity="Info" text="2FAL furans between 200 ppb and 250 ppb for 65 °C rise."/>
+        <PostedMessage severity="Info" text="2FAL furans between 200 ppb and 250 ppb for 65 °C rise."/>
+        <PostedMessage severity="Info" text="2FAL furans between 200 ppb and 250 ppb for 65 °C rise."/>
+        <PostedMessage severity="Info" text="2FAL furans between 200 ppb and 250 ppb for 65 °C rise."/>
       </output>
       <expectedOutput/>
     </testsheet>
     <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
       <inputRoot>
         <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="../../Rule%20Vocabulary.ecore#//Inspection">
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Acetylene" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/chemical"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/observed_value"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Oil Analysis" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_indicator"/>
-          </children>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Carbon Monoxide" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/chemical"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_sub_indicator"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="150.000" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/observed_value"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Oil Analysis" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_indicator"/>
-          </children>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Hydrogen" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/chemical"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_sub_indicator"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value=".145" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/observed_value"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Oil Analysis" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_indicator"/>
-          </children>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" manuallyCreated="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Methane" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/chemical"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_sub_indicator"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.540" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/observed_value"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Oil Analysis" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_indicator"/>
-          </children>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" manuallyCreated="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Ethane" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/chemical"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_sub_indicator"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value=".550" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/observed_value"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Oil Analysis" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_indicator"/>
-          </children>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="6" manuallyCreated="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Ethylene" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/chemical"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_sub_indicator"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2.660" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/observed_value"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Oil Analysis" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_indicator"/>
-          </children>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="7" manuallyCreated="true" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Carbon Dioxide" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/chemical"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_sub_indicator"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2.100" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/observed_value"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Oil Analysis" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_indicator"/>
-          </children>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="8" manuallyCreated="true" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2FAL PPB" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_sub_indicator"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="200.000" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/observed_value"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Oil Analysis" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_indicator"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="../../Rule%20Vocabulary.ecore#//Inspection/assessment" eClass="../../Rule%20Vocabulary.ecore#//Assessment">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Health" eAttribute="../../Rule%20Vocabulary.ecore#//Assessment/analysis_type"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Rule%20Vocabulary.ecore#//Assessment/condition_indicator"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Transformer Condition Index" eAttribute="../../Rule%20Vocabulary.ecore#//Assessment/index"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="9" manuallyCreated="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Assessment/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Acetylene" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/chemical"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Oil Analysis" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_indicator"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/observed_value"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="10" manuallyCreated="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Assessment/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Carbon Monoxide" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/chemical"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Oil Analysis" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_indicator"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="150.000" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/observed_value"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Assessment/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Ethane" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/chemical"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Oil Analysis" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_indicator"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value=".550" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/observed_value"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Assessment/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Methane" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/chemical"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Oil Analysis" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_indicator"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_sub_indicator"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.540" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/observed_value"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="11" manuallyCreated="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Assessment/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Hydrogen" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/chemical"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Oil Analysis" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_indicator"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value=".145" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/observed_value"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Assessment/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Oil Analysis" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_indicator"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2FAL PPB" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_sub_indicator"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="200.000" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/observed_value"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="12" manuallyCreated="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Assessment/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Carbon Dioxide" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/chemical"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Oil Analysis" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_indicator"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_sub_indicator"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2.100" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/observed_value"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="13" manuallyCreated="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Assessment/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Ethylene" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/chemical"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Oil Analysis" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_indicator"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_sub_indicator"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2.660" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/observed_value"/>
+            </children>
           </children>
         </children>
       </inputRoot>
       <outputRoot newOrModified="true">
         <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="../../Rule%20Vocabulary.ecore#//Inspection">
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.0 #//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.22" eReference="../../Rule%20Vocabulary.ecore#//Inspection/result" eClass="../../Rule%20Vocabulary.ecore#//Result">
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.10" value="6.995" eAttribute="../../Rule%20Vocabulary.ecore#//Result/measure_net_score"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.11" value="TDCG Generation Rate" eAttribute="../../Rule%20Vocabulary.ecore#//Result/measure_category"/>
-          </children>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.1 #//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.23" eReference="../../Rule%20Vocabulary.ecore#//Inspection/result" eClass="../../Rule%20Vocabulary.ecore#//Result">
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.21" value="7.995" eAttribute="../../Rule%20Vocabulary.ecore#//Result/measure_net_score"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.20" value="Oil Analysis Condition Score" eAttribute="../../Rule%20Vocabulary.ecore#//Result/measure_category"/>
-          </children>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/observed_value"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.18" value="1" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/indicator_score"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Acetylene" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/chemical"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.2" value="1.143" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/measure_weight"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Oil Analysis" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_indicator"/>
-          </children>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="150.000" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/observed_value"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.12" value="1" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/indicator_score"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Carbon Monoxide" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/chemical"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.5" value="1.143" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/measure_weight"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_sub_indicator"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Oil Analysis" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_indicator"/>
-          </children>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.145" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/observed_value"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.17" value="1" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/indicator_score"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Hydrogen" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/chemical"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.7" value="1.143" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/measure_weight"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_sub_indicator"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Oil Analysis" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_indicator"/>
-          </children>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.540" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/observed_value"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.19" value="1" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/indicator_score"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Methane" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/chemical"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.3" value="1.143" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/measure_weight"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_sub_indicator"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Oil Analysis" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_indicator"/>
-          </children>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" newOrModified="true" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.550" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/observed_value"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.13" value="1" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/indicator_score"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Ethane" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/chemical"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.9" value="1.143" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/measure_weight"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_sub_indicator"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Oil Analysis" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_indicator"/>
-          </children>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="6" newOrModified="true" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2.660" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/observed_value"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.16" value="1" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/indicator_score"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Ethylene" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/chemical"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.6" value="1.143" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/measure_weight"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_sub_indicator"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Oil Analysis" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_indicator"/>
-          </children>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="7" newOrModified="true" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2.100" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/observed_value"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.14" value="1" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/indicator_score"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Carbon Dioxide" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/chemical"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.8" value="1.143" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/measure_weight"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_sub_indicator"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Oil Analysis" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_indicator"/>
-          </children>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="8" newOrModified="true" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="200.000" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/observed_value"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.15" value="1" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/indicator_score"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.4" value="1.143" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/measure_weight"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2FAL PPB" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_sub_indicator"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Oil Analysis" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_indicator"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" eReference="../../Rule%20Vocabulary.ecore#//Inspection/assessment" eClass="../../Rule%20Vocabulary.ecore#//Assessment">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="9" newOrModified="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Assessment/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/observed_value"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Acetylene" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/chemical"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1.000" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/raw_score"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Oil Analysis" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_indicator"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="10" newOrModified="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Assessment/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="150.000" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/observed_value"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Carbon Monoxide" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/chemical"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1.000" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/raw_score"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Oil Analysis" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_indicator"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Assessment/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.550" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/observed_value"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Ethane" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/chemical"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1.000" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/raw_score"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Oil Analysis" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_indicator"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Assessment/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.540" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/observed_value"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Methane" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/chemical"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1.000" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/raw_score"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_sub_indicator"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Oil Analysis" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_indicator"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="11" newOrModified="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Assessment/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.145" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/observed_value"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Hydrogen" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/chemical"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1.000" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/raw_score"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Oil Analysis" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_indicator"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" expanded="false" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.0 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.1 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.2 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.3 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.4 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.5 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.6 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.7" eReference="../../Rule%20Vocabulary.ecore#//Assessment/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="200.000" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/observed_value"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1.000" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/raw_score"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2FAL PPB" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_sub_indicator"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Oil Analysis" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_indicator"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="12" newOrModified="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Assessment/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2.100" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/observed_value"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Carbon Dioxide" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/chemical"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1.000" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/raw_score"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_sub_indicator"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Oil Analysis" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_indicator"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="13" newOrModified="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Assessment/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2.660" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/observed_value"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Ethylene" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/chemical"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1.000" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/raw_score"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_sub_indicator"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Oil Analysis" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_indicator"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" eReference="../../Rule%20Vocabulary.ecore#//Assessment/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="6.995" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/observed_value"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="TDCG Generation Rate" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/condition_sub_indicator"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Health" eAttribute="../../Rule%20Vocabulary.ecore#//Assessment/analysis_type"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Transformer Condition Index" eAttribute="../../Rule%20Vocabulary.ecore#//Assessment/index"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1.143" eAttribute="../../Rule%20Vocabulary.ecore#//Assessment/weight"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="7.995" eAttribute="../../Rule%20Vocabulary.ecore#//Assessment/weighted"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="../../Rule%20Vocabulary.ecore#//Assessment/condition_indicator"/>
           </children>
         </children>
       </outputRoot>
-      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.0/@children.5"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.0/@children.5"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.0/@children.5"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.0/@children.5"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.0/@children.5"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.5" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.0/@children.5"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.6" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.0/@children.5"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.7" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.0/@children.5"/>
+      </outputMessageSection>
       <expectedRoot/>
       <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
-      <outputRuleTraceSection>
-        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.0" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.0"/>
-        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.1" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.1"/>
-        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.2" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2/@children.3"/>
-        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.3" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.5/@children.3"/>
-        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.4" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.9/@children.2"/>
-        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.5" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3/@children.3"/>
-        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.6" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.7/@children.3"/>
-        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.7" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.4/@children.3"/>
-        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.8" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.8/@children.3"/>
-        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.9" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.6/@children.3"/>
-        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.10" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.0/@children.0"/>
-        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.11" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.0/@children.1"/>
-        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.12" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3/@children.1"/>
-        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.13" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.6/@children.1"/>
-        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.14" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.8/@children.1"/>
-        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.15" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.9/@children.1"/>
-        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.16" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.7/@children.1"/>
-        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.17" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.4/@children.1"/>
-        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.18" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2/@children.1"/>
-        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.19" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.5/@children.1"/>
-        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.20" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.1/@children.1"/>
-        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.21" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.1/@children.0"/>
-        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.22" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.0"/>
-        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.23" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.1"/>
-      </outputRuleTraceSection>
+      <outputRuleTraceSection/>
     </testsheetViewList>
   </testsheetAssets>
-  <testsheetAssets majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_r3fxYZKREe2yV9_RIafW5w" externalChecksum="3391387159:507989954">
-    <testsheet ruleActivityUpdateStamp="_r3X1kZKREe2yV9_RIafW5w" ruleActivity="../Turns%20Ratio%20Test.ers#//@ruleset" locale="">
+  <testsheetAssets majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_0_kxsbhYEe2Gad3MA-icQg" externalChecksum="3391387159:507989954">
+    <testsheet ruleActivityUpdateStamp="_BhSQs7hXEe2Gad3MA-icQg" ruleActivity="../Turns%20Ratio%20Test.ers#//@ruleset" locale="">
       <input/>
       <output/>
       <expectedOutput/>
@@ -245,7 +207,7 @@
       <outputRuleTraceSection/>
     </testsheetViewList>
   </testsheetAssets>
-  <ruletest vocabularyUpdateStamp="_iLl0IJKOEe2yV9_RIafW5w" testsheets="#//@testsheetAssets.0/@testsheet #//@testsheetAssets.1/@testsheet" vocabulary="../../Rule%20Vocabulary.ecore#/"/>
+  <ruletest vocabularyUpdateStamp="_g17ucbhOEe2Zhrrcn2WE-Q" testsheets="#//@testsheetAssets.0/@testsheet #//@testsheetAssets.1/@testsheet" vocabulary="../../Rule%20Vocabulary.ecore#/"/>
   <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
     <testTabList name="Oil"/>
     <testTabList name="TRT"/>

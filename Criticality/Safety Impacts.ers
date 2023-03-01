@@ -1,109 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_VE8v9KumEe2dU-aSgLK5sQ" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_4NrGYLhNEe2Zhrrcn2WE-Q" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
   <languageCode>en_US</languageCode>
-  <ruleset vocabularyUpdateStamp="_iLl0IJKOEe2yV9_RIafW5w" vocabulary="../Rule%20Vocabulary.ecore#/">
+  <ruleset vocabularyUpdateStamp="_yORpY7hFEe27_LioLLvt2w" vocabulary="../Rule%20Vocabulary.ecore#/">
     <rule>
       <condition/>
       <condition/>
       <action/>
       <action/>
       <action>
-        <opaqueExpression expression="Injury_Failure.final_score = Injury_Failure.selection * safety_measures.category_weight / (safety_measures -> size)">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.final_score = Injury_Failure.selection * safety_measures.category_weight / ( safety_measures->size )" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="Injury_Failure.final_score = Injury_Failure.raw_score * Inspection.assessment.weight/ (All_Safety_Measures -> size)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.final_score = Injury_Failure.raw_score * Inspection.assessment.weight / ( All_Safety_Measures->size )" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
               <terms text="final_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Failure.final_score">
-                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
-                </parentTerm>
-              </terms>
-            </modifiedTermList>
-            <referencedTermList>
-              <terms text="safety_measures" datatype="Integer" termtype="COLLECTION" fulltext="safety_measures->size">
-                <parentTerm text="safety_measures" datatype="Measure" termtype="ENTITY" fulltext="safety_measures" variable="#//@ruleset/@logicalVariables.0/@extension.0">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
-                </parentTerm>
-              </terms>
-              <terms text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
-              </terms>
-              <terms text="category_weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="safety_measures.category_weight">
-                <parentTerm text="safety_measures" datatype="Measure" termtype="ENTITY" fulltext="safety_measures" variable="#//@ruleset/@logicalVariables.0/@extension.0">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
-                </parentTerm>
-              </terms>
-              <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Failure.selection">
-                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
-                </parentTerm>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </opaqueExpression>
-      </action>
-      <action>
-        <opaqueExpression expression="Injury_Repair.final_score = Injury_Repair.selection *safety_measures.category_weight / safety_measures -> size">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.final_score = Injury_Repair.selection * safety_measures.category_weight / safety_measures->size" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
-            <modifiedTermList>
-              <terms text="final_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Repair.final_score">
-                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
-                </parentTerm>
-              </terms>
-            </modifiedTermList>
-            <referencedTermList>
-              <terms text="safety_measures" datatype="Integer" termtype="COLLECTION" fulltext="safety_measures->size">
-                <parentTerm text="safety_measures" datatype="Measure" termtype="ENTITY" fulltext="safety_measures" variable="#//@ruleset/@logicalVariables.0/@extension.0">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
-                </parentTerm>
-              </terms>
-              <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Repair.selection">
-                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
-                </parentTerm>
-              </terms>
-              <terms text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
-              </terms>
-              <terms text="category_weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="safety_measures.category_weight">
-                <parentTerm text="safety_measures" datatype="Measure" termtype="ENTITY" fulltext="safety_measures" variable="#//@ruleset/@logicalVariables.0/@extension.0">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
-                </parentTerm>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </opaqueExpression>
-      </action>
-      <action/>
-      <action>
-        <opaqueExpression expression="safety_result+=Result.new[measure_net_score = safety_measures.final_score->sum, inspection_component = 'Criticality', measure_category = 'Safety Impact']">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="safety_result += Result.new [ Result.measure_net_score = safety_measures.final_score->sum , Result.measure_category = 'Safety Impact' , Result.inspection_component = 'Criticality' ]" datatype="Result" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
-            <modifiedTermList>
-              <terms text="safety_result" datatype="Result" termtype="ENTITY" fulltext="safety_result" variable="#//@ruleset/@logicalVariables.0/@extension.3">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
-              </terms>
-            </modifiedTermList>
-            <referencedTermList>
-              <terms text="measure_category" datatype="String" termtype="ATTRIBUTE" fulltext="Result.measure_category">
-                <parentTerm text="Result" datatype="Result" termtype="ENTITY" fulltext="Result" variable="#//@ruleset/@logicalVariables.2"/>
-              </terms>
-              <terms text="measure_net_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Result.measure_net_score">
-                <parentTerm text="Result" datatype="Result" termtype="ENTITY" fulltext="Result" variable="#//@ruleset/@logicalVariables.2"/>
-              </terms>
-              <terms text="new" datatype="Result" termtype="NEW" fulltext="Result.new">
-                <parentTerm text="Result" datatype="Result" termtype="ENTITY" fulltext="Result" variable="#//@ruleset/@logicalVariables.2"/>
-              </terms>
-              <terms text="safety_measures_final_score" datatype="Decimal" termtype="COLLECTION" fulltext="safety_measures.final_score->sum">
-                <parentTerm text="final_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="safety_measures.final_score">
-                  <parentTerm text="safety_measures" datatype="Measure" termtype="ENTITY" fulltext="safety_measures" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                     <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
                 </parentTerm>
               </terms>
-              <terms text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
-              <terms text="inspection_component" datatype="String" termtype="ATTRIBUTE" fulltext="Result.inspection_component">
-                <parentTerm text="Result" datatype="Result" termtype="ENTITY" fulltext="Result" variable="#//@ruleset/@logicalVariables.2"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="All_Safety_Measures" datatype="Integer" termtype="COLLECTION" fulltext="All_Safety_Measures->size">
+                <parentTerm text="All_Safety_Measures" datatype="Measure" termtype="ENTITY" fulltext="All_Safety_Measures" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.2">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
               </terms>
-              <terms text="Result" datatype="Result" termtype="ENTITY" fulltext="Result" variable="#//@ruleset/@logicalVariables.2"/>
+              <terms text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Failure.raw_score">
+                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Inspection.assessment.weight">
+                <parentTerm text="assessment" datatype="Assessment" termtype="ENTITY" fulltext="Inspection.assessment">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Injury_Repair.final_score = Injury_Repair.raw_score* Inspection.assessment.weight/ (All_Safety_Measures -> size)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.final_score = Injury_Repair.raw_score * Inspection.assessment.weight / ( All_Safety_Measures->size )" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="final_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Repair.final_score">
+                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Repair.raw_score">
+                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="All_Safety_Measures" datatype="Integer" termtype="COLLECTION" fulltext="All_Safety_Measures->size">
+                <parentTerm text="All_Safety_Measures" datatype="Measure" termtype="ENTITY" fulltext="All_Safety_Measures" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.2">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Inspection.assessment.weight">
+                <parentTerm text="assessment" datatype="Assessment" termtype="ENTITY" fulltext="Inspection.assessment">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Safety_Assessment.weighted = All_Safety_Measures.final_score->sum">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Safety_Assessment.weighted = All_Safety_Measures.final_score->sum" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="weighted" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Safety_Assessment.weighted">
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="All_Safety_Measures_final_score" datatype="Decimal" termtype="COLLECTION" fulltext="All_Safety_Measures.final_score->sum">
+                <parentTerm text="final_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="All_Safety_Measures.final_score">
+                  <parentTerm text="All_Safety_Measures" datatype="Measure" termtype="ENTITY" fulltext="All_Safety_Measures" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.2">
+                    <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
             </referencedTermList>
           </parserOutput>
         </opaqueExpression>
@@ -111,39 +119,44 @@
     </rule>
     <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
       <condition>
-        <opaqueExpression expression="Injury_Failure.description = 'None'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.description = 'None'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <opaqueExpression expression="Injury_Failure.observed_string = 'None'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.observed_string = 'None'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.description">
-                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.observed_string">
+                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
           </parserOutput>
         </opaqueExpression>
-        <viewExpressions lhs="Injury_Failure.description" rhs="'None'"/>
+        <viewExpressions lhs="Injury_Failure.observed_string" rhs="'None'"/>
       </condition>
       <condition/>
       <action>
-        <opaqueExpression expression="Injury_Failure.selection = 0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.selection = 0" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="Injury_Failure.raw_score = 0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.raw_score = 0" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Failure.selection">
-                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Failure.raw_score">
+                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
               </terms>
             </referencedTermList>
           </parserOutput>
         </opaqueExpression>
       </action>
-      <action/>
       <action/>
       <action/>
       <action/>
@@ -151,39 +164,44 @@
     </rule>
     <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
       <condition>
-        <opaqueExpression expression="Injury_Failure.description = 'Minor Injury (First Aid/Minor Medical Aid)'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.description = 'Minor Injury (First Aid/Minor Medical Aid)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <opaqueExpression expression="Injury_Failure.observed_string = 'Minor Injury (First Aid/Minor Medical Aid)'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.observed_string = 'Minor Injury (First Aid/Minor Medical Aid)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.description">
-                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.observed_string">
+                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
           </parserOutput>
         </opaqueExpression>
-        <viewExpressions lhs="Injury_Failure.description" rhs="'Minor Injury (First Aid/Minor Medical Aid)'"/>
+        <viewExpressions lhs="Injury_Failure.observed_string" rhs="'Minor Injury (First Aid/Minor Medical Aid)'"/>
       </condition>
       <condition/>
       <action>
-        <opaqueExpression expression="Injury_Failure.selection = 1">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.selection = 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="Injury_Failure.raw_score = 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.raw_score = 1" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Failure.selection">
-                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Failure.raw_score">
+                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
               </terms>
             </referencedTermList>
           </parserOutput>
         </opaqueExpression>
       </action>
-      <action/>
       <action/>
       <action/>
       <action/>
@@ -191,39 +209,44 @@
     </rule>
     <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
       <condition>
-        <opaqueExpression expression="Injury_Failure.description = 'Major Injury (Lost Time)'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.description = 'Major Injury (Lost Time)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <opaqueExpression expression="Injury_Failure.observed_string = 'Major Injury (Lost Time)'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.observed_string = 'Major Injury (Lost Time)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.description">
-                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.observed_string">
+                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
           </parserOutput>
         </opaqueExpression>
-        <viewExpressions lhs="Injury_Failure.description" rhs="'Major Injury (Lost Time)'"/>
+        <viewExpressions lhs="Injury_Failure.observed_string" rhs="'Major Injury (Lost Time)'"/>
       </condition>
       <condition/>
       <action>
-        <opaqueExpression expression="Injury_Failure.selection = 3">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.selection = 3" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="Injury_Failure.raw_score = 3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.raw_score = 3" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Failure.selection">
-                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Failure.raw_score">
+                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
               </terms>
             </referencedTermList>
           </parserOutput>
         </opaqueExpression>
       </action>
-      <action/>
       <action/>
       <action/>
       <action/>
@@ -231,74 +254,39 @@
     </rule>
     <rule documentingRuleStatements="#//@ruleset/@ruleStatements.2">
       <condition>
-        <opaqueExpression expression="Injury_Failure.description = 'Fatality or Permanent Disability'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.description = 'Fatality or Permanent Disability'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <opaqueExpression expression="Injury_Failure.observed_string = 'Fatality or Permanent Disability'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.observed_string = 'Fatality or Permanent Disability'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.description">
-                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.observed_string">
+                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
           </parserOutput>
         </opaqueExpression>
-        <viewExpressions lhs="Injury_Failure.description" rhs="'Fatality or Permanent Disability'"/>
+        <viewExpressions lhs="Injury_Failure.observed_string" rhs="'Fatality or Permanent Disability'"/>
       </condition>
       <condition/>
       <action>
-        <opaqueExpression expression="Injury_Failure.selection = 5">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.selection = 5" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="Injury_Failure.raw_score = 5">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.raw_score = 5" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Failure.selection">
-                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Failure.raw_score">
+                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </opaqueExpression>
-      </action>
-      <action/>
-      <action/>
-      <action/>
-      <action/>
-      <action/>
-    </rule>
-    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.3">
-      <condition/>
-      <condition>
-        <opaqueExpression expression="Injury_Repair.description = 'None'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.description = 'None'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.description">
-                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+              <terms text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                   <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
                 </parentTerm>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </opaqueExpression>
-        <viewExpressions lhs="Injury_Repair.description" rhs="'None'"/>
-      </condition>
-      <action/>
-      <action>
-        <opaqueExpression expression="Injury_Repair.selection = 0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.selection = 0" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
-            <modifiedTermList>
-              <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Repair.selection">
-                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
-                </parentTerm>
-              </terms>
-            </modifiedTermList>
-            <referencedTermList>
-              <terms text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
               </terms>
             </referencedTermList>
           </parserOutput>
@@ -312,39 +300,89 @@
     <rule documentingRuleStatements="#//@ruleset/@ruleStatements.3">
       <condition/>
       <condition>
-        <opaqueExpression expression="Injury_Repair.description = 'Low Risk (First Aid/Minor Medical Aid)'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.description = 'Low Risk (First Aid/Minor Medical Aid)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <opaqueExpression expression="Injury_Repair.observed_string = 'None'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.observed_string = 'None'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.description">
-                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.observed_string">
+                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
           </parserOutput>
         </opaqueExpression>
-        <viewExpressions lhs="Injury_Repair.description" rhs="'Low Risk (First Aid/Minor Medical Aid)'"/>
+        <viewExpressions lhs="Injury_Repair.observed_string" rhs="'None'"/>
       </condition>
       <action/>
       <action>
-        <opaqueExpression expression="Injury_Repair.selection = 1">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.selection = 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="Injury_Repair.raw_score = 0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.raw_score = 0" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Repair.selection">
-                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Repair.raw_score">
+                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
               </terms>
             </referencedTermList>
           </parserOutput>
         </opaqueExpression>
       </action>
       <action/>
+      <action/>
+      <action/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.3">
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Injury_Repair.observed_string = 'Low Risk (First Aid/Minor Medical Aid)'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.observed_string = 'Low Risk (First Aid/Minor Medical Aid)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.observed_string">
+                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Injury_Repair.observed_string" rhs="'Low Risk (First Aid/Minor Medical Aid)'"/>
+      </condition>
+      <action/>
+      <action>
+        <opaqueExpression expression="Injury_Repair.raw_score = 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.raw_score = 1" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Repair.raw_score">
+                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
       <action/>
       <action/>
       <action/>
@@ -352,39 +390,44 @@
     <rule documentingRuleStatements="#//@ruleset/@ruleStatements.4">
       <condition/>
       <condition>
-        <opaqueExpression expression="Injury_Repair.description = 'Medium Risk (Rigging, Fall Arrest, Confined Space)'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.description = 'Medium Risk (Rigging, Fall Arrest, Confined Space)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <opaqueExpression expression="Injury_Repair.observed_string = 'Medium Risk (Rigging, Fall Arrest, Confined Space)'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.observed_string = 'Medium Risk (Rigging, Fall Arrest, Confined Space)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.description">
-                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.observed_string">
+                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
           </parserOutput>
         </opaqueExpression>
-        <viewExpressions lhs="Injury_Repair.description" rhs="'Medium Risk (Rigging, Fall Arrest, Confined Space)'"/>
+        <viewExpressions lhs="Injury_Repair.observed_string" rhs="'Medium Risk (Rigging, Fall Arrest, Confined Space)'"/>
       </condition>
       <action/>
       <action>
-        <opaqueExpression expression="Injury_Repair.selection = 3">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.selection = 3" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="Injury_Repair.raw_score = 3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.raw_score = 3" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Repair.selection">
-                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Repair.raw_score">
+                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
               </terms>
             </referencedTermList>
           </parserOutput>
         </opaqueExpression>
       </action>
-      <action/>
       <action/>
       <action/>
       <action/>
@@ -392,33 +435,39 @@
     <rule documentingRuleStatements="#//@ruleset/@ruleStatements.5">
       <condition/>
       <condition>
-        <opaqueExpression expression="Injury_Repair.description = 'High Risk (Critical Lift, Permit Required Confined Space)'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.description = 'High Risk (Critical Lift, Permit Required Confined Space)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <opaqueExpression expression="Injury_Repair.observed_string = 'High Risk (Critical Lift, Permit Required Confined Space)'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.observed_string = 'High Risk (Critical Lift, Permit Required Confined Space)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.description">
-                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.observed_string">
+                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
           </parserOutput>
         </opaqueExpression>
-        <viewExpressions lhs="Injury_Repair.description" rhs="'High Risk (Critical Lift, Permit Required Confined Space)'"/>
+        <viewExpressions lhs="Injury_Repair.observed_string" rhs="'High Risk (Critical Lift, Permit Required Confined Space)'"/>
       </condition>
       <action/>
       <action>
-        <opaqueExpression expression="Injury_Repair.selection = 5">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.selection = 5" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="Injury_Repair.raw_score = 5">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.raw_score = 5" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Repair.selection">
-                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Repair.raw_score">
+                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
               </terms>
             </referencedTermList>
           </parserOutput>
@@ -427,14 +476,13 @@
       <action/>
       <action/>
       <action/>
-      <action/>
     </rule>
-    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.0 #//@ruleset/@logicalVariables.1">
-      <opaqueExpression expression="safety_measures.category='Safety Impact'">
-        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="safety_measures.category = 'Safety Impact'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.0">
+      <opaqueExpression expression="Safety_Assessment.index='Safety Impact'">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Safety_Assessment.index = 'Safety Impact'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
           <referencedTermList>
-            <terms text="category" datatype="String" termtype="ATTRIBUTE" fulltext="safety_measures.category">
-              <parentTerm text="safety_measures" datatype="Measure" termtype="ENTITY" fulltext="safety_measures" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <terms text="index" datatype="String" termtype="ATTRIBUTE" fulltext="Safety_Assessment.index">
+              <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                 <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
               </parentTerm>
             </terms>
@@ -442,188 +490,220 @@
         </parserOutput>
       </opaqueExpression>
     </filter>
-    <filter/>
-    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.1">
+    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.0">
+      <opaqueExpression expression="Safety_Assessment.analysis_type='Criticality'">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Safety_Assessment.analysis_type = 'Criticality'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+          <referencedTermList>
+            <terms text="analysis_type" datatype="String" termtype="ATTRIBUTE" fulltext="Safety_Assessment.analysis_type">
+              <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.0 #//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
       <opaqueExpression expression="Injury_Failure.name = 'Injury from failure'">
         <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.name = 'Injury from failure'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
           <referencedTermList>
             <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.name">
-              <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
               </parentTerm>
             </terms>
           </referencedTermList>
         </parserOutput>
       </opaqueExpression>
     </filter>
-    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.2">
+    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.0 #//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
       <opaqueExpression expression="Injury_Repair.name = 'Injury during repair'">
         <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.name = 'Injury during repair'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
           <referencedTermList>
             <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.name">
-              <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
               </parentTerm>
             </terms>
           </referencedTermList>
         </parserOutput>
       </opaqueExpression>
     </filter>
-    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1 #//@ruleset/@rules.2" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1">
-      <text expression="When Safety Impact measure of Injury from Failure has description [{Injury_Failure.description}], set its corresponding selection value to [{Injury_Failure.selection}]">
-        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury from Failure has description [ + Injury_Failure.description + ], set its corresponding selection value to [ + Injury_Failure.selection + ]" expressiontype="BRSTATEMENT">
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1 #//@ruleset/@rules.2">
+      <text expression="When Safety Impact measure of Injury from Failure has observed_string [{Injury_Failure.observed_string}], set its corresponding selection value to [{Injury_Failure.raw_score}]">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury from Failure has observed_string [ + Injury_Failure.observed_string + ], set its corresponding selection value to [ + Injury_Failure.raw_score + ]" expressiontype="BRSTATEMENT">
           <referencedTermList>
-            <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.description">
-              <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+            <terms text="raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Failure.raw_score">
+              <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
               </parentTerm>
             </terms>
-            <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Failure.selection">
-              <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+            <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.observed_string">
+              <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
               </parentTerm>
             </terms>
           </referencedTermList>
         </parserOutput>
       </text>
     </ruleStatement>
-    <ruleStatement post="Warning" ruleModelElements="#//@ruleset/@rules.3" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1">
-      <text expression="When Safety Impact measure of Injury from Failure has description [{Injury_Failure.description}], set its corresponding selection value to [{Injury_Failure.selection}]">
-        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury from Failure has description [ + Injury_Failure.description + ], set its corresponding selection value to [ + Injury_Failure.selection + ]" expressiontype="BRSTATEMENT">
+    <ruleStatement post="Warning" ruleModelElements="#//@ruleset/@rules.3">
+      <text expression="When Safety Impact measure of Injury from Failure has observed_string [{Injury_Failure.observed_string}], set its corresponding selection value to [{Injury_Failure.raw_score}]">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury from Failure has observed_string [ + Injury_Failure.observed_string + ], set its corresponding selection value to [ + Injury_Failure.raw_score + ]" expressiontype="BRSTATEMENT">
           <referencedTermList>
-            <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.description">
-              <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+            <terms text="raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Failure.raw_score">
+              <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
               </parentTerm>
             </terms>
-            <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Failure.selection">
-              <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+            <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.observed_string">
+              <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
               </parentTerm>
             </terms>
           </referencedTermList>
         </parserOutput>
       </text>
     </ruleStatement>
-    <ruleStatement post="Violation" ruleModelElements="#//@ruleset/@rules.4" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1">
-      <text expression="When Safety Impact measure of Injury from Failure has description [{Injury_Failure.description}], set its corresponding selection value to [{Injury_Failure.selection}]">
-        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury from Failure has description [ + Injury_Failure.description + ], set its corresponding selection value to [ + Injury_Failure.selection + ]" expressiontype="BRSTATEMENT">
+    <ruleStatement post="Violation" ruleModelElements="#//@ruleset/@rules.4">
+      <text expression="When Safety Impact measure of Injury from Failure has observed_string [{Injury_Failure.observed_string}], set its corresponding selection value to [{Injury_Failure.raw_score}]">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury from Failure has observed_string [ + Injury_Failure.observed_string + ], set its corresponding selection value to [ + Injury_Failure.raw_score + ]" expressiontype="BRSTATEMENT">
           <referencedTermList>
-            <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.description">
-              <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+            <terms text="raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Failure.raw_score">
+              <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
               </parentTerm>
             </terms>
-            <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Failure.selection">
-              <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+            <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.observed_string">
+              <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
               </parentTerm>
             </terms>
           </referencedTermList>
         </parserOutput>
       </text>
     </ruleStatement>
-    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.5 #//@ruleset/@rules.6" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.2">
-      <text expression="When Safety Impact measure of Injury during Repair has description [{Injury_Repair.description}], set its corresponding selection value to [{Injury_Repair.selection}]">
-        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury during Repair has description [ + Injury_Repair.description + ], set its corresponding selection value to [ + Injury_Repair.selection + ]" expressiontype="BRSTATEMENT">
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.5 #//@ruleset/@rules.6">
+      <text expression="When Safety Impact measure of Injury during Repair has observed_string [{Injury_Repair.observed_string}], set its corresponding selection value to [{Injury_Repair.raw_score}]">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury during Repair has observed_string [ + Injury_Repair.observed_string + ], set its corresponding selection value to [ + Injury_Repair.raw_score + ]" expressiontype="BRSTATEMENT">
           <referencedTermList>
-            <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.description">
-              <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+            <terms text="raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Repair.raw_score">
+              <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
               </parentTerm>
             </terms>
-            <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Repair.selection">
-              <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+            <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.observed_string">
+              <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
               </parentTerm>
             </terms>
           </referencedTermList>
         </parserOutput>
       </text>
     </ruleStatement>
-    <ruleStatement post="Warning" ruleModelElements="#//@ruleset/@rules.7" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.2">
-      <text expression="When Safety Impact measure of Injury during Repair has description [{Injury_Repair.description}], set its corresponding selection value to [{Injury_Repair.selection}]">
-        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury during Repair has description [ + Injury_Repair.description + ], set its corresponding selection value to [ + Injury_Repair.selection + ]" expressiontype="BRSTATEMENT">
+    <ruleStatement post="Warning" ruleModelElements="#//@ruleset/@rules.7">
+      <text expression="When Safety Impact measure of Injury during Repair has observed_string [{Injury_Repair.observed_string}], set its corresponding selection value to [{Injury_Repair.raw_score}]">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury during Repair has observed_string [ + Injury_Repair.observed_string + ], set its corresponding selection value to [ + Injury_Repair.raw_score + ]" expressiontype="BRSTATEMENT">
           <referencedTermList>
-            <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.description">
-              <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+            <terms text="raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Repair.raw_score">
+              <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
               </parentTerm>
             </terms>
-            <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Repair.selection">
-              <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+            <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.observed_string">
+              <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
               </parentTerm>
             </terms>
           </referencedTermList>
         </parserOutput>
       </text>
     </ruleStatement>
-    <ruleStatement post="Violation" ruleModelElements="#//@ruleset/@rules.8" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.2">
-      <text expression="When Safety Impact measure of Injury during Repair has description [{Injury_Repair.description}], set its corresponding selection value to [{Injury_Repair.selection}]">
-        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury during Repair has description [ + Injury_Repair.description + ], set its corresponding selection value to [ + Injury_Repair.selection + ]" expressiontype="BRSTATEMENT">
+    <ruleStatement post="Violation" ruleModelElements="#//@ruleset/@rules.8">
+      <text expression="When Safety Impact measure of Injury during Repair has observed_string [{Injury_Repair.observed_string}], set its corresponding selection value to [{Injury_Repair.raw_score}]">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury during Repair has observed_string [ + Injury_Repair.observed_string + ], set its corresponding selection value to [ + Injury_Repair.raw_score + ]" expressiontype="BRSTATEMENT">
           <referencedTermList>
-            <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.description">
-              <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+            <terms text="raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Repair.raw_score">
+              <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
               </parentTerm>
             </terms>
-            <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Repair.selection">
-              <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+            <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.observed_string">
+              <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
               </parentTerm>
             </terms>
           </referencedTermList>
         </parserOutput>
       </text>
     </ruleStatement>
-    <logicalVariable entity="../Rule%20Vocabulary.ecore#//Inspection" filters="#//@ruleset/@filters.0 #//@ruleset/@filters.2 #//@ruleset/@filters.3">
-      <extension explicit="true" association="true" entity="../Rule%20Vocabulary.ecore#//Measure" traversedAssocRole="../Rule%20Vocabulary.ecore#//Inspection/measure" filters="#//@ruleset/@filters.0">
-        <alias value="safety_measures"/>
-        <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Measure/category"/>
-        <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Measure/measure_weight"/>
-        <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Measure/category_weight"/>
+    <logicalVariable entity="../Rule%20Vocabulary.ecore#//Inspection" filters="#//@ruleset/@filters.0 #//@ruleset/@filters.2 #//@ruleset/@filters.3 #//@ruleset/@filters.1">
+      <extension explicit="true" association="true" entity="../Rule%20Vocabulary.ecore#//Assessment" traversedAssocRole="../Rule%20Vocabulary.ecore#//Inspection/assessment" filters="#//@ruleset/@filters.0 #//@ruleset/@filters.2 #//@ruleset/@filters.3 #//@ruleset/@filters.1">
+        <alias value="Safety_Assessment"/>
+        <extension explicit="true" association="true" entity="../Rule%20Vocabulary.ecore#//Measure" traversedAssocRole="../Rule%20Vocabulary.ecore#//Assessment/measure" filters="#//@ruleset/@filters.2">
+          <alias value="Injury_Failure"/>
+          <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Measure/raw_score"/>
+          <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Measure/final_score"/>
+          <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Measure/name"/>
+          <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Measure/observed_string"/>
+        </extension>
+        <extension explicit="true" association="true" entity="../Rule%20Vocabulary.ecore#//Measure" traversedAssocRole="../Rule%20Vocabulary.ecore#//Assessment/measure" filters="#//@ruleset/@filters.3">
+          <alias value="Injury_Repair"/>
+          <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Measure/raw_score"/>
+          <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Measure/final_score"/>
+          <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Measure/name"/>
+          <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Measure/observed_string"/>
+        </extension>
+        <extension explicit="true" association="true" entity="../Rule%20Vocabulary.ecore#//Measure" traversedAssocRole="../Rule%20Vocabulary.ecore#//Assessment/measure">
+          <alias value="All_Safety_Measures"/>
+        </extension>
+        <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Assessment/analysis_type"/>
+        <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Assessment/index"/>
+        <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Assessment/weighted"/>
+        <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Assessment/weight"/>
       </extension>
-      <extension explicit="true" association="true" entity="../Rule%20Vocabulary.ecore#//Measure" traversedAssocRole="../Rule%20Vocabulary.ecore#//Inspection/measure" ruleStatements="#//@ruleset/@ruleStatements.0 #//@ruleset/@ruleStatements.1 #//@ruleset/@ruleStatements.2" filters="#//@ruleset/@filters.2">
-        <alias value="Injury_Failure"/>
-        <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Measure/selection"/>
-        <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Measure/final_score"/>
-        <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Measure/name"/>
-        <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Measure/description"/>
-      </extension>
-      <extension explicit="true" association="true" entity="../Rule%20Vocabulary.ecore#//Measure" traversedAssocRole="../Rule%20Vocabulary.ecore#//Inspection/measure" ruleStatements="#//@ruleset/@ruleStatements.3 #//@ruleset/@ruleStatements.4 #//@ruleset/@ruleStatements.5" filters="#//@ruleset/@filters.3">
-        <alias value="Injury_Repair"/>
-        <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Measure/selection"/>
-        <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Measure/final_score"/>
-        <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Measure/name"/>
-        <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Measure/description"/>
-      </extension>
-      <extension explicit="true" association="true" entity="../Rule%20Vocabulary.ecore#//Result" traversedAssocRole="../Rule%20Vocabulary.ecore#//Inspection/result">
-        <alias value="safety_result"/>
-        <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Result/measure_net_score"/>
-        <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Result/inspection_component"/>
-      </extension>
-    </logicalVariable>
-    <logicalVariable entity="../Rule%20Vocabulary.ecore#//Measure" filters="#//@ruleset/@filters.0">
-      <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Measure/measure_weight"/>
-      <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Measure/category"/>
-    </logicalVariable>
-    <logicalVariable entity="../Rule%20Vocabulary.ecore#//Result">
-      <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Result/measure_net_score"/>
-      <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Result/measure_category"/>
-      <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Result/inspection_component"/>
     </logicalVariable>
   </ruleset>
-  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="35" sashWeightConditionsActions="24" sashWeightConditionsIf="45">
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="28" sashWeightScope="63" sashWeightConditionsActions="37" sashWeightConditionsIf="45">
     <actionSection rowCount="50" columnWidthFactor="0.5">
       <actionItemList>
         <valueSetCell/>
-        <expressionCell external="Injury_Failure.selection">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.selection" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <expressionCell external="Injury_Failure.raw_score">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.raw_score" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Failure.selection">
-                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Failure.raw_score">
+                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -632,74 +712,62 @@
       </actionItemList>
       <actionItemList>
         <valueSetCell/>
-        <expressionCell external="Injury_Repair.selection">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.selection" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <expressionCell external="Injury_Repair.raw_score">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.raw_score" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Repair.selection">
-                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Repair.raw_score">
+                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
           </parserOutput>
         </expressionCell>
       </actionItemList>
-      <actionItemList rowHeight="121">
+      <actionItemList rowHeight="78">
         <valueSetCell/>
         <expressionCell external="Injury_Failure.final_score">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.final_score" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
               <terms text="final_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Failure.final_score">
-                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
           </parserOutput>
         </expressionCell>
       </actionItemList>
-      <actionItemList rowHeight="93">
+      <actionItemList rowHeight="136">
         <valueSetCell/>
         <expressionCell external="Injury_Repair.final_score">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.final_score" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
               <terms text="final_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Repair.final_score">
-                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
           </parserOutput>
         </expressionCell>
       </actionItemList>
-      <actionItemList>
+      <actionItemList rowHeight="98">
         <valueSetCell/>
-        <expressionCell/>
-      </actionItemList>
-      <actionItemList rowHeight="140">
-        <valueSetCell/>
-        <expressionCell external="safety_result+=Result.new[measure_net_score = cellValue, inspection_component = 'Criticality', measure_category = 'Safety Impact']">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="safety_result += Result.new [ Result.measure_net_score = cellValue , Result.measure_category = 'Safety Impact' , Result.inspection_component = 'Criticality' ]" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="true">
-            <modifiedTermList>
-              <terms text="safety_result" datatype="Result" termtype="ENTITY" fulltext="safety_result" variable="#//@ruleset/@logicalVariables.0/@extension.3">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
-              </terms>
-            </modifiedTermList>
+        <expressionCell external="Safety_Assessment.weighted">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Safety_Assessment.weighted" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="measure_category" datatype="String" termtype="ATTRIBUTE" fulltext="Result.measure_category">
-                <parentTerm text="Result" datatype="Result" termtype="ENTITY" fulltext="Result" variable="#//@ruleset/@logicalVariables.2"/>
+              <terms text="weighted" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Safety_Assessment.weighted">
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
               </terms>
-              <terms text="measure_net_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Result.measure_net_score">
-                <parentTerm text="Result" datatype="Result" termtype="ENTITY" fulltext="Result" variable="#//@ruleset/@logicalVariables.2"/>
-              </terms>
-              <terms text="new" datatype="Result" termtype="NEW" fulltext="Result.new">
-                <parentTerm text="Result" datatype="Result" termtype="ENTITY" fulltext="Result" variable="#//@ruleset/@logicalVariables.2"/>
-              </terms>
-              <terms text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
-              <terms text="inspection_component" datatype="String" termtype="ATTRIBUTE" fulltext="Result.inspection_component">
-                <parentTerm text="Result" datatype="Result" termtype="ENTITY" fulltext="Result" variable="#//@ruleset/@logicalVariables.2"/>
-              </terms>
-              <terms text="Result" datatype="Result" termtype="ENTITY" fulltext="Result" variable="#//@ruleset/@logicalVariables.2"/>
             </referencedTermList>
           </parserOutput>
         </expressionCell>
@@ -709,59 +777,52 @@
       <rootNode>
         <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
           <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
-            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="safety_measures.category='Safety Impact'" filter="#//@ruleset/@filters.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Safety_Assessment.index='Safety Impact'" filter="#//@ruleset/@filters.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Safety_Assessment.analysis_type='Criticality'" filter="#//@ruleset/@filters.1"/>
             <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Injury_Failure.name = 'Injury from failure'" filter="#//@ruleset/@filters.2"/>
             <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Injury_Repair.name = 'Injury during repair'" filter="#//@ruleset/@filters.3"/>
           </children>
-          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
             <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
-              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="safety_measures.category='Safety Impact'" filter="#//@ruleset/@filters.0"/>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Safety_Assessment.index='Safety Impact'" filter="#//@ruleset/@filters.0"/>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Safety_Assessment.analysis_type='Criticality'" filter="#//@ruleset/@filters.1"/>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Injury_Failure.name = 'Injury from failure'" filter="#//@ruleset/@filters.2"/>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Injury_Repair.name = 'Injury during repair'" filter="#//@ruleset/@filters.3"/>
             </children>
             <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
             <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.1"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Injury_Failure.name = 'Injury from failure'" filter="#//@ruleset/@filters.2"/>
+              </children>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@referencedAttributes.0"/>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@referencedAttributes.1"/>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@referencedAttributes.2"/>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@referencedAttributes.3"/>
+            </children>
             <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.2"/>
-          </children>
-          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1">
-            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
-              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Injury_Failure.name = 'Injury from failure'" filter="#//@ruleset/@filters.2"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Injury_Repair.name = 'Injury during repair'" filter="#//@ruleset/@filters.3"/>
+              </children>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1/@referencedAttributes.0"/>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1/@referencedAttributes.1"/>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1/@referencedAttributes.2"/>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1/@referencedAttributes.3"/>
             </children>
-            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.0"/>
-            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.1"/>
-            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.2"/>
-            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.3"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.3"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.2"/>
           </children>
-          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.2">
-            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
-              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Injury_Repair.name = 'Injury during repair'" filter="#//@ruleset/@filters.3"/>
-            </children>
-            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.2/@referencedAttributes.0"/>
-            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.2/@referencedAttributes.1"/>
-            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.2/@referencedAttributes.2"/>
-            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.2/@referencedAttributes.3"/>
-          </children>
-          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.3">
-            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.3/@referencedAttributes.0"/>
-            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.3/@referencedAttributes.1"/>
-          </children>
-        </children>
-        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
-          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
-          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.1"/>
-        </children>
-        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.2">
-          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.0"/>
-          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.1"/>
-          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.2"/>
         </children>
       </rootNode>
     </scopeSection>
     <filterSection rowCount="50">
       <filterItemList filter="#//@ruleset/@filters.0">
-        <expressionCell external="safety_measures.category='Safety Impact'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="safety_measures.category = 'Safety Impact'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+        <expressionCell external="Safety_Assessment.index='Safety Impact'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Safety_Assessment.index = 'Safety Impact'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
             <referencedTermList>
-              <terms text="category" datatype="String" termtype="ATTRIBUTE" fulltext="safety_measures.category">
-                <parentTerm text="safety_measures" datatype="Measure" termtype="ENTITY" fulltext="safety_measures" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+              <terms text="index" datatype="String" termtype="ATTRIBUTE" fulltext="Safety_Assessment.index">
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                   <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
                 </parentTerm>
               </terms>
@@ -770,15 +831,27 @@
         </expressionCell>
       </filterItemList>
       <filterItemList filter="#//@ruleset/@filters.1">
-        <expressionCell/>
+        <expressionCell external="Safety_Assessment.analysis_type='Criticality'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Safety_Assessment.analysis_type = 'Criticality'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="analysis_type" datatype="String" termtype="ATTRIBUTE" fulltext="Safety_Assessment.analysis_type">
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
       </filterItemList>
       <filterItemList filter="#//@ruleset/@filters.2">
         <expressionCell external="Injury_Failure.name = 'Injury from failure'">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.name = 'Injury from failure'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
             <referencedTermList>
               <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.name">
-                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -790,8 +863,10 @@
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.name = 'Injury during repair'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
             <referencedTermList>
               <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.name">
-                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -799,20 +874,24 @@
         </expressionCell>
       </filterItemList>
     </filterSection>
-    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="1225" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
       <ruleStatementItemList rowHeight="74" ruleStatement="#//@ruleset/@ruleStatements.0">
-        <reference external="{1, 2}"/>
-        <text external="When Safety Impact measure of Injury from Failure has description [{Injury_Failure.description}], set its corresponding selection value to [{Injury_Failure.selection}]">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury from Failure has description [ + Injury_Failure.description + ], set its corresponding selection value to [ + Injury_Failure.selection + ]" expressiontype="BRSTATEMENT">
+        <reference external="1:2"/>
+        <text external="When Safety Impact measure of Injury from Failure has observed_string [{Injury_Failure.observed_string}], set its corresponding selection value to [{Injury_Failure.raw_score}]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury from Failure has observed_string [ + Injury_Failure.observed_string + ], set its corresponding selection value to [ + Injury_Failure.raw_score + ]" expressiontype="BRSTATEMENT">
             <referencedTermList>
-              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.description">
-                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Failure.raw_score">
+                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
-              <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Failure.selection">
-                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.observed_string">
+                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -821,17 +900,21 @@
       </ruleStatementItemList>
       <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
         <reference external="3"/>
-        <text external="When Safety Impact measure of Injury from Failure has description [{Injury_Failure.description}], set its corresponding selection value to [{Injury_Failure.selection}]">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury from Failure has description [ + Injury_Failure.description + ], set its corresponding selection value to [ + Injury_Failure.selection + ]" expressiontype="BRSTATEMENT">
+        <text external="When Safety Impact measure of Injury from Failure has observed_string [{Injury_Failure.observed_string}], set its corresponding selection value to [{Injury_Failure.raw_score}]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury from Failure has observed_string [ + Injury_Failure.observed_string + ], set its corresponding selection value to [ + Injury_Failure.raw_score + ]" expressiontype="BRSTATEMENT">
             <referencedTermList>
-              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.description">
-                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Failure.raw_score">
+                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
-              <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Failure.selection">
-                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.observed_string">
+                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -840,17 +923,21 @@
       </ruleStatementItemList>
       <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.2">
         <reference external="4"/>
-        <text external="When Safety Impact measure of Injury from Failure has description [{Injury_Failure.description}], set its corresponding selection value to [{Injury_Failure.selection}]">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury from Failure has description [ + Injury_Failure.description + ], set its corresponding selection value to [ + Injury_Failure.selection + ]" expressiontype="BRSTATEMENT">
+        <text external="When Safety Impact measure of Injury from Failure has observed_string [{Injury_Failure.observed_string}], set its corresponding selection value to [{Injury_Failure.raw_score}]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury from Failure has observed_string [ + Injury_Failure.observed_string + ], set its corresponding selection value to [ + Injury_Failure.raw_score + ]" expressiontype="BRSTATEMENT">
             <referencedTermList>
-              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.description">
-                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Failure.raw_score">
+                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
-              <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Failure.selection">
-                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.observed_string">
+                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -858,18 +945,22 @@
         </text>
       </ruleStatementItemList>
       <ruleStatementItemList rowHeight="66" ruleStatement="#//@ruleset/@ruleStatements.3">
-        <reference external="{5, 6}"/>
-        <text external="When Safety Impact measure of Injury during Repair has description [{Injury_Repair.description}], set its corresponding selection value to [{Injury_Repair.selection}]">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury during Repair has description [ + Injury_Repair.description + ], set its corresponding selection value to [ + Injury_Repair.selection + ]" expressiontype="BRSTATEMENT">
+        <reference external="5:6"/>
+        <text external="When Safety Impact measure of Injury during Repair has observed_string [{Injury_Repair.observed_string}], set its corresponding selection value to [{Injury_Repair.raw_score}]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury during Repair has observed_string [ + Injury_Repair.observed_string + ], set its corresponding selection value to [ + Injury_Repair.raw_score + ]" expressiontype="BRSTATEMENT">
             <referencedTermList>
-              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.description">
-                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Repair.raw_score">
+                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
-              <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Repair.selection">
-                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.observed_string">
+                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -878,17 +969,21 @@
       </ruleStatementItemList>
       <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.4">
         <reference external="7"/>
-        <text external="When Safety Impact measure of Injury during Repair has description [{Injury_Repair.description}], set its corresponding selection value to [{Injury_Repair.selection}]">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury during Repair has description [ + Injury_Repair.description + ], set its corresponding selection value to [ + Injury_Repair.selection + ]" expressiontype="BRSTATEMENT">
+        <text external="When Safety Impact measure of Injury during Repair has observed_string [{Injury_Repair.observed_string}], set its corresponding selection value to [{Injury_Repair.raw_score}]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury during Repair has observed_string [ + Injury_Repair.observed_string + ], set its corresponding selection value to [ + Injury_Repair.raw_score + ]" expressiontype="BRSTATEMENT">
             <referencedTermList>
-              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.description">
-                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Repair.raw_score">
+                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
-              <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Repair.selection">
-                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.observed_string">
+                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -897,17 +992,21 @@
       </ruleStatementItemList>
       <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.5">
         <reference external="8"/>
-        <text external="When Safety Impact measure of Injury during Repair has description [{Injury_Repair.description}], set its corresponding selection value to [{Injury_Repair.selection}]">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury during Repair has description [ + Injury_Repair.description + ], set its corresponding selection value to [ + Injury_Repair.selection + ]" expressiontype="BRSTATEMENT">
+        <text external="When Safety Impact measure of Injury during Repair has observed_string [{Injury_Repair.observed_string}], set its corresponding selection value to [{Injury_Repair.raw_score}]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="When Safety Impact measure of Injury during Repair has observed_string [ + Injury_Repair.observed_string + ], set its corresponding selection value to [ + Injury_Repair.raw_score + ]" expressiontype="BRSTATEMENT">
             <referencedTermList>
-              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.description">
-                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Repair.raw_score">
+                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
-              <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Repair.selection">
-                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.observed_string">
+                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -918,12 +1017,14 @@
     <conditionSection rowCount="50" columnWidthFactor="0.5">
       <conditionItemList rowHeight="74">
         <valueSetCell/>
-        <expressionCell external="Injury_Failure.description">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.description" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <expressionCell external="Injury_Failure.observed_string">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.observed_string" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.description">
-                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.observed_string">
+                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -932,12 +1033,14 @@
       </conditionItemList>
       <conditionItemList>
         <valueSetCell/>
-        <expressionCell external="Injury_Repair.description">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.description" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <expressionCell external="Injury_Repair.observed_string">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.observed_string" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.description">
-                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.observed_string">
+                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -946,114 +1049,124 @@
       </conditionItemList>
     </conditionSection>
     <ruleSection columnCount="20">
-      <ruleColumnList ruleId="0" columnWidth="196" pRule="#//@ruleset/@rules.0">
+      <ruleColumnList ruleId="0" columnWidth="429" pRule="#//@ruleset/@rules.0">
         <conditionValueSetCellList/>
         <conditionValueSetCellList/>
         <actionValueSetCellList/>
         <actionValueSetCellList/>
-        <actionValueSetCellList valueSet="Injury_Failure.selection * safety_measures.category_weight / (safety_measures -> size)">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.final_score = Injury_Failure.selection * safety_measures.category_weight / ( safety_measures->size )" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <actionValueSetCellList valueSet="Injury_Failure.raw_score * Inspection.assessment.weight/ (All_Safety_Measures -> size)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.final_score = Injury_Failure.raw_score * Inspection.assessment.weight / ( All_Safety_Measures->size )" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
               <terms text="final_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Failure.final_score">
                 <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
-                </parentTerm>
-              </terms>
-            </modifiedTermList>
-            <referencedTermList>
-              <terms text="safety_measures" datatype="Integer" termtype="COLLECTION" fulltext="safety_measures->size">
-                <parentTerm text="safety_measures" datatype="Measure" termtype="ENTITY" fulltext="safety_measures">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
-                </parentTerm>
-              </terms>
-              <terms text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
-              </terms>
-              <terms text="category_weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="safety_measures.category_weight">
-                <parentTerm text="safety_measures" datatype="Measure" termtype="ENTITY" fulltext="safety_measures">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
-                </parentTerm>
-              </terms>
-              <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Failure.selection">
-                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
-                </parentTerm>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </actionValueSetCellList>
-        <actionValueSetCellList valueSet="Injury_Repair.selection *safety_measures.category_weight / safety_measures -> size">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.final_score = Injury_Repair.selection * safety_measures.category_weight / safety_measures->size" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
-            <modifiedTermList>
-              <terms text="final_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Repair.final_score">
-                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
-                </parentTerm>
-              </terms>
-            </modifiedTermList>
-            <referencedTermList>
-              <terms text="safety_measures" datatype="Integer" termtype="COLLECTION" fulltext="safety_measures->size">
-                <parentTerm text="safety_measures" datatype="Measure" termtype="ENTITY" fulltext="safety_measures">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
-                </parentTerm>
-              </terms>
-              <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Repair.selection">
-                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
-                </parentTerm>
-              </terms>
-              <terms text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
-              </terms>
-              <terms text="category_weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="safety_measures.category_weight">
-                <parentTerm text="safety_measures" datatype="Measure" termtype="ENTITY" fulltext="safety_measures">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
-                </parentTerm>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </actionValueSetCellList>
-        <actionValueSetCellList/>
-        <actionValueSetCellList valueSet="safety_measures.final_score->sum">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="safety_result += Result.new [ Result.measure_net_score = safety_measures.final_score->sum , Result.measure_category = 'Safety Impact' , Result.inspection_component = 'Criticality' ]" datatype="Result" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
-            <modifiedTermList>
-              <terms text="safety_result" datatype="Result" termtype="ENTITY" fulltext="safety_result">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
-              </terms>
-            </modifiedTermList>
-            <referencedTermList>
-              <terms text="measure_category" datatype="String" termtype="ATTRIBUTE" fulltext="Result.measure_category">
-                <parentTerm text="Result" datatype="Result" termtype="ENTITY" fulltext="Result"/>
-              </terms>
-              <terms text="measure_net_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Result.measure_net_score">
-                <parentTerm text="Result" datatype="Result" termtype="ENTITY" fulltext="Result"/>
-              </terms>
-              <terms text="new" datatype="Result" termtype="NEW" fulltext="Result.new">
-                <parentTerm text="Result" datatype="Result" termtype="ENTITY" fulltext="Result"/>
-              </terms>
-              <terms text="safety_measures_final_score" datatype="Decimal" termtype="COLLECTION" fulltext="safety_measures.final_score->sum">
-                <parentTerm text="final_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="safety_measures.final_score">
-                  <parentTerm text="safety_measures" datatype="Measure" termtype="ENTITY" fulltext="safety_measures">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment">
                     <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
                   </parentTerm>
                 </parentTerm>
               </terms>
-              <terms text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
-              <terms text="inspection_component" datatype="String" termtype="ATTRIBUTE" fulltext="Result.inspection_component">
-                <parentTerm text="Result" datatype="Result" termtype="ENTITY" fulltext="Result"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="All_Safety_Measures" datatype="Integer" termtype="COLLECTION" fulltext="All_Safety_Measures->size">
+                <parentTerm text="All_Safety_Measures" datatype="Measure" termtype="ENTITY" fulltext="All_Safety_Measures">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                  </parentTerm>
+                </parentTerm>
               </terms>
-              <terms text="Result" datatype="Result" termtype="ENTITY" fulltext="Result"/>
+              <terms text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure">
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                </parentTerm>
+              </terms>
+              <terms text="raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Failure.raw_score">
+                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Inspection.assessment.weight">
+                <parentTerm text="assessment" datatype="Assessment" termtype="ENTITY" fulltext="Inspection.assessment">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet="Injury_Repair.raw_score* Inspection.assessment.weight/ (All_Safety_Measures -> size)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.final_score = Injury_Repair.raw_score * Inspection.assessment.weight / ( All_Safety_Measures->size )" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="final_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Repair.final_score">
+                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Repair.raw_score">
+                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="All_Safety_Measures" datatype="Integer" termtype="COLLECTION" fulltext="All_Safety_Measures->size">
+                <parentTerm text="All_Safety_Measures" datatype="Measure" termtype="ENTITY" fulltext="All_Safety_Measures">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair">
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                </parentTerm>
+              </terms>
+              <terms text="weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Inspection.assessment.weight">
+                <parentTerm text="assessment" datatype="Assessment" termtype="ENTITY" fulltext="Inspection.assessment">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet="All_Safety_Measures.final_score->sum">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Safety_Assessment.weighted = All_Safety_Measures.final_score->sum" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="weighted" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Safety_Assessment.weighted">
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment">
+                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+              </terms>
+              <terms text="All_Safety_Measures_final_score" datatype="Decimal" termtype="COLLECTION" fulltext="All_Safety_Measures.final_score->sum">
+                <parentTerm text="final_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="All_Safety_Measures.final_score">
+                  <parentTerm text="All_Safety_Measures" datatype="Measure" termtype="ENTITY" fulltext="All_Safety_Measures">
+                    <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment">
+                      <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
             </referencedTermList>
           </parserOutput>
         </actionValueSetCellList>
       </ruleColumnList>
       <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
         <conditionValueSetCellList valueSet="'None'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.description = 'None'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.observed_string = 'None'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.description">
-                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.observed_string">
+                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -1061,22 +1174,25 @@
         </conditionValueSetCellList>
         <conditionValueSetCellList valueSet="-"/>
         <actionValueSetCellList valueSet="0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.selection = 0" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.raw_score = 0" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Failure.selection">
+              <terms text="raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Failure.raw_score">
                 <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </modifiedTermList>
             <referencedTermList>
               <terms text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                </parentTerm>
               </terms>
             </referencedTermList>
           </parserOutput>
         </actionValueSetCellList>
-        <actionValueSetCellList/>
         <actionValueSetCellList/>
         <actionValueSetCellList/>
         <actionValueSetCellList/>
@@ -1084,11 +1200,13 @@
       </ruleColumnList>
       <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
         <conditionValueSetCellList valueSet="'Minor Injury (First Aid/Minor Medical Aid)'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.description = 'Minor Injury (First Aid/Minor Medical Aid)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.observed_string = 'Minor Injury (First Aid/Minor Medical Aid)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.description">
-                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.observed_string">
+                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -1096,22 +1214,25 @@
         </conditionValueSetCellList>
         <conditionValueSetCellList valueSet="-"/>
         <actionValueSetCellList valueSet="1">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.selection = 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.raw_score = 1" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Failure.selection">
+              <terms text="raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Failure.raw_score">
                 <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </modifiedTermList>
             <referencedTermList>
               <terms text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                </parentTerm>
               </terms>
             </referencedTermList>
           </parserOutput>
         </actionValueSetCellList>
-        <actionValueSetCellList/>
         <actionValueSetCellList/>
         <actionValueSetCellList/>
         <actionValueSetCellList/>
@@ -1119,11 +1240,13 @@
       </ruleColumnList>
       <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
         <conditionValueSetCellList valueSet="'Major Injury (Lost Time)'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.description = 'Major Injury (Lost Time)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.observed_string = 'Major Injury (Lost Time)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.description">
-                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.observed_string">
+                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -1131,22 +1254,25 @@
         </conditionValueSetCellList>
         <conditionValueSetCellList valueSet="-"/>
         <actionValueSetCellList valueSet="3">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.selection = 3" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.raw_score = 3" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Failure.selection">
+              <terms text="raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Failure.raw_score">
                 <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </modifiedTermList>
             <referencedTermList>
               <terms text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                </parentTerm>
               </terms>
             </referencedTermList>
           </parserOutput>
         </actionValueSetCellList>
-        <actionValueSetCellList/>
         <actionValueSetCellList/>
         <actionValueSetCellList/>
         <actionValueSetCellList/>
@@ -1154,11 +1280,13 @@
       </ruleColumnList>
       <ruleColumnList ruleId="4" columnWidth="100" pRule="#//@ruleset/@rules.4">
         <conditionValueSetCellList valueSet="'Fatality or Permanent Disability'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.description = 'Fatality or Permanent Disability'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.observed_string = 'Fatality or Permanent Disability'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.description">
-                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.1">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Failure.observed_string">
+                <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -1166,22 +1294,25 @@
         </conditionValueSetCellList>
         <conditionValueSetCellList valueSet="-"/>
         <actionValueSetCellList valueSet="5">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.selection = 5" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.raw_score = 5" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Failure.selection">
+              <terms text="raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Failure.raw_score">
                 <parentTerm text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </modifiedTermList>
             <referencedTermList>
               <terms text="Injury_Failure" datatype="Measure" termtype="ENTITY" fulltext="Injury_Failure">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                </parentTerm>
               </terms>
             </referencedTermList>
           </parserOutput>
         </actionValueSetCellList>
-        <actionValueSetCellList/>
         <actionValueSetCellList/>
         <actionValueSetCellList/>
         <actionValueSetCellList/>
@@ -1190,11 +1321,13 @@
       <ruleColumnList ruleId="5" columnWidth="100" pRule="#//@ruleset/@rules.5">
         <conditionValueSetCellList valueSet="-"/>
         <conditionValueSetCellList valueSet="'None'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.description = 'None'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.observed_string = 'None'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.description">
-                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.observed_string">
+                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -1202,22 +1335,25 @@
         </conditionValueSetCellList>
         <actionValueSetCellList/>
         <actionValueSetCellList valueSet="0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.selection = 0" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.raw_score = 0" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Repair.selection">
+              <terms text="raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Repair.raw_score">
                 <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </modifiedTermList>
             <referencedTermList>
               <terms text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                </parentTerm>
               </terms>
             </referencedTermList>
           </parserOutput>
         </actionValueSetCellList>
-        <actionValueSetCellList/>
         <actionValueSetCellList/>
         <actionValueSetCellList/>
         <actionValueSetCellList/>
@@ -1225,11 +1361,13 @@
       <ruleColumnList ruleId="6" columnWidth="100" pRule="#//@ruleset/@rules.6">
         <conditionValueSetCellList valueSet="-"/>
         <conditionValueSetCellList valueSet="'Low Risk (First Aid/Minor Medical Aid)'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.description = 'Low Risk (First Aid/Minor Medical Aid)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.observed_string = 'Low Risk (First Aid/Minor Medical Aid)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.description">
-                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.observed_string">
+                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -1237,22 +1375,25 @@
         </conditionValueSetCellList>
         <actionValueSetCellList/>
         <actionValueSetCellList valueSet="1">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.selection = 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.raw_score = 1" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Repair.selection">
+              <terms text="raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Repair.raw_score">
                 <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </modifiedTermList>
             <referencedTermList>
               <terms text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                </parentTerm>
               </terms>
             </referencedTermList>
           </parserOutput>
         </actionValueSetCellList>
-        <actionValueSetCellList/>
         <actionValueSetCellList/>
         <actionValueSetCellList/>
         <actionValueSetCellList/>
@@ -1260,11 +1401,13 @@
       <ruleColumnList ruleId="7" columnWidth="100" pRule="#//@ruleset/@rules.7">
         <conditionValueSetCellList valueSet="-"/>
         <conditionValueSetCellList valueSet="'Medium Risk (Rigging, Fall Arrest, Confined Space)'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.description = 'Medium Risk (Rigging, Fall Arrest, Confined Space)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.observed_string = 'Medium Risk (Rigging, Fall Arrest, Confined Space)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.description">
-                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.observed_string">
+                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -1272,22 +1415,25 @@
         </conditionValueSetCellList>
         <actionValueSetCellList/>
         <actionValueSetCellList valueSet="3">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.selection = 3" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.raw_score = 3" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Repair.selection">
+              <terms text="raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Repair.raw_score">
                 <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </modifiedTermList>
             <referencedTermList>
               <terms text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                </parentTerm>
               </terms>
             </referencedTermList>
           </parserOutput>
         </actionValueSetCellList>
-        <actionValueSetCellList/>
         <actionValueSetCellList/>
         <actionValueSetCellList/>
         <actionValueSetCellList/>
@@ -1295,11 +1441,13 @@
       <ruleColumnList ruleId="8" columnWidth="100" pRule="#//@ruleset/@rules.8">
         <conditionValueSetCellList valueSet="-"/>
         <conditionValueSetCellList valueSet="'High Risk (Critical Lift, Permit Required Confined Space)'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.description = 'High Risk (Critical Lift, Permit Required Confined Space)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.observed_string = 'High Risk (Critical Lift, Permit Required Confined Space)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.description">
-                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.2">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Injury_Repair.observed_string">
+                <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -1307,22 +1455,25 @@
         </conditionValueSetCellList>
         <actionValueSetCellList/>
         <actionValueSetCellList valueSet="5">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.selection = 5" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.raw_score = 5" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="Injury_Repair.selection">
+              <terms text="raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Injury_Repair.raw_score">
                 <parentTerm text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                  <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </modifiedTermList>
             <referencedTermList>
               <terms text="Injury_Repair" datatype="Measure" termtype="ENTITY" fulltext="Injury_Repair">
-                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                <parentTerm text="Safety_Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Safety_Assessment">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection"/>
+                </parentTerm>
               </terms>
             </referencedTermList>
           </parserOutput>
         </actionValueSetCellList>
-        <actionValueSetCellList/>
         <actionValueSetCellList/>
         <actionValueSetCellList/>
         <actionValueSetCellList/>
