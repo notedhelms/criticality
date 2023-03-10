@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_Wvmok7hXEe2Gad3MA-icQg" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_trvfzr9TEe2LIqTgc456_g" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
   <languageCode>en_US</languageCode>
-  <ruleset vocabularyUpdateStamp="_g17ucbhOEe2Zhrrcn2WE-Q" vocabulary="../Rule%20Vocabulary.ecore#/">
+  <ruleset vocabularyUpdateStamp="_qibEELhdEe2Gad3MA-icQg" vocabulary="../Rule%20Vocabulary.ecore#/">
     <rule>
       <condition/>
     </rule>
-    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+    <rule>
       <condition>
-        <opaqueExpression expression="Inspection.measure.observed_string = 'Less than 1% difference from nameplate impedance'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Inspection.measure.observed_string = 'Less than 1% difference from nameplate impedance'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <opaqueExpression expression="Inspection.assessment.measure.observed_value >= 1000">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Inspection.assessment.measure.observed_value >= 1000" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Inspection.measure.observed_string">
-                <parentTerm text="measure" datatype="Measure" termtype="ENTITY" fulltext="Inspection.measure">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="observed_value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Inspection.assessment.measure.observed_value">
+                <parentTerm text="measure" datatype="Measure" termtype="ENTITY" fulltext="Inspection.assessment.measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="assessment" datatype="Assessment" termtype="ENTITY" fulltext="Inspection.assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
           </parserOutput>
         </opaqueExpression>
-        <viewExpressions lhs="Inspection.measure.observed_string" rhs="'Less than 1% difference from nameplate impedance'"/>
+        <viewExpressions lhs="Inspection.assessment.measure.observed_value" rhs=">= 1000"/>
       </condition>
       <action>
         <opaqueExpression expression="Inspection.assessment.measure.index_adjustment = 0">
@@ -43,24 +45,26 @@
         </opaqueExpression>
       </action>
     </rule>
-    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+    <rule>
       <condition>
-        <opaqueExpression expression="Inspection.measure.observed_string = '1% to 3% difference from nameplate impedance (minor degradation)'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Inspection.measure.observed_string = '1% to 3% difference from nameplate impedance (minor degradation)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <opaqueExpression expression="Inspection.assessment.measure.observed_value in [500..1000)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Inspection.assessment.measure.observed_value in [ 500 .. 1000 )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Inspection.measure.observed_string">
-                <parentTerm text="measure" datatype="Measure" termtype="ENTITY" fulltext="Inspection.measure">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="observed_value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Inspection.assessment.measure.observed_value">
+                <parentTerm text="measure" datatype="Measure" termtype="ENTITY" fulltext="Inspection.assessment.measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="assessment" datatype="Assessment" termtype="ENTITY" fulltext="Inspection.assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
           </parserOutput>
         </opaqueExpression>
-        <viewExpressions lhs="Inspection.measure.observed_string" rhs="'1% to 3% difference from nameplate impedance (minor degradation)'"/>
+        <viewExpressions lhs="Inspection.assessment.measure.observed_value" rhs="[500..1000)"/>
       </condition>
       <action>
-        <opaqueExpression expression="Inspection.assessment.measure.index_adjustment = -5">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Inspection.assessment.measure.index_adjustment = -5" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="Inspection.assessment.measure.index_adjustment = -.5">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Inspection.assessment.measure.index_adjustment = -0.5" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
               <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Inspection.assessment.measure.index_adjustment">
                 <parentTerm text="measure" datatype="Measure" termtype="ENTITY" fulltext="Inspection.assessment.measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
@@ -81,20 +85,22 @@
         </opaqueExpression>
       </action>
     </rule>
-    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.2">
+    <rule>
       <condition>
-        <opaqueExpression expression="Inspection.measure.observed_string = '3% to 5% difference from nameplate impedance (significant degradation)'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Inspection.measure.observed_string = '3% to 5% difference from nameplate impedance (significant degradation)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <opaqueExpression expression="Inspection.assessment.measure.observed_value in [200..500)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Inspection.assessment.measure.observed_value in [ 200 .. 500 )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Inspection.measure.observed_string">
-                <parentTerm text="measure" datatype="Measure" termtype="ENTITY" fulltext="Inspection.measure">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="observed_value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Inspection.assessment.measure.observed_value">
+                <parentTerm text="measure" datatype="Measure" termtype="ENTITY" fulltext="Inspection.assessment.measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="assessment" datatype="Assessment" termtype="ENTITY" fulltext="Inspection.assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
           </parserOutput>
         </opaqueExpression>
-        <viewExpressions lhs="Inspection.measure.observed_string" rhs="'3% to 5% difference from nameplate impedance (significant degradation)'"/>
+        <viewExpressions lhs="Inspection.assessment.measure.observed_value" rhs="[200..500)"/>
       </condition>
       <action>
         <opaqueExpression expression="Inspection.assessment.measure.index_adjustment = -1">
@@ -119,20 +125,22 @@
         </opaqueExpression>
       </action>
     </rule>
-    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.3">
+    <rule>
       <condition>
-        <opaqueExpression expression="Inspection.measure.observed_string = 'Greater than 5% difference from nameplate impedance (severe degradation)'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Inspection.measure.observed_string = 'Greater than 5% difference from nameplate impedance (severe degradation)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <opaqueExpression expression="Inspection.assessment.measure.observed_value &lt; 200">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Inspection.assessment.measure.observed_value &lt; 200" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Inspection.measure.observed_string">
-                <parentTerm text="measure" datatype="Measure" termtype="ENTITY" fulltext="Inspection.measure">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="observed_value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Inspection.assessment.measure.observed_value">
+                <parentTerm text="measure" datatype="Measure" termtype="ENTITY" fulltext="Inspection.assessment.measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="assessment" datatype="Assessment" termtype="ENTITY" fulltext="Inspection.assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
           </parserOutput>
         </opaqueExpression>
-        <viewExpressions lhs="Inspection.measure.observed_string" rhs="'Greater than 5% difference from nameplate impedance (severe degradation)'"/>
+        <viewExpressions lhs="Inspection.assessment.measure.observed_value" rhs="&lt; 200"/>
       </condition>
       <action>
         <opaqueExpression expression="Inspection.assessment.measure.index_adjustment = -5">
@@ -157,65 +165,44 @@
         </opaqueExpression>
       </action>
     </rule>
-    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.0 #//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
-      <opaqueExpression expression="Inspection.assessment.measure.test = 'Short Circuit Impedance Test'">
-        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Inspection.assessment.measure.test = 'Short Circuit Impedance Test'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+      <opaqueExpression expression="Inspection.measure.test = 'Core-to-Ground Resistance (Megger) Test'">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Inspection.measure.test = 'Core-to-Ground Resistance (Megger) Test'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
           <referencedTermList>
-            <terms text="test" datatype="String" termtype="ATTRIBUTE" fulltext="Inspection.assessment.measure.test">
-              <parentTerm text="measure" datatype="Measure" termtype="ENTITY" fulltext="Inspection.assessment.measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
-                <parentTerm text="assessment" datatype="Assessment" termtype="ENTITY" fulltext="Inspection.assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
-                </parentTerm>
+            <terms text="test" datatype="String" termtype="ATTRIBUTE" fulltext="Inspection.measure.test">
+              <parentTerm text="measure" datatype="Measure" termtype="ENTITY" fulltext="Inspection.measure">
+                <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
               </parentTerm>
             </terms>
           </referencedTermList>
         </parserOutput>
       </opaqueExpression>
     </filter>
-    <ruleStatement post="Info" ruleName="Short Circuit Test Scoring" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0">
-      <text expression="Less than 1% difference from nameplate impedance. No change">
-        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Less than 1% difference from nameplate impedance. No change" expressiontype="BRSTATEMENT">
-          <referencedTermList/>
-        </parserOutput>
-      </text>
-    </ruleStatement>
-    <ruleStatement post="Info" ruleName="Short Circuit Test Scoring" ruleModelElements="#//@ruleset/@rules.2" logicalVariable="#//@ruleset/@logicalVariables.0">
-      <text expression="1% to 3% difference from nameplate impedance (minor degradation). Subtract 0.5">
-        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="1% to 3% difference from nameplate impedance (minor degradation). Subtract 0.5" expressiontype="BRSTATEMENT">
-          <referencedTermList/>
-        </parserOutput>
-      </text>
-    </ruleStatement>
-    <ruleStatement post="Info" ruleName="Short Circuit Test Scoring" ruleModelElements="#//@ruleset/@rules.3" logicalVariable="#//@ruleset/@logicalVariables.0">
-      <text expression="3% to 5% difference from nameplate impedance (significant degradation). Subtract 1.0">
-        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="3% to 5% difference from nameplate impedance (significant degradation). Subtract 1.0" expressiontype="BRSTATEMENT">
-          <referencedTermList/>
-        </parserOutput>
-      </text>
-    </ruleStatement>
-    <ruleStatement post="Info" ruleName="Short Circuit Test Scoring" ruleModelElements="#//@ruleset/@rules.4" logicalVariable="#//@ruleset/@logicalVariables.0">
-      <text expression="Greater than 5% difference from nameplate impedance (severe degradation). May indicate serious problem requiring immediate evaluation, additional testing, consultation with experts, and remediation prior to re-energization.">
-        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Greater than 5% difference from nameplate impedance (severe degradation). May indicate serious problem requiring immediate evaluation, additional testing, consultation with experts, and remediation prior to re-energization." expressiontype="BRSTATEMENT">
-          <referencedTermList/>
-        </parserOutput>
-      </text>
-    </ruleStatement>
-    <logicalVariable entity="../Rule%20Vocabulary.ecore#//Inspection" ruleStatements="#//@ruleset/@ruleStatements.0 #//@ruleset/@ruleStatements.1 #//@ruleset/@ruleStatements.3 #//@ruleset/@ruleStatements.2" filters="#//@ruleset/@filters.0">
-      <extension association="true" entity="../Rule%20Vocabulary.ecore#//Assessment" traversedAssocRole="../Rule%20Vocabulary.ecore#//Inspection/assessment" filters="#//@ruleset/@filters.0">
+    <logicalVariable entity="../Rule%20Vocabulary.ecore#//Inspection" filters="#//@ruleset/@filters.0">
+      <extension association="true" entity="../Rule%20Vocabulary.ecore#//Assessment" traversedAssocRole="../Rule%20Vocabulary.ecore#//Inspection/assessment">
         <extension association="true" entity="../Rule%20Vocabulary.ecore#//Measure" traversedAssocRole="../Rule%20Vocabulary.ecore#//Assessment/measure" filters="#//@ruleset/@filters.0">
-          <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Measure/test"/>
-          <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Measure/observed_string"/>
+          <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Measure/observed_value"/>
           <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Measure/index_adjustment"/>
+          <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Measure/test"/>
         </extension>
       </extension>
     </logicalVariable>
   </ruleset>
   <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true">
     <actionSection rowCount="50" columnWidthFactor="0.5">
-      <actionItemList>
+      <actionItemList rowHeight="182">
         <valueSetCell/>
-        <expressionCell external="Inspection.assessment.measure.index_adjustment">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Inspection.assessment.measure.index_adjustment" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <expressionCell external="Inspection.assessment.measure.index_adjustment = cellValue">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Inspection.assessment.measure.index_adjustment = cellValue" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="true">
+            <modifiedTermList>
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Inspection.assessment.measure.index_adjustment">
+                <parentTerm text="measure" datatype="Measure" termtype="ENTITY" fulltext="Inspection.assessment.measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="assessment" datatype="Assessment" termtype="ENTITY" fulltext="Inspection.assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
             <referencedTermList>
               <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Inspection.assessment.measure.index_adjustment">
                 <parentTerm text="measure" datatype="Measure" termtype="ENTITY" fulltext="Inspection.assessment.measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
@@ -233,15 +220,12 @@
       <rootNode>
         <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
           <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
-            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Inspection.assessment.measure.test = 'Short Circuit Impedance Test'" filter="#//@ruleset/@filters.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Inspection.measure.test = 'Core-to-Ground Resistance (Megger) Test'" filter="#//@ruleset/@filters.0"/>
           </children>
           <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
-            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
-              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Inspection.assessment.measure.test = 'Short Circuit Impedance Test'" filter="#//@ruleset/@filters.0"/>
-            </children>
-            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
               <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
-                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Inspection.assessment.measure.test = 'Short Circuit Impedance Test'" filter="#//@ruleset/@filters.0"/>
+                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Inspection.measure.test = 'Core-to-Ground Resistance (Megger) Test'" filter="#//@ruleset/@filters.0"/>
               </children>
               <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@referencedAttributes.0"/>
               <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@referencedAttributes.1"/>
@@ -253,14 +237,12 @@
     </scopeSection>
     <filterSection rowCount="50">
       <filterItemList filter="#//@ruleset/@filters.0">
-        <expressionCell external="Inspection.assessment.measure.test = 'Short Circuit Impedance Test'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Inspection.assessment.measure.test = 'Short Circuit Impedance Test'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+        <expressionCell external="Inspection.measure.test = 'Core-to-Ground Resistance (Megger) Test'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Inspection.measure.test = 'Core-to-Ground Resistance (Megger) Test'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
             <referencedTermList>
-              <terms text="test" datatype="String" termtype="ATTRIBUTE" fulltext="Inspection.assessment.measure.test">
-                <parentTerm text="measure" datatype="Measure" termtype="ENTITY" fulltext="Inspection.assessment.measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
-                  <parentTerm text="assessment" datatype="Assessment" termtype="ENTITY" fulltext="Inspection.assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
-                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
-                  </parentTerm>
+              <terms text="test" datatype="String" termtype="ATTRIBUTE" fulltext="Inspection.measure.test">
+                <parentTerm text="measure" datatype="Measure" termtype="ENTITY" fulltext="Inspection.measure">
+                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -268,49 +250,18 @@
         </expressionCell>
       </filterItemList>
     </filterSection>
-    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
-      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
-        <reference external="1"/>
-        <text external="Less than 1% difference from nameplate impedance. No change">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Less than 1% difference from nameplate impedance. No change" expressiontype="BRSTATEMENT">
-            <referencedTermList/>
-          </parserOutput>
-        </text>
-      </ruleStatementItemList>
-      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
-        <reference external="2"/>
-        <text external="1% to 3% difference from nameplate impedance (minor degradation). Subtract 0.5">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="1% to 3% difference from nameplate impedance (minor degradation). Subtract 0.5" expressiontype="BRSTATEMENT">
-            <referencedTermList/>
-          </parserOutput>
-        </text>
-      </ruleStatementItemList>
-      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.2">
-        <reference external="3"/>
-        <text external="3% to 5% difference from nameplate impedance (significant degradation). Subtract 1.0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="3% to 5% difference from nameplate impedance (significant degradation). Subtract 1.0" expressiontype="BRSTATEMENT">
-            <referencedTermList/>
-          </parserOutput>
-        </text>
-      </ruleStatementItemList>
-      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.3">
-        <reference external="4"/>
-        <text external="Greater than 5% difference from nameplate impedance (severe degradation). May indicate serious problem requiring immediate evaluation, additional testing, consultation with experts, and remediation prior to re-energization.">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Greater than 5% difference from nameplate impedance (severe degradation). May indicate serious problem requiring immediate evaluation, additional testing, consultation with experts, and remediation prior to re-energization." expressiontype="BRSTATEMENT">
-            <referencedTermList/>
-          </parserOutput>
-        </text>
-      </ruleStatementItemList>
-    </ruleStatementSection>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
     <conditionSection rowCount="50" columnWidthFactor="0.5">
-      <conditionItemList rowHeight="183">
+      <conditionItemList>
         <valueSetCell/>
-        <expressionCell external="Inspection.measure.observed_string">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Inspection.measure.observed_string" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <expressionCell external="Inspection.assessment.measure.observed_value">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Inspection.assessment.measure.observed_value" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Inspection.measure.observed_string">
-                <parentTerm text="measure" datatype="Measure" termtype="ENTITY" fulltext="Inspection.measure">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="observed_value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Inspection.assessment.measure.observed_value">
+                <parentTerm text="measure" datatype="Measure" termtype="ENTITY" fulltext="Inspection.assessment.measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="assessment" datatype="Assessment" termtype="ENTITY" fulltext="Inspection.assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -323,12 +274,14 @@
         <conditionValueSetCellList/>
       </ruleColumnList>
       <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
-        <conditionValueSetCellList valueSet="'Less than 1% difference from nameplate impedance'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Inspection.measure.observed_string = 'Less than 1% difference from nameplate impedance'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <conditionValueSetCellList valueSet=">= 1000">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Inspection.assessment.measure.observed_value >= 1000" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Inspection.measure.observed_string">
-                <parentTerm text="measure" datatype="Measure" termtype="ENTITY" fulltext="Inspection.measure">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="observed_value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Inspection.assessment.measure.observed_value">
+                <parentTerm text="measure" datatype="Measure" termtype="ENTITY" fulltext="Inspection.assessment.measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="assessment" datatype="Assessment" termtype="ENTITY" fulltext="Inspection.assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -356,19 +309,21 @@
         </actionValueSetCellList>
       </ruleColumnList>
       <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
-        <conditionValueSetCellList valueSet="'1% to 3% difference from nameplate impedance (minor degradation)'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Inspection.measure.observed_string = '1% to 3% difference from nameplate impedance (minor degradation)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <conditionValueSetCellList valueSet="[500..1000)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Inspection.assessment.measure.observed_value in [ 500 .. 1000 )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Inspection.measure.observed_string">
-                <parentTerm text="measure" datatype="Measure" termtype="ENTITY" fulltext="Inspection.measure">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="observed_value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Inspection.assessment.measure.observed_value">
+                <parentTerm text="measure" datatype="Measure" termtype="ENTITY" fulltext="Inspection.assessment.measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="assessment" datatype="Assessment" termtype="ENTITY" fulltext="Inspection.assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
           </parserOutput>
         </conditionValueSetCellList>
-        <actionValueSetCellList valueSet="-5">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Inspection.assessment.measure.index_adjustment = -5" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <actionValueSetCellList valueSet="-.5">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Inspection.assessment.measure.index_adjustment = -0.5" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
               <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Inspection.assessment.measure.index_adjustment">
                 <parentTerm text="measure" datatype="Measure" termtype="ENTITY" fulltext="Inspection.assessment.measure">
@@ -389,12 +344,14 @@
         </actionValueSetCellList>
       </ruleColumnList>
       <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
-        <conditionValueSetCellList valueSet="'3% to 5% difference from nameplate impedance (significant degradation)'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Inspection.measure.observed_string = '3% to 5% difference from nameplate impedance (significant degradation)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <conditionValueSetCellList valueSet="[200..500)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Inspection.assessment.measure.observed_value in [ 200 .. 500 )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Inspection.measure.observed_string">
-                <parentTerm text="measure" datatype="Measure" termtype="ENTITY" fulltext="Inspection.measure">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="observed_value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Inspection.assessment.measure.observed_value">
+                <parentTerm text="measure" datatype="Measure" termtype="ENTITY" fulltext="Inspection.assessment.measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="assessment" datatype="Assessment" termtype="ENTITY" fulltext="Inspection.assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -422,12 +379,14 @@
         </actionValueSetCellList>
       </ruleColumnList>
       <ruleColumnList ruleId="4" columnWidth="100" pRule="#//@ruleset/@rules.4">
-        <conditionValueSetCellList valueSet="'Greater than 5% difference from nameplate impedance (severe degradation)'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Inspection.measure.observed_string = 'Greater than 5% difference from nameplate impedance (severe degradation)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <conditionValueSetCellList valueSet="&lt; 200">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Inspection.assessment.measure.observed_value &lt; 200" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="observed_string" datatype="String" termtype="ATTRIBUTE" fulltext="Inspection.measure.observed_string">
-                <parentTerm text="measure" datatype="Measure" termtype="ENTITY" fulltext="Inspection.measure">
-                  <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="observed_value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Inspection.assessment.measure.observed_value">
+                <parentTerm text="measure" datatype="Measure" termtype="ENTITY" fulltext="Inspection.assessment.measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="assessment" datatype="Assessment" termtype="ENTITY" fulltext="Inspection.assessment" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Inspection" datatype="Inspection" termtype="ENTITY" fulltext="Inspection" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
                 </parentTerm>
               </terms>
             </referencedTermList>
