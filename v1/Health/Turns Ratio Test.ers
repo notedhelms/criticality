@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_vkiN8b9TEe2LIqTgc456_g" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_q7JgBb9WEe2LIqTgc456_g" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
   <languageCode>en_US</languageCode>
   <ruleset vocabularyUpdateStamp="_qibEELhdEe2Gad3MA-icQg" vocabulary="../Rule%20Vocabulary.ecore#/">
     <rule>
@@ -218,7 +218,7 @@
       </opaqueExpression>
     </filter>
     <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.1"/>
-    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.1">
+    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.1 #//@ruleset/@logicalVariables.0/@extension.2">
       <opaqueExpression expression="this_inspection.date= all_inspections -> sortedByDesc(date)->first.date">
         <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="this_inspection.date = all_inspections->sortedByDesc (all_inspections.date)->first.date" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
           <referencedTermList>
@@ -301,7 +301,7 @@
         <alias value="all_inspections"/>
         <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Inspection/date"/>
       </extension>
-      <extension explicit="true" association="true" entity="../Rule%20Vocabulary.ecore#//Inspection" traversedAssocRole="../Rule%20Vocabulary.ecore#//Asset/inspection" filters="#//@ruleset/@filters.0">
+      <extension explicit="true" association="true" entity="../Rule%20Vocabulary.ecore#//Inspection" traversedAssocRole="../Rule%20Vocabulary.ecore#//Asset/inspection" filters="#//@ruleset/@filters.0 #//@ruleset/@filters.3">
         <alias value="this_inspection"/>
         <extension association="true" entity="../Rule%20Vocabulary.ecore#//Assessment" traversedAssocRole="../Rule%20Vocabulary.ecore#//Inspection/assessment" filters="#//@ruleset/@filters.0">
           <extension explicit="true" association="true" entity="../Rule%20Vocabulary.ecore#//Measure" traversedAssocRole="../Rule%20Vocabulary.ecore#//Assessment/measure" filters="#//@ruleset/@filters.0">
@@ -322,7 +322,7 @@
       </extension>
     </logicalVariable>
   </ruleset>
-  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="26" sashWeightScope="67">
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="21" sashWeightScope="67">
     <actionSection rowCount="50" columnWidthFactor="0.5">
       <actionItemList rowHeight="157">
         <valueSetCell/>
@@ -384,10 +384,6 @@
             </children>
           </children>
           <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1">
-            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
-              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="this_inspection.date= all_inspections -> sortedByDesc(date)->first.date" filter="#//@ruleset/@filters.3"/>
-              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="last_inspection.date= all_inspections -> sortedByDesc(date)->at(2).date" filter="#//@ruleset/@filters.4"/>
-            </children>
             <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.0"/>
           </children>
           <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.2">
@@ -401,7 +397,7 @@
                 <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="this_trt_test.test = 'Turns Ratio Test'" filter="#//@ruleset/@filters.0"/>
               </children>
               <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.2/@extension.0/@extension.0">
-                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder" expanded="true">
+                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
                   <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="this_trt_test.test = 'Turns Ratio Test'" filter="#//@ruleset/@filters.0"/>
                 </children>
                 <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.2/@extension.0/@extension.0/@referencedAttributes.0"/>

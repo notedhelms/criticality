@@ -102,7 +102,7 @@
   </ruleset>
   <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="37" sashWeightScope="50" sashWeightConditionsIf="38">
     <actionSection rowCount="50" columnWidthFactor="0.5">
-      <actionItemList rowHeight="173">
+      <actionItemList rowHeight="21">
         <valueSetCell/>
         <expressionCell external="Assessment.tier1_condition_index">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Assessment.tier1_condition_index" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">

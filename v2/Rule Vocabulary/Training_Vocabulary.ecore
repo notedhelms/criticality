@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.canonicalvocabularymodel="http:///com/corticon/rulesemf/canonicalvocabularymodel.ecore" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="root" nsURI="http://root/1.0" nsPrefix="root">
   <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
-    <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:RootExtension" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_cvBnQb9QEe2LIqTgc456_g" externalChecksum="3391387159:507989954" studioType="Java" customDataTypeDisplayCount="49">
+    <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:RootExtension" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_dRelUL9WEe2LIqTgc456_g" externalChecksum="3391387159:507989954" studioType="Java" customDataTypeDisplayCount="49">
       <languageCode>en_US</languageCode>
       <databaseAccess databasePropertyDisplayCount="50"/>
       <customDataTypeList enumerationDisplayCount="50" eDataType="#//risk_assessment_type">
@@ -341,6 +341,14 @@
         </contents>
       </eAnnotations>
     </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="date" eType="ecore:EDataType http:///com/corticon/rulesemf/canonicalvocabularymodel.ecore#//Date">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="date"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="risk_assessment_type">
     <eLiterals name="V0" literal="'Criticality'"/>
@@ -532,6 +540,14 @@
       <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
         <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
           <name manuallyCreated="true" value="health_component_score"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="health_test_name" eType="#//tier2_test">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension" customDataType="#//%http:%2F%2F%2Fcom%2Fcorticon%2Frulesemf%2Fcanonicalvocabularymodel%2FVocabularyExtension%/@contents.0/@customDataTypeList.6">
+          <name manuallyCreated="true" value="health_test_name"/>
           <mode manuallyCreated="true" value="Base"/>
         </contents>
       </eAnnotations>
