@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_PA6KEL9TEe2LIqTgc456_g" externalChecksum="3391387159:507989954" studioType="Java">
+  <testsheetAssets majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_YfHJ4r9TEe2LIqTgc456_g" externalChecksum="3391387159:507989954">
+    <testsheet ruleActivityUpdateStamp="_vL25hb9REe2LIqTgc456_g" ruleActivity="../Rule%20Flows/Health%20Risk%20Flow.erf#//@ruleflow" locale="">
+      <input/>
+      <output/>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Assessment">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Assessment/index" eClass="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Health" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index/index_name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" expanded="false" eReference="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index/index_Component" eClass="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="DGA" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/health_component_name"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="12" manuallyCreated="true" eReference="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/measure" eClass="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure">
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2FAL Furans PPB" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/gas_measure"/>
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="160.000" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/measure_value"/>
+              </children>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" expanded="false" eReference="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index/index_Component" eClass="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Power Factor and Excitation Current Tests" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/health_component_name"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" eReference="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/measure" eClass="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure">
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Power Factor" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/measure_name"/>
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Power factor results normal. (Good – G)" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/observation"/>
+              </children>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" manuallyCreated="true" eReference="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/measure" eClass="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure">
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Excitation Current" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/measure_name"/>
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Normal excitation current values and patterns compared to other phases and prior tests." eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/observation"/>
+              </children>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" expanded="false" eReference="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index/index_Component" eClass="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Operation and Maintenance History" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/health_component_name"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/measure" eClass="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure">
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Some abnormal operating conditions experienced and/or additional maintenance above normal occurring." eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/observation"/>
+              </children>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" manuallyCreated="true" expanded="false" eReference="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index/index_Component" eClass="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Age" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/health_component_name"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/measure" eClass="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure">
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="45.000" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/measure_value"/>
+              </children>
+            </children>
+          </children>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Assessment">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" eReference="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Assessment/index" eClass="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="4.856" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index/score"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" expanded="false" eReference="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index/index_Component" eClass="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="12" eReference="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/measure" eClass="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure">
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="160.000" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/measure_value"/>
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2FAL Furans PPB" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/gas_measure"/>
+              </children>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="DGA" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/health_component_name"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" expanded="false" eReference="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index/index_Component" eClass="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" eReference="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/measure" eClass="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure">
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Power factor results normal. (Good – G)" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/observation"/>
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.952" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/weight"/>
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Power Factor" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/measure_name"/>
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="3" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/raw_score"/>
+              </children>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" eReference="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/measure" eClass="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure">
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Normal excitation current values and patterns compared to other phases and prior tests." eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/observation"/>
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.952" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/weight"/>
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Excitation Current" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/measure_name"/>
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="3" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/raw_score"/>
+              </children>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Power Factor and Excitation Current Tests" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/health_component_name"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2.856" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/health_component_score"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" expanded="false" eReference="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index/index_Component" eClass="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" eReference="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/measure" eClass="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure">
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Some abnormal operating conditions experienced and/or additional maintenance above normal occurring." eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/observation"/>
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.762" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/weight"/>
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/raw_score"/>
+              </children>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Operation and Maintenance History" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/health_component_name"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1.524" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/health_component_score"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" expanded="false" eReference="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index/index_Component" eClass="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" eReference="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/measure" eClass="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure">
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="45.000" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/measure_value"/>
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.476" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/weight"/>
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/raw_score"/>
+              </children>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Age" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/health_component_name"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.476" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/health_component_score"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Health" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index/index_name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="4.856" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Assessment/tier1_condition_index"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <expectedRoot passed="false"/>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <outputRuleTraceSection/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_cvBnQb9QEe2LIqTgc456_g" testsheets="#//@testsheetAssets.0/@testsheet" vocabulary="../../Rule%20Vocabulary/Training_Vocabulary.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="just t1"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

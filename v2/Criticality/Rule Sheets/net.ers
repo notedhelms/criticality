@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_7pw2nb9PEe2LIqTgc456_g" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_RsFwMb9OEe2LIqTgc456_g" vocabulary="../../Rule%20Vocabulary/Training_Vocabulary.ecore#/">
+    <rule>
+      <action>
+        <opaqueExpression expression="Assessment.index.score = criticality_measures.weighted_value -> sum">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Assessment.index.score = criticality_measures.weighted_value->sum" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Assessment.index.score">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="criticality_measures_weighted_value" datatype="Decimal" termtype="COLLECTION" fulltext="criticality_measures.weighted_value->sum">
+                <parentTerm text="weighted_value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="criticality_measures.weighted_value">
+                  <parentTerm text="criticality_measures" datatype="Measure" termtype="ENTITY" fulltext="criticality_measures" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                    <parentTerm text="index_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Assessment.index.index_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                      <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                        <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                      </parentTerm>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+      <opaqueExpression expression="Assessment.index.index_name = 'Criticality'">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Assessment.index.index_name = 'Criticality'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+          <referencedTermList>
+            <terms text="index_name" datatype="String" termtype="ATTRIBUTE" fulltext="Assessment.index.index_name">
+              <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <logicalVariable entity="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Assessment" filters="#//@ruleset/@filters.0">
+      <extension association="true" entity="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index" traversedAssocRole="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Assessment/index">
+        <extension association="true" entity="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component" traversedAssocRole="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index/index_Component" filters="#//@ruleset/@filters.0">
+          <extension explicit="true" association="true" entity="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure" traversedAssocRole="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/measure">
+            <alias value="criticality_measures"/>
+            <referencedAttributes attribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/weighted_value"/>
+          </extension>
+        </extension>
+        <referencedAttributes attribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index/index_name"/>
+        <referencedAttributes attribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index/score"/>
+      </extension>
+      <referencedAttributes attribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Assessment/criticality_score"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="34">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList rowHeight="163">
+        <valueSetCell/>
+        <expressionCell external="Assessment.index.score">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Assessment.index.score" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Assessment.index.score">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Assessment.index.index_name = 'Criticality'" filter="#//@ruleset/@filters.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder" expanded="true">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Assessment.index.index_name = 'Criticality'" filter="#//@ruleset/@filters.0"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0/@referencedAttributes.0"/>
+              </children>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.1"/>
+          </children>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50">
+      <filterItemList filter="#//@ruleset/@filters.0">
+        <expressionCell external="Assessment.index.index_name = 'Criticality'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Assessment.index.index_name = 'Criticality'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="index_name" datatype="String" termtype="ATTRIBUTE" fulltext="Assessment.index.index_name">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+    </filterSection>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <conditionSection rowCount="50" columnWidthFactor="0.5"/>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="357" pRule="#//@ruleset/@rules.0">
+        <actionValueSetCellList valueSet="criticality_measures.weighted_value -> sum">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Assessment.index.score = criticality_measures.weighted_value->sum" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Assessment.index.score">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+              </terms>
+              <terms text="criticality_measures_weighted_value" datatype="Decimal" termtype="COLLECTION" fulltext="criticality_measures.weighted_value->sum">
+                <parentTerm text="weighted_value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="criticality_measures.weighted_value">
+                  <parentTerm text="criticality_measures" datatype="Measure" termtype="ENTITY" fulltext="criticality_measures">
+                    <parentTerm text="index_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Assessment.index.index_Component">
+                      <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                        <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+                      </parentTerm>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

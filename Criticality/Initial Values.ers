@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_26ysw7hOEe2Zhrrcn2WE-Q" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_vOThM7hZEe2Gad3MA-icQg" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
   <languageCode>en_US</languageCode>
   <ruleset vocabularyUpdateStamp="_g17ucbhOEe2Zhrrcn2WE-Q" vocabulary="../Rule%20Vocabulary.ecore#/">
-    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1 #//@ruleset/@ruleStatements.2">
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0 #//@ruleset/@ruleStatements.1">
       <condition/>
       <action/>
       <action>
@@ -65,7 +65,7 @@
         </opaqueExpression>
       </action>
     </rule>
-    <rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.2">
       <condition>
         <opaqueExpression expression="Inspection.assessment.index = 'Safety Impact'">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Inspection.assessment.index = 'Safety Impact'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
@@ -245,7 +245,6 @@
       <action/>
       <action/>
     </rule>
-    <ruleStatement/>
     <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.0" logicalVariable="#//@ruleset/@logicalVariables.0">
       <text expression="Tier 1 condition index initialized to 0">
         <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Tier 1 condition index initialized to 0" expressiontype="BRSTATEMENT">
@@ -260,7 +259,8 @@
         </parserOutput>
       </text>
     </ruleStatement>
-    <logicalVariable entity="../Rule%20Vocabulary.ecore#//Inspection" ruleStatements="#//@ruleset/@ruleStatements.1 #//@ruleset/@ruleStatements.2">
+    <ruleStatement ruleModelElements="#//@ruleset/@rules.1"/>
+    <logicalVariable entity="../Rule%20Vocabulary.ecore#//Inspection" ruleStatements="#//@ruleset/@ruleStatements.0 #//@ruleset/@ruleStatements.1">
       <extension association="true" entity="../Rule%20Vocabulary.ecore#//Assessment" traversedAssocRole="../Rule%20Vocabulary.ecore#//Inspection/assessment">
         <extension explicit="true" association="true" entity="../Rule%20Vocabulary.ecore#//Measure" traversedAssocRole="../Rule%20Vocabulary.ecore#//Assessment/measure">
           <alias value="measures"/>
@@ -280,7 +280,7 @@
       <referencedAttributes attribute="../Rule%20Vocabulary.ecore#//Asset/total_inspections"/>
     </logicalVariable>
   </ruleset>
-  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="45" sashWeightScope="50" sashWeightConditionsIf="37">
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" sashWeightAdvancedView="45" sashWeightScope="50" sashWeightConditionsIf="37">
     <actionSection rowCount="50" columnWidthFactor="0.5">
       <actionItemList rowHeight="96">
         <naturalLanguageText value="has a weight of --------->"/>
@@ -361,12 +361,8 @@
       </rootNode>
     </scopeSection>
     <filterSection rowCount="50"/>
-    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="340" columnWidthID="50" columnWidthText="1035" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+    <ruleStatementSection rowCount="49" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="340" columnWidthID="50" columnWidthText="1035" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
       <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
-        <reference/>
-        <text/>
-      </ruleStatementItemList>
-      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
         <reference external="0"/>
         <text external="Tier 1 condition index initialized to 0">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Tier 1 condition index initialized to 0" expressiontype="BRSTATEMENT">
@@ -374,13 +370,17 @@
           </parserOutput>
         </text>
       </ruleStatementItemList>
-      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.2">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
         <reference external="0"/>
         <text external="This asset's total # inspections set to the size of all of this asset's associated inspections.">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="This asset's total # inspections set to the size of all of this asset's associated inspections." expressiontype="BRSTATEMENT">
             <referencedTermList/>
           </parserOutput>
         </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.2">
+        <reference external="1"/>
+        <text/>
       </ruleStatementItemList>
     </ruleStatementSection>
     <conditionSection rowCount="50" columnWidthFactor="0.5">

@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_0jb_Q76uEe2LIqTgc456_g" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_RT7hYr6qEe2LIqTgc456_g" vocabulary="../../Rule%20Vocabulary/Training_Vocabulary.ecore#/">
+    <rule>
+      <condition/>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="spare_measure.weighted_value = spare_measure.raw_score*.05">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="spare_measure.weighted_value = spare_measure.raw_score * 0.05" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="weighted_value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="spare_measure.weighted_value">
+                <parentTerm text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="spare_measure.raw_score">
+                <parentTerm text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="spare_measure.observation = 'Complete unit replacement on site'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="spare_measure.observation = 'Complete unit replacement on site'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="observation" datatype="String" termtype="ATTRIBUTE" fulltext="spare_measure.observation">
+                <parentTerm text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="spare_measure.observation" rhs="'Complete unit replacement on site'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="spare_measure.raw_score = 0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="spare_measure.raw_score = 0" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="spare_measure.raw_score">
+                <parentTerm text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="spare_measure.observation = 'Partial unit replacement on site'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="spare_measure.observation = 'Partial unit replacement on site'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="observation" datatype="String" termtype="ATTRIBUTE" fulltext="spare_measure.observation">
+                <parentTerm text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="spare_measure.observation" rhs="'Partial unit replacement on site'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="spare_measure.raw_score = 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="spare_measure.raw_score = 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="spare_measure.raw_score">
+                <parentTerm text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="spare_measure.observation = 'Parts available within 7 days'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="spare_measure.observation = 'Parts available within 7 days'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="observation" datatype="String" termtype="ATTRIBUTE" fulltext="spare_measure.observation">
+                <parentTerm text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="spare_measure.observation" rhs="'Parts available within 7 days'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="spare_measure.raw_score = 2">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="spare_measure.raw_score = 2" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="spare_measure.raw_score">
+                <parentTerm text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="spare_measure.observation = 'Parts available > 7 to 30 days'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="spare_measure.observation = 'Parts available > 7 to 30 days'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="observation" datatype="String" termtype="ATTRIBUTE" fulltext="spare_measure.observation">
+                <parentTerm text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="spare_measure.observation" rhs="'Parts available > 7 to 30 days'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="spare_measure.raw_score = 3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="spare_measure.raw_score = 3" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="spare_measure.raw_score">
+                <parentTerm text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="spare_measure.observation = 'Parts available > 30 days or none identified'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="spare_measure.observation = 'Parts available > 30 days or none identified'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="observation" datatype="String" termtype="ATTRIBUTE" fulltext="spare_measure.observation">
+                <parentTerm text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="spare_measure.observation" rhs="'Parts available > 30 days or none identified'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="spare_measure.raw_score = 5">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="spare_measure.raw_score = 5" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="spare_measure.raw_score">
+                <parentTerm text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+    </rule>
+    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.0 #//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+      <opaqueExpression expression="Spares_Component.criticality_component_name ='Spares availability'">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Spares_Component.criticality_component_name = 'Spares availability'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+          <referencedTermList>
+            <terms text="criticality_component_name" datatype="String" termtype="ATTRIBUTE" fulltext="Spares_Component.criticality_component_name">
+              <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <logicalVariable entity="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Assessment" filters="#//@ruleset/@filters.0">
+      <extension association="true" entity="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index" traversedAssocRole="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Assessment/index" filters="#//@ruleset/@filters.0">
+        <extension explicit="true" association="true" entity="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component" traversedAssocRole="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index/index_Component" filters="#//@ruleset/@filters.0">
+          <alias value="Spares_Component"/>
+          <extension explicit="true" association="true" entity="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure" traversedAssocRole="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/measure">
+            <alias value="spare_measure"/>
+            <referencedAttributes attribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/measure_name"/>
+            <referencedAttributes attribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/observation"/>
+            <referencedAttributes attribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/weighted_value"/>
+            <referencedAttributes attribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/raw_score"/>
+          </extension>
+          <referencedAttributes attribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/criticality_component_name"/>
+        </extension>
+      </extension>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="8" sashWeightScope="63" sashWeightConditionsActions="37" sashWeightConditionsIf="19">
+    <actionSection rowCount="49" columnWidthFactor="0.5">
+      <actionItemList rowHeight="160">
+        <valueSetCell/>
+        <expressionCell external="spare_measure.raw_score">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="spare_measure.raw_score" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="spare_measure.raw_score">
+                <parentTerm text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell/>
+      </actionItemList>
+      <actionItemList rowHeight="109">
+        <valueSetCell/>
+        <expressionCell external="spare_measure.weighted_value">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="spare_measure.weighted_value" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="weighted_value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="spare_measure.weighted_value">
+                <parentTerm text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Spares_Component.criticality_component_name ='Spares availability'" filter="#//@ruleset/@filters.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Spares_Component.criticality_component_name ='Spares availability'" filter="#//@ruleset/@filters.0"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Spares_Component.criticality_component_name ='Spares availability'" filter="#//@ruleset/@filters.0"/>
+              </children>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@referencedAttributes.0"/>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0/@referencedAttributes.0"/>
+                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0/@referencedAttributes.1"/>
+                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0/@referencedAttributes.2"/>
+                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0/@referencedAttributes.3"/>
+              </children>
+            </children>
+          </children>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50">
+      <filterItemList filter="#//@ruleset/@filters.0">
+        <expressionCell external="Spares_Component.criticality_component_name ='Spares availability'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Spares_Component.criticality_component_name = 'Spares availability'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="criticality_component_name" datatype="String" termtype="ATTRIBUTE" fulltext="Spares_Component.criticality_component_name">
+                <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+    </filterSection>
+    <ruleStatementSection rowCount="44" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="1225" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList rowHeight="172">
+        <valueSetCell/>
+        <expressionCell external="spare_measure.observation">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="spare_measure.observation" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="observation" datatype="String" termtype="ATTRIBUTE" fulltext="spare_measure.observation">
+                <parentTerm text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="169" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="spare_measure.raw_score*.05">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="spare_measure.weighted_value = spare_measure.raw_score * 0.05" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="weighted_value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="spare_measure.weighted_value">
+                <parentTerm text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure">
+                  <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="spare_measure.raw_score">
+                <parentTerm text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure">
+                  <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure">
+                <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="'Complete unit replacement on site'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="spare_measure.observation = 'Complete unit replacement on site'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="observation" datatype="String" termtype="ATTRIBUTE" fulltext="spare_measure.observation">
+                <parentTerm text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet="0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="spare_measure.raw_score = 0" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="spare_measure.raw_score">
+                <parentTerm text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure">
+                  <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure">
+                <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="'Partial unit replacement on site'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="spare_measure.observation = 'Partial unit replacement on site'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="observation" datatype="String" termtype="ATTRIBUTE" fulltext="spare_measure.observation">
+                <parentTerm text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet="1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="spare_measure.raw_score = 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="spare_measure.raw_score">
+                <parentTerm text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure">
+                  <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure">
+                <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="'Parts available within 7 days'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="spare_measure.observation = 'Parts available within 7 days'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="observation" datatype="String" termtype="ATTRIBUTE" fulltext="spare_measure.observation">
+                <parentTerm text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet="2">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="spare_measure.raw_score = 2" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="spare_measure.raw_score">
+                <parentTerm text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure">
+                  <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure">
+                <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="4" columnWidth="100" pRule="#//@ruleset/@rules.4">
+        <conditionValueSetCellList valueSet="'Parts available > 7 to 30 days'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="spare_measure.observation = 'Parts available > 7 to 30 days'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="observation" datatype="String" termtype="ATTRIBUTE" fulltext="spare_measure.observation">
+                <parentTerm text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet="3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="spare_measure.raw_score = 3" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="spare_measure.raw_score">
+                <parentTerm text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure">
+                  <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure">
+                <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="5" columnWidth="100" pRule="#//@ruleset/@rules.5">
+        <conditionValueSetCellList valueSet="'Parts available > 30 days or none identified'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="spare_measure.observation = 'Parts available > 30 days or none identified'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="observation" datatype="String" termtype="ATTRIBUTE" fulltext="spare_measure.observation">
+                <parentTerm text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet="5">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="spare_measure.raw_score = 5" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="spare_measure.raw_score">
+                <parentTerm text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure">
+                  <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="spare_measure" datatype="Measure" termtype="ENTITY" fulltext="spare_measure">
+                <parentTerm text="Spares_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Spares_Component">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

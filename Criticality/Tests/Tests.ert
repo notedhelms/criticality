@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.canonicaltestmodel.testsheet="http:///com/corticon/rulesemf/canonicaltestmodel/testsheet.ecore" xmlns:com.corticon.rulesemf.common="http:///com/corticon/rulesemf/common.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_1f_2oZEmEe2d88WYEwJcUQ" externalChecksum="3391387159:507989954" studioType="Java">
-  <testsheetAssets majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_sHI2kLhGEe27_LioLLvt2w" externalChecksum="3391387159:507989954">
-    <testsheet ruleActivityUpdateStamp="_8Bp2KbfQEe27_LioLLvt2w" ruleActivity="../Initial%20Values.ers#//@ruleset" locale="">
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.canonicaltestmodel.testsheet="http:///com/corticon/rulesemf/canonicaltestmodel/testsheet.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_1f_2oZEmEe2d88WYEwJcUQ" externalChecksum="3391387159:507989954" studioType="Java">
+  <testsheetAssets majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_GoJ8g7haEe2Gad3MA-icQg" externalChecksum="3391387159:507989954">
+    <testsheet ruleActivityUpdateStamp="_vOThM7hZEe2Gad3MA-icQg" ruleActivity="../Initial%20Values.ers#//@ruleset" locale="">
       <input/>
       <output>
         <PostedMessage severity="Info" text="Tier 1 condition index initialized to 0"/>
@@ -66,11 +66,8 @@
       </outputRuleTraceSection>
     </testsheetViewList>
   </testsheetAssets>
-  <testsheetAssets majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_tM1TULhGEe27_LioLLvt2w" externalChecksum="3391387159:507989954">
-    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_sGlc8LhGEe27_LioLLvt2w" key="8" type="Validation" severity="Error" textKey="TestsheetTreeSetModelAPIImpl.Validation.Testsheet.Invalid.TestSubject" locationKey="TestsheetTreeSetModelAPIImpl.Validation.Testsheet.Invalid.RuleAsset.Location">
-      <locationVariables>Safety Impacts</locationVariables>
-    </validationMessages>
-    <testsheet ruleActivityUpdateStamp="_dOQWwLhGEe27_LioLLvt2w" ruleActivity="../MasterFlow_Criticality.erf#//@ruleflow" locale="">
+  <testsheetAssets majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_GoJ8gLhaEe2Gad3MA-icQg" externalChecksum="3391387159:507989954">
+    <testsheet ruleActivityUpdateStamp="_Gmz4sLhaEe2Gad3MA-icQg" ruleActivity="../MasterFlow_Criticality.erf#//@ruleflow" locale="">
       <input/>
       <output>
         <PostedMessage severity="Info" text="[Safety Impact] bucket weight: [0.150000]"/>
@@ -123,11 +120,8 @@
       <outputRuleTraceSection/>
     </testsheetViewList>
   </testsheetAssets>
-  <testsheetAssets majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_tttLwLhGEe27_LioLLvt2w" externalChecksum="3391387159:507989954">
-    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_sGpuYLhGEe27_LioLLvt2w" key="8" type="Validation" severity="Error" textKey="TestsheetTreeSetModelAPIImpl.Validation.Testsheet.Invalid.TestSubject" locationKey="TestsheetTreeSetModelAPIImpl.Validation.Testsheet.Invalid.RuleAsset.Location">
-      <locationVariables>Environmental Impacts</locationVariables>
-    </validationMessages>
-    <testsheet ruleActivityUpdateStamp="_dOQWwLhGEe27_LioLLvt2w" ruleActivity="../MasterFlow_Criticality.erf#//@ruleflow" locale="">
+  <testsheetAssets majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_GoJ8gbhaEe2Gad3MA-icQg" externalChecksum="3391387159:507989954">
+    <testsheet ruleActivityUpdateStamp="_Gmz4sLhaEe2Gad3MA-icQg" ruleActivity="../MasterFlow_Criticality.erf#//@ruleflow" locale="">
       <input/>
       <output/>
       <expectedOutput/>
@@ -192,11 +186,8 @@
       <outputRuleTraceSection/>
     </testsheetViewList>
   </testsheetAssets>
-  <testsheetAssets majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_xBf3wLhGEe27_LioLLvt2w" externalChecksum="3391387159:507989954">
-    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_sGum4LhGEe27_LioLLvt2w" key="8" type="Validation" severity="Error" textKey="TestsheetTreeSetModelAPIImpl.Validation.Testsheet.Invalid.TestSubject" locationKey="TestsheetTreeSetModelAPIImpl.Validation.Testsheet.Invalid.RuleAsset.Location">
-      <locationVariables>All Tests</locationVariables>
-    </validationMessages>
-    <testsheet ruleActivityUpdateStamp="_dOQWwLhGEe27_LioLLvt2w" ruleActivity="../MasterFlow_Criticality.erf#//@ruleflow" locale="">
+  <testsheetAssets majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_GoJ8grhaEe2Gad3MA-icQg" externalChecksum="3391387159:507989954">
+    <testsheet ruleActivityUpdateStamp="_Gmz4sLhaEe2Gad3MA-icQg" ruleActivity="../MasterFlow_Criticality.erf#//@ruleflow" locale="">
       <input/>
       <output>
         <PostedMessage severity="Info" text="Tier 1 condition index initialized to 0"/>
@@ -285,49 +276,49 @@
     <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
       <inputRoot>
         <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="../../Rule%20Vocabulary.ecore#//Inspection">
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Chemical spills" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/name"/>
           </children>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Air emissions" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/name"/>
           </children>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Water and Process Water Impacts" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/name"/>
           </children>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" manuallyCreated="true" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" manuallyCreated="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Solid and Hazardous Waste" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/name"/>
           </children>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" manuallyCreated="true" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" manuallyCreated="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Injury from failure" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/name"/>
           </children>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="6" manuallyCreated="true" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="6" manuallyCreated="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Injury during repair" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/name"/>
           </children>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="7" manuallyCreated="true" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="7" manuallyCreated="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Capacity Impact" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/name"/>
           </children>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="8" manuallyCreated="true" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="8" manuallyCreated="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Mean time to repair" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/name"/>
           </children>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="9" manuallyCreated="true" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="9" manuallyCreated="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Spares availability" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/name"/>
           </children>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="10" manuallyCreated="true" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="10" manuallyCreated="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Downtime Impact" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/name"/>
           </children>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="11" manuallyCreated="true" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="11" manuallyCreated="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Equpment Utilization" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/name"/>
           </children>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="12" manuallyCreated="true" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="12" manuallyCreated="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Frequency of Failure" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/name"/>
           </children>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="13" manuallyCreated="true" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="13" manuallyCreated="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Equipment Redundancy" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/name"/>
           </children>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="14" manuallyCreated="true" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="14" manuallyCreated="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Maintenace schedule compliance" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/name"/>
           </children>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="15" manuallyCreated="true" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="15" manuallyCreated="true" expanded="false" eReference="../../Rule%20Vocabulary.ecore#//Inspection/measure" eClass="../../Rule%20Vocabulary.ecore#//Measure">
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Repair costs" eAttribute="../../Rule%20Vocabulary.ecore#//Measure/name"/>
           </children>
         </children>
@@ -570,7 +561,7 @@
       </outputRuleTraceSection>
     </testsheetViewList>
   </testsheetAssets>
-  <ruletest vocabularyUpdateStamp="_yORpY7hFEe27_LioLLvt2w" testsheets="#//@testsheetAssets.0/@testsheet #//@testsheetAssets.1/@testsheet #//@testsheetAssets.2/@testsheet #//@testsheetAssets.3/@testsheet" vocabulary="../../Rule%20Vocabulary.ecore#/"/>
+  <ruletest vocabularyUpdateStamp="_g17ucbhOEe2Zhrrcn2WE-Q" testsheets="#//@testsheetAssets.0/@testsheet #//@testsheetAssets.1/@testsheet #//@testsheetAssets.2/@testsheet #//@testsheetAssets.3/@testsheet" vocabulary="../../Rule%20Vocabulary.ecore#/"/>
   <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
     <testTabList name="Initial Values"/>
     <testTabList name="Safety Impacts"/>

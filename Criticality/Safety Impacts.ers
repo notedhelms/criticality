@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_4NrGYLhNEe2Zhrrcn2WE-Q" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_2LO3FLhZEe2Gad3MA-icQg" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
   <languageCode>en_US</languageCode>
-  <ruleset vocabularyUpdateStamp="_yORpY7hFEe27_LioLLvt2w" vocabulary="../Rule%20Vocabulary.ecore#/">
+  <ruleset vocabularyUpdateStamp="_qibEELhdEe2Gad3MA-icQg" vocabulary="../Rule%20Vocabulary.ecore#/">
     <rule>
       <condition/>
       <condition/>
@@ -477,7 +477,7 @@
       <action/>
       <action/>
     </rule>
-    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.0">
+    <filter logicalVariables="#//@ruleset/@logicalVariables.0">
       <opaqueExpression expression="Safety_Assessment.index='Safety Impact'">
         <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Safety_Assessment.index = 'Safety Impact'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
           <referencedTermList>
@@ -490,7 +490,7 @@
         </parserOutput>
       </opaqueExpression>
     </filter>
-    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.0">
+    <filter logicalVariables="#//@ruleset/@logicalVariables.0">
       <opaqueExpression expression="Safety_Assessment.analysis_type='Criticality'">
         <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Safety_Assessment.analysis_type = 'Criticality'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
           <referencedTermList>
@@ -503,7 +503,7 @@
         </parserOutput>
       </opaqueExpression>
     </filter>
-    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.0 #//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
       <opaqueExpression expression="Injury_Failure.name = 'Injury from failure'">
         <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Failure.name = 'Injury from failure'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
           <referencedTermList>
@@ -518,7 +518,7 @@
         </parserOutput>
       </opaqueExpression>
     </filter>
-    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.0 #//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
       <opaqueExpression expression="Injury_Repair.name = 'Injury during repair'">
         <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Injury_Repair.name = 'Injury during repair'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
           <referencedTermList>
@@ -666,7 +666,7 @@
       </text>
     </ruleStatement>
     <logicalVariable entity="../Rule%20Vocabulary.ecore#//Inspection" filters="#//@ruleset/@filters.0 #//@ruleset/@filters.2 #//@ruleset/@filters.3 #//@ruleset/@filters.1">
-      <extension explicit="true" association="true" entity="../Rule%20Vocabulary.ecore#//Assessment" traversedAssocRole="../Rule%20Vocabulary.ecore#//Inspection/assessment" filters="#//@ruleset/@filters.0 #//@ruleset/@filters.2 #//@ruleset/@filters.3 #//@ruleset/@filters.1">
+      <extension explicit="true" association="true" entity="../Rule%20Vocabulary.ecore#//Assessment" traversedAssocRole="../Rule%20Vocabulary.ecore#//Inspection/assessment">
         <alias value="Safety_Assessment"/>
         <extension explicit="true" association="true" entity="../Rule%20Vocabulary.ecore#//Measure" traversedAssocRole="../Rule%20Vocabulary.ecore#//Assessment/measure" filters="#//@ruleset/@filters.2">
           <alias value="Injury_Failure"/>
@@ -692,7 +692,7 @@
       </extension>
     </logicalVariable>
   </ruleset>
-  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="28" sashWeightScope="63" sashWeightConditionsActions="37" sashWeightConditionsIf="45">
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="22" sashWeightScope="63" sashWeightConditionsActions="37" sashWeightConditionsIf="45">
     <actionSection rowCount="50" columnWidthFactor="0.5">
       <actionItemList>
         <valueSetCell/>
@@ -783,7 +783,7 @@
             <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Injury_Repair.name = 'Injury during repair'" filter="#//@ruleset/@filters.3"/>
           </children>
           <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
-            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder" expanded="true">
               <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Safety_Assessment.index='Safety Impact'" filter="#//@ruleset/@filters.0"/>
               <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Safety_Assessment.analysis_type='Criticality'" filter="#//@ruleset/@filters.1"/>
               <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Injury_Failure.name = 'Injury from failure'" filter="#//@ruleset/@filters.2"/>
@@ -791,7 +791,7 @@
             </children>
             <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
             <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.1"/>
-            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
               <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
                 <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Injury_Failure.name = 'Injury from failure'" filter="#//@ruleset/@filters.2"/>
               </children>
