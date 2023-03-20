@@ -1,31 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_R2HHrb9REe2LIqTgc456_g" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_r1Lw48chEe26oNkFwxsVAA" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
   <languageCode>en_US</languageCode>
-  <ruleset vocabularyUpdateStamp="_cvBnQb9QEe2LIqTgc456_g" vocabulary="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#/">
+  <ruleset vocabularyUpdateStamp="_ZbzlwcchEe26oNkFwxsVAA" vocabulary="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#/">
     <rule>
       <condition/>
       <condition/>
       <action/>
       <action>
-        <opaqueExpression expression="power_excitation_measures.weight = .952">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_excitation_measures.weight = 0.952" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="power_component.health_component_weight = .952">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_component.health_component_weight = 0.952" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="power_excitation_measures.weight">
-                <parentTerm text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
-                  <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
-                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
-                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
-                    </parentTerm>
+              <terms text="health_component_weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="power_component.health_component_weight">
+                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
                 </parentTerm>
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
-                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
-                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
-                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
-                  </parentTerm>
+              <terms text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -33,8 +29,8 @@
         </opaqueExpression>
       </action>
       <action>
-        <opaqueExpression expression="power_component.health_component_score = power_excitation_measures.raw_score * power_excitation_measures.weight">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_component.health_component_score = power_excitation_measures.raw_score * power_excitation_measures.weight" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="power_component.health_component_score = power_component.health_component_raw_score* power_component.health_component_weight">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_component.health_component_score = power_component.health_component_raw_score * power_component.health_component_weight" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
               <terms text="health_component_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="power_component.health_component_score">
                 <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
@@ -45,21 +41,17 @@
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="power_excitation_measures.raw_score">
-                <parentTerm text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
-                  <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
-                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
-                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
-                    </parentTerm>
+              <terms text="health_component_raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="power_component.health_component_raw_score">
+                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
                 </parentTerm>
               </terms>
-              <terms text="weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="power_excitation_measures.weight">
-                <parentTerm text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
-                  <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
-                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
-                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
-                    </parentTerm>
+              <terms text="health_component_weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="power_component.health_component_weight">
+                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
                 </parentTerm>
               </terms>
@@ -79,7 +71,7 @@
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power.observation = 'Power factor results normal. (Good – G)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
               <terms text="observation" datatype="String" termtype="ATTRIBUTE" fulltext="power.observation">
-                <parentTerm text="power" datatype="Measure" termtype="ENTITY" fulltext="power" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.2">
+                <parentTerm text="power" datatype="Measure" termtype="ENTITY" fulltext="power" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
                   <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                     <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                       <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
@@ -111,25 +103,21 @@
         <viewExpressions lhs="excitation.observation" rhs="'Normal excitation current values and patterns compared to other phases and prior tests.'"/>
       </condition>
       <action>
-        <opaqueExpression expression="power_excitation_measures.raw_score = 3">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_excitation_measures.raw_score = 3" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="power_component.health_component_raw_score = 3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_component.health_component_raw_score = 3" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="power_excitation_measures.raw_score">
-                <parentTerm text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
-                  <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
-                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
-                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
-                    </parentTerm>
+              <terms text="health_component_raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="power_component.health_component_raw_score">
+                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
                 </parentTerm>
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
-                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
-                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
-                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
-                  </parentTerm>
+              <terms text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -145,7 +133,7 @@
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power.observation = 'Power factor results show minor degradation. (Deteriorated – D)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
               <terms text="observation" datatype="String" termtype="ATTRIBUTE" fulltext="power.observation">
-                <parentTerm text="power" datatype="Measure" termtype="ENTITY" fulltext="power" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.2">
+                <parentTerm text="power" datatype="Measure" termtype="ENTITY" fulltext="power" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
                   <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                     <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                       <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
@@ -160,25 +148,21 @@
       </condition>
       <condition/>
       <action>
-        <opaqueExpression expression="power_excitation_measures.raw_score = 2">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_excitation_measures.raw_score = 2" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="power_component.health_component_raw_score = 2">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_component.health_component_raw_score = 2" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="power_excitation_measures.raw_score">
-                <parentTerm text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
-                  <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
-                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
-                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
-                    </parentTerm>
+              <terms text="health_component_raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="power_component.health_component_raw_score">
+                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
                 </parentTerm>
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
-                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
-                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
-                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
-                  </parentTerm>
+              <terms text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -194,7 +178,7 @@
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power.observation = 'Power factor results show significant deterioration. (Investigate – I)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
               <terms text="observation" datatype="String" termtype="ATTRIBUTE" fulltext="power.observation">
-                <parentTerm text="power" datatype="Measure" termtype="ENTITY" fulltext="power" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.2">
+                <parentTerm text="power" datatype="Measure" termtype="ENTITY" fulltext="power" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
                   <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                     <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                       <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
@@ -209,25 +193,21 @@
       </condition>
       <condition/>
       <action>
-        <opaqueExpression expression="power_excitation_measures.raw_score = 1">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_excitation_measures.raw_score = 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="power_component.health_component_raw_score = 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_component.health_component_raw_score = 1" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="power_excitation_measures.raw_score">
-                <parentTerm text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
-                  <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
-                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
-                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
-                    </parentTerm>
+              <terms text="health_component_raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="power_component.health_component_raw_score">
+                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
                 </parentTerm>
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
-                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
-                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
-                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
-                  </parentTerm>
+              <terms text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -243,7 +223,7 @@
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power.observation = 'Power factor results show severe degradation. (Bad – B)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
               <terms text="observation" datatype="String" termtype="ATTRIBUTE" fulltext="power.observation">
-                <parentTerm text="power" datatype="Measure" termtype="ENTITY" fulltext="power" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.2">
+                <parentTerm text="power" datatype="Measure" termtype="ENTITY" fulltext="power" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
                   <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                     <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                       <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
@@ -258,25 +238,21 @@
       </condition>
       <condition/>
       <action>
-        <opaqueExpression expression="power_excitation_measures.raw_score = 0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_excitation_measures.raw_score = 0" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="power_component.health_component_raw_score = 0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_component.health_component_raw_score = 0" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="power_excitation_measures.raw_score">
-                <parentTerm text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
-                  <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
-                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
-                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
-                    </parentTerm>
+              <terms text="health_component_raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="power_component.health_component_raw_score">
+                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
                 </parentTerm>
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
-                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
-                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
-                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
-                  </parentTerm>
+              <terms text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -307,25 +283,21 @@
         <viewExpressions lhs="excitation.observation" rhs="'Minor deviation in excitation current values and patterns compared to other phases and prior tests'"/>
       </condition>
       <action>
-        <opaqueExpression expression="power_excitation_measures.raw_score = 2">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_excitation_measures.raw_score = 2" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="power_component.health_component_raw_score = 2">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_component.health_component_raw_score = 2" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="power_excitation_measures.raw_score">
-                <parentTerm text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
-                  <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
-                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
-                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
-                    </parentTerm>
+              <terms text="health_component_raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="power_component.health_component_raw_score">
+                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
                 </parentTerm>
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
-                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
-                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
-                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
-                  </parentTerm>
+              <terms text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -356,25 +328,21 @@
         <viewExpressions lhs="excitation.observation" rhs="'Significant deviation in current values and patterns compared to other phases and prior tests.'"/>
       </condition>
       <action>
-        <opaqueExpression expression="power_excitation_measures.raw_score = 1">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_excitation_measures.raw_score = 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="power_component.health_component_raw_score = 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_component.health_component_raw_score = 1" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="power_excitation_measures.raw_score">
-                <parentTerm text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
-                  <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
-                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
-                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
-                    </parentTerm>
+              <terms text="health_component_raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="power_component.health_component_raw_score">
+                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
                 </parentTerm>
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
-                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
-                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
-                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
-                  </parentTerm>
+              <terms text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -405,25 +373,21 @@
         <viewExpressions lhs="excitation.observation" rhs="'Severe deviation in current values and patterns compared to other phases and prior tests.'"/>
       </condition>
       <action>
-        <opaqueExpression expression="power_excitation_measures.raw_score = 0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_excitation_measures.raw_score = 0" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="power_component.health_component_raw_score = 0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_component.health_component_raw_score = 0" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="power_excitation_measures.raw_score">
-                <parentTerm text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
-                  <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
-                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
-                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
-                    </parentTerm>
+              <terms text="health_component_raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="power_component.health_component_raw_score">
+                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
                 </parentTerm>
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
-                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
-                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
-                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
-                  </parentTerm>
+              <terms text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -446,12 +410,12 @@
         </parserOutput>
       </opaqueExpression>
     </filter>
-    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.0 #//@ruleset/@logicalVariables.0/@extension.0/@extension.0 #//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.2">
+    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.0 #//@ruleset/@logicalVariables.0/@extension.0/@extension.0 #//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
       <opaqueExpression expression="power.measure_name = 'Power Factor'">
         <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power.measure_name = 'Power Factor'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
           <referencedTermList>
             <terms text="measure_name" datatype="String" termtype="ATTRIBUTE" fulltext="power.measure_name">
-              <parentTerm text="power" datatype="Measure" termtype="ENTITY" fulltext="power" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.2">
+              <parentTerm text="power" datatype="Measure" termtype="ENTITY" fulltext="power" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
                 <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                   <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                     <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
@@ -480,23 +444,6 @@
         </parserOutput>
       </opaqueExpression>
     </filter>
-    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.0 #//@ruleset/@logicalVariables.0/@extension.0/@extension.0 #//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
-      <opaqueExpression expression="power_excitation_measures.measure_name in {'Excitation Current', 'Power Factor'}">
-        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_excitation_measures.measure_name in { 'Excitation Current' , 'Power Factor' }" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-          <referencedTermList>
-            <terms text="measure_name" datatype="String" termtype="ATTRIBUTE" fulltext="power_excitation_measures.measure_name">
-              <parentTerm text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
-                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
-                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
-                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
-                  </parentTerm>
-                </parentTerm>
-              </parentTerm>
-            </terms>
-          </referencedTermList>
-        </parserOutput>
-      </opaqueExpression>
-    </filter>
     <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.0 #//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
       <opaqueExpression expression="power_component.health_component_name= 'Power Factor and Excitation Current Tests'">
         <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_component.health_component_name = 'Power Factor and Excitation Current Tests'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
@@ -512,21 +459,14 @@
         </parserOutput>
       </opaqueExpression>
     </filter>
-    <logicalVariable entity="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Assessment" filters="#//@ruleset/@filters.0 #//@ruleset/@filters.1 #//@ruleset/@filters.2 #//@ruleset/@filters.4 #//@ruleset/@filters.3">
-      <extension association="true" entity="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index" traversedAssocRole="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Assessment/index" filters="#//@ruleset/@filters.0 #//@ruleset/@filters.1 #//@ruleset/@filters.2 #//@ruleset/@filters.4 #//@ruleset/@filters.3">
-        <extension explicit="true" association="true" entity="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component" traversedAssocRole="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index/index_Component" filters="#//@ruleset/@filters.1 #//@ruleset/@filters.2 #//@ruleset/@filters.4 #//@ruleset/@filters.3">
+    <logicalVariable entity="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Assessment" filters="#//@ruleset/@filters.0 #//@ruleset/@filters.1 #//@ruleset/@filters.2 #//@ruleset/@filters.3">
+      <extension association="true" entity="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index" traversedAssocRole="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Assessment/index" filters="#//@ruleset/@filters.0 #//@ruleset/@filters.1 #//@ruleset/@filters.2 #//@ruleset/@filters.3">
+        <extension explicit="true" association="true" entity="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component" traversedAssocRole="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index/index_Component" filters="#//@ruleset/@filters.1 #//@ruleset/@filters.2 #//@ruleset/@filters.3">
           <alias value="power_component"/>
           <extension explicit="true" association="true" entity="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure" traversedAssocRole="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/measure" filters="#//@ruleset/@filters.2">
             <alias value="excitation"/>
             <referencedAttributes attribute="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/measure_name"/>
             <referencedAttributes attribute="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/observation"/>
-            <referencedAttributes attribute="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/raw_score"/>
-            <referencedAttributes attribute="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/weight"/>
-            <referencedAttributes attribute="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/weighted_value"/>
-          </extension>
-          <extension explicit="true" association="true" entity="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure" traversedAssocRole="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/measure" filters="#//@ruleset/@filters.3">
-            <alias value="power_excitation_measures"/>
-            <referencedAttributes attribute="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/measure_name"/>
             <referencedAttributes attribute="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/raw_score"/>
             <referencedAttributes attribute="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/weight"/>
             <referencedAttributes attribute="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/weighted_value"/>
@@ -540,25 +480,25 @@
             <referencedAttributes attribute="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/weighted_value"/>
           </extension>
           <referencedAttributes attribute="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/health_component_name"/>
+          <referencedAttributes attribute="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/health_component_raw_score"/>
           <referencedAttributes attribute="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/health_component_score"/>
+          <referencedAttributes attribute="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/health_component_weight"/>
         </extension>
         <referencedAttributes attribute="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index/index_name"/>
       </extension>
     </logicalVariable>
   </ruleset>
-  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true">
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightConditionsIf="30">
     <actionSection rowCount="50" columnWidthFactor="0.5">
       <actionItemList>
         <valueSetCell/>
-        <expressionCell external="power_excitation_measures.raw_score">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_excitation_measures.raw_score" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <expressionCell external="power_component.health_component_raw_score">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_component.health_component_raw_score" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="power_excitation_measures.raw_score">
-                <parentTerm text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
-                  <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
-                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
-                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
-                    </parentTerm>
+              <terms text="health_component_raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="power_component.health_component_raw_score">
+                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
                 </parentTerm>
               </terms>
@@ -568,15 +508,13 @@
       </actionItemList>
       <actionItemList>
         <valueSetCell/>
-        <expressionCell external="power_excitation_measures.weight">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_excitation_measures.weight" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <expressionCell external="power_component.health_component_weight">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_component.health_component_weight" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="power_excitation_measures.weight">
-                <parentTerm text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
-                  <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
-                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
-                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
-                    </parentTerm>
+              <terms text="health_component_weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="power_component.health_component_weight">
+                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
                 </parentTerm>
               </terms>
@@ -608,24 +546,21 @@
             <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Assessment.index.index_name = 'Health'" filter="#//@ruleset/@filters.0"/>
             <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="power.measure_name = 'Power Factor'" filter="#//@ruleset/@filters.1"/>
             <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="excitation.measure_name = 'Excitation Current'" filter="#//@ruleset/@filters.2"/>
-            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="power_excitation_measures.measure_name in {'Excitation Current', 'Power Factor'}" filter="#//@ruleset/@filters.3"/>
-            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="power_component.health_component_name= 'Power Factor and Excitation Current Tests'" filter="#//@ruleset/@filters.4"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="power_component.health_component_name= 'Power Factor and Excitation Current Tests'" filter="#//@ruleset/@filters.3"/>
           </children>
           <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
             <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
               <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Assessment.index.index_name = 'Health'" filter="#//@ruleset/@filters.0"/>
               <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="power.measure_name = 'Power Factor'" filter="#//@ruleset/@filters.1"/>
               <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="excitation.measure_name = 'Excitation Current'" filter="#//@ruleset/@filters.2"/>
-              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="power_excitation_measures.measure_name in {'Excitation Current', 'Power Factor'}" filter="#//@ruleset/@filters.3"/>
-              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="power_component.health_component_name= 'Power Factor and Excitation Current Tests'" filter="#//@ruleset/@filters.4"/>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="power_component.health_component_name= 'Power Factor and Excitation Current Tests'" filter="#//@ruleset/@filters.3"/>
             </children>
             <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
             <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
               <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
                 <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="power.measure_name = 'Power Factor'" filter="#//@ruleset/@filters.1"/>
                 <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="excitation.measure_name = 'Excitation Current'" filter="#//@ruleset/@filters.2"/>
-                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="power_excitation_measures.measure_name in {'Excitation Current', 'Power Factor'}" filter="#//@ruleset/@filters.3"/>
-                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="power_component.health_component_name= 'Power Factor and Excitation Current Tests'" filter="#//@ruleset/@filters.4"/>
+                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="power_component.health_component_name= 'Power Factor and Excitation Current Tests'" filter="#//@ruleset/@filters.3"/>
               </children>
               <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
                 <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
@@ -639,31 +574,24 @@
               </children>
               <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
                 <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
-                  <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="power_excitation_measures.measure_name in {'Excitation Current', 'Power Factor'}" filter="#//@ruleset/@filters.3"/>
+                  <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="power.measure_name = 'Power Factor'" filter="#//@ruleset/@filters.1"/>
                 </children>
                 <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1/@referencedAttributes.0"/>
                 <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1/@referencedAttributes.1"/>
                 <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1/@referencedAttributes.2"/>
                 <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1/@referencedAttributes.3"/>
-              </children>
-              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.2">
-                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
-                  <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="power.measure_name = 'Power Factor'" filter="#//@ruleset/@filters.1"/>
-                </children>
-                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.2/@referencedAttributes.0"/>
-                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.2/@referencedAttributes.1"/>
-                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.2/@referencedAttributes.2"/>
-                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.2/@referencedAttributes.3"/>
-                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.2/@referencedAttributes.4"/>
+                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1/@referencedAttributes.4"/>
               </children>
               <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@referencedAttributes.0"/>
               <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@referencedAttributes.1"/>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@referencedAttributes.2"/>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@referencedAttributes.3"/>
             </children>
           </children>
         </children>
       </rootNode>
     </scopeSection>
-    <filterSection rowCount="48">
+    <filterSection rowCount="46">
       <filterItemList filter="#//@ruleset/@filters.0">
         <expressionCell external="Assessment.index.index_name = 'Health'">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Assessment.index.index_name = 'Health'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
@@ -682,7 +610,7 @@
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power.measure_name = 'Power Factor'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
               <terms text="measure_name" datatype="String" termtype="ATTRIBUTE" fulltext="power.measure_name">
-                <parentTerm text="power" datatype="Measure" termtype="ENTITY" fulltext="power" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.2">
+                <parentTerm text="power" datatype="Measure" termtype="ENTITY" fulltext="power" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
                   <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                     <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                       <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
@@ -712,23 +640,6 @@
         </expressionCell>
       </filterItemList>
       <filterItemList filter="#//@ruleset/@filters.3">
-        <expressionCell external="power_excitation_measures.measure_name in {'Excitation Current', 'Power Factor'}">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_excitation_measures.measure_name in { 'Excitation Current' , 'Power Factor' }" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="measure_name" datatype="String" termtype="ATTRIBUTE" fulltext="power_excitation_measures.measure_name">
-                <parentTerm text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
-                  <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
-                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
-                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
-                    </parentTerm>
-                  </parentTerm>
-                </parentTerm>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </expressionCell>
-      </filterItemList>
-      <filterItemList filter="#//@ruleset/@filters.4">
         <expressionCell external="power_component.health_component_name= 'Power Factor and Excitation Current Tests'">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_component.health_component_name = 'Power Factor and Excitation Current Tests'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
@@ -752,7 +663,7 @@
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power.observation" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
               <terms text="observation" datatype="String" termtype="ATTRIBUTE" fulltext="power.observation">
-                <parentTerm text="power" datatype="Measure" termtype="ENTITY" fulltext="power" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.2">
+                <parentTerm text="power" datatype="Measure" termtype="ENTITY" fulltext="power" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
                   <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                     <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                       <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
@@ -789,31 +700,27 @@
         <conditionValueSetCellList/>
         <actionValueSetCellList/>
         <actionValueSetCellList valueSet=".952">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_excitation_measures.weight = 0.952" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_component.health_component_weight = 0.952" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="power_excitation_measures.weight">
-                <parentTerm text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures">
-                  <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
-                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
-                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
-                    </parentTerm>
-                  </parentTerm>
-                </parentTerm>
-              </terms>
-            </modifiedTermList>
-            <referencedTermList>
-              <terms text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures">
+              <terms text="health_component_weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="power_component.health_component_weight">
                 <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
                   <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
                     <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
                   </parentTerm>
                 </parentTerm>
               </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+                </parentTerm>
+              </terms>
             </referencedTermList>
           </parserOutput>
         </actionValueSetCellList>
-        <actionValueSetCellList valueSet="power_excitation_measures.raw_score * power_excitation_measures.weight">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_component.health_component_score = power_excitation_measures.raw_score * power_excitation_measures.weight" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <actionValueSetCellList valueSet="power_component.health_component_raw_score* power_component.health_component_weight">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_component.health_component_score = power_component.health_component_raw_score * power_component.health_component_weight" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
               <terms text="health_component_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="power_component.health_component_score">
                 <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
@@ -824,21 +731,17 @@
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="power_excitation_measures.raw_score">
-                <parentTerm text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures">
-                  <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
-                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
-                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
-                    </parentTerm>
+              <terms text="health_component_raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="power_component.health_component_raw_score">
+                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
                   </parentTerm>
                 </parentTerm>
               </terms>
-              <terms text="weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="power_excitation_measures.weight">
-                <parentTerm text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures">
-                  <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
-                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
-                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
-                    </parentTerm>
+              <terms text="health_component_weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="power_component.health_component_weight">
+                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
                   </parentTerm>
                 </parentTerm>
               </terms>
@@ -856,7 +759,7 @@
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power.observation = 'Power factor results normal. (Good – G)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
               <terms text="observation" datatype="String" termtype="ATTRIBUTE" fulltext="power.observation">
-                <parentTerm text="power" datatype="Measure" termtype="ENTITY" fulltext="power" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.2">
+                <parentTerm text="power" datatype="Measure" termtype="ENTITY" fulltext="power" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
                   <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                     <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                       <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
@@ -883,24 +786,20 @@
           </parserOutput>
         </conditionValueSetCellList>
         <actionValueSetCellList valueSet="3">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_excitation_measures.raw_score = 3" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_component.health_component_raw_score = 3" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="power_excitation_measures.raw_score">
-                <parentTerm text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures">
-                  <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
-                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
-                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
-                    </parentTerm>
+              <terms text="health_component_raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="power_component.health_component_raw_score">
+                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
                   </parentTerm>
                 </parentTerm>
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures">
-                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
-                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
-                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
-                  </parentTerm>
+              <terms text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -914,7 +813,7 @@
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power.observation = 'Power factor results show minor degradation. (Deteriorated – D)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
               <terms text="observation" datatype="String" termtype="ATTRIBUTE" fulltext="power.observation">
-                <parentTerm text="power" datatype="Measure" termtype="ENTITY" fulltext="power" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.2">
+                <parentTerm text="power" datatype="Measure" termtype="ENTITY" fulltext="power" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
                   <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                     <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                       <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
@@ -927,24 +826,20 @@
         </conditionValueSetCellList>
         <conditionValueSetCellList valueSet="-"/>
         <actionValueSetCellList valueSet="2">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_excitation_measures.raw_score = 2" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_component.health_component_raw_score = 2" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="power_excitation_measures.raw_score">
-                <parentTerm text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures">
-                  <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
-                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
-                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
-                    </parentTerm>
+              <terms text="health_component_raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="power_component.health_component_raw_score">
+                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
                   </parentTerm>
                 </parentTerm>
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures">
-                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
-                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
-                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
-                  </parentTerm>
+              <terms text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -958,7 +853,7 @@
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power.observation = 'Power factor results show significant deterioration. (Investigate – I)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
               <terms text="observation" datatype="String" termtype="ATTRIBUTE" fulltext="power.observation">
-                <parentTerm text="power" datatype="Measure" termtype="ENTITY" fulltext="power" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.2">
+                <parentTerm text="power" datatype="Measure" termtype="ENTITY" fulltext="power" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
                   <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                     <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                       <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
@@ -971,24 +866,20 @@
         </conditionValueSetCellList>
         <conditionValueSetCellList valueSet="-"/>
         <actionValueSetCellList valueSet="1">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_excitation_measures.raw_score = 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_component.health_component_raw_score = 1" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="power_excitation_measures.raw_score">
-                <parentTerm text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures">
-                  <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
-                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
-                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
-                    </parentTerm>
+              <terms text="health_component_raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="power_component.health_component_raw_score">
+                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
                   </parentTerm>
                 </parentTerm>
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures">
-                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
-                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
-                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
-                  </parentTerm>
+              <terms text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -1002,7 +893,7 @@
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power.observation = 'Power factor results show severe degradation. (Bad – B)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
               <terms text="observation" datatype="String" termtype="ATTRIBUTE" fulltext="power.observation">
-                <parentTerm text="power" datatype="Measure" termtype="ENTITY" fulltext="power" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.2">
+                <parentTerm text="power" datatype="Measure" termtype="ENTITY" fulltext="power" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
                   <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                     <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                       <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
@@ -1015,24 +906,20 @@
         </conditionValueSetCellList>
         <conditionValueSetCellList valueSet="-"/>
         <actionValueSetCellList valueSet="0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_excitation_measures.raw_score = 0" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_component.health_component_raw_score = 0" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="power_excitation_measures.raw_score">
-                <parentTerm text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures">
-                  <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
-                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
-                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
-                    </parentTerm>
+              <terms text="health_component_raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="power_component.health_component_raw_score">
+                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
                   </parentTerm>
                 </parentTerm>
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures">
-                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
-                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
-                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
-                  </parentTerm>
+              <terms text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -1059,24 +946,20 @@
           </parserOutput>
         </conditionValueSetCellList>
         <actionValueSetCellList valueSet="2">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_excitation_measures.raw_score = 2" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_component.health_component_raw_score = 2" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="power_excitation_measures.raw_score">
-                <parentTerm text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures">
-                  <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
-                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
-                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
-                    </parentTerm>
+              <terms text="health_component_raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="power_component.health_component_raw_score">
+                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
                   </parentTerm>
                 </parentTerm>
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures">
-                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
-                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
-                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
-                  </parentTerm>
+              <terms text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -1103,24 +986,20 @@
           </parserOutput>
         </conditionValueSetCellList>
         <actionValueSetCellList valueSet="1">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_excitation_measures.raw_score = 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_component.health_component_raw_score = 1" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="power_excitation_measures.raw_score">
-                <parentTerm text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures">
-                  <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
-                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
-                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
-                    </parentTerm>
+              <terms text="health_component_raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="power_component.health_component_raw_score">
+                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
                   </parentTerm>
                 </parentTerm>
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures">
-                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
-                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
-                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
-                  </parentTerm>
+              <terms text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -1147,24 +1026,20 @@
           </parserOutput>
         </conditionValueSetCellList>
         <actionValueSetCellList valueSet="0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_excitation_measures.raw_score = 0" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="power_component.health_component_raw_score = 0" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="power_excitation_measures.raw_score">
-                <parentTerm text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures">
-                  <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
-                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
-                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
-                    </parentTerm>
+              <terms text="health_component_raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="power_component.health_component_raw_score">
+                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
                   </parentTerm>
                 </parentTerm>
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="power_excitation_measures" datatype="Measure" termtype="ENTITY" fulltext="power_excitation_measures">
-                <parentTerm text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
-                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
-                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
-                  </parentTerm>
+              <terms text="power_component" datatype="Index_Component" termtype="ENTITY" fulltext="power_component">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
                 </parentTerm>
               </terms>
             </referencedTermList>
