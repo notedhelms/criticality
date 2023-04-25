@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_Fdx_wuK6Ee2vkr7xzlqPwA" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_2eJ-weK5Ee2vkr7xzlqPwA" vocabulary="../Training_Vocabulary.ecore#/">
+    <rule>
+      <action>
+        <opaqueExpression expression="Oil_Analysis.weight = 1.143">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Oil_Analysis.weight = 1.143" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Condition_Assessment.Oil_Analysis.weight">
+                <parentTerm text="Condition_Assessment.Oil_Analysis" datatype="Condition_Assessment.Oil_Analysis" termtype="ENTITY" fulltext="Condition_Assessment.Oil_Analysis" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Condition_Assessment.Oil_Analysis" datatype="Condition_Assessment.Oil_Analysis" termtype="ENTITY" fulltext="Condition_Assessment.Oil_Analysis" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Operation_History.weight = 0.762">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Operation_History.weight = 0.762" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Condition_Assessment.Operation_History.weight">
+                <parentTerm text="Condition_Assessment.Operation_History" datatype="Condition_Assessment.Operation_History" termtype="ENTITY" fulltext="Condition_Assessment.Operation_History" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Condition_Assessment.Operation_History" datatype="Condition_Assessment.Operation_History" termtype="ENTITY" fulltext="Condition_Assessment.Operation_History" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Power_Factor_Analysis.weight = 0.952">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Power_Factor_Analysis.weight = 0.952" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Condition_Assessment.Power_Factor_Analysis.weight">
+                <parentTerm text="Condition_Assessment.Power_Factor_Analysis" datatype="Condition_Assessment.Power_Factor_Analysis" termtype="ENTITY" fulltext="Condition_Assessment.Power_Factor_Analysis" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Condition_Assessment.Power_Factor_Analysis" datatype="Condition_Assessment.Power_Factor_Analysis" termtype="ENTITY" fulltext="Condition_Assessment.Power_Factor_Analysis" variable="#//@ruleset/@logicalVariables.2"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Age.weight = 0.476">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Age.weight = 0.476" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Condition_Assessment.Age.weight">
+                <parentTerm text="Condition_Assessment.Age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Condition_Assessment.Age" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Condition_Assessment.Age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Condition_Assessment.Age" variable="#//@ruleset/@logicalVariables.3"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Asset.inspection.tier1_total_raw = 0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.tier1_total_raw = 0" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="tier1_total_raw" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.tier1_total_raw">
+                <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.4/@extension.0">
+                  <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.4"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.4/@extension.0">
+                <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Asset.service_life = Asset.in_service_date.yearsBetween(today)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.service_life = Asset.in_service_date.yearsBetween ( today )" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="service_life" datatype="Integer" termtype="ATTRIBUTE" fulltext="Asset.service_life">
+                <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.4"/>
+              <terms text="yearsBetween" datatype="Integer" termtype="METHOD" fulltext="Asset.in_service_date.yearsBetween">
+                <parentTerm text="in_service_date" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Asset.in_service_date">
+                  <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.4"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Asset.unit_name = Asset.equip_num.toString + ' ' +Asset.name + ' ' + Asset.location">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.unit_name = Asset.equip_num.toString + ' ' + Asset.name + ' ' + Asset.location" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="unit_name" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.unit_name">
+                <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.name">
+                <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="location" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.location">
+                <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="toString" datatype="String" termtype="METHOD" fulltext="Asset.equip_num.toString">
+                <parentTerm text="equip_num" datatype="Integer" termtype="ATTRIBUTE" fulltext="Asset.equip_num">
+                  <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.4"/>
+                </parentTerm>
+              </terms>
+              <terms text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.4"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <logicalVariable entity="../Training_Vocabulary.ecore#//Condition_Assessment/Oil_Analysis">
+      <referencedAttributes attribute="../Training_Vocabulary.ecore#//Condition_Assessment/Oil_Analysis/weight"/>
+    </logicalVariable>
+    <logicalVariable entity="../Training_Vocabulary.ecore#//Condition_Assessment/Operation_History">
+      <referencedAttributes attribute="../Training_Vocabulary.ecore#//Condition_Assessment/Operation_History/weight"/>
+    </logicalVariable>
+    <logicalVariable entity="../Training_Vocabulary.ecore#//Condition_Assessment/Power_Factor_Analysis">
+      <referencedAttributes attribute="../Training_Vocabulary.ecore#//Condition_Assessment/Power_Factor_Analysis/weight"/>
+    </logicalVariable>
+    <logicalVariable entity="../Training_Vocabulary.ecore#//Condition_Assessment/Age">
+      <referencedAttributes attribute="../Training_Vocabulary.ecore#//Condition_Assessment/Age/weight"/>
+    </logicalVariable>
+    <logicalVariable entity="../Training_Vocabulary.ecore#//Asset">
+      <extension association="true" entity="../Training_Vocabulary.ecore#//Inspection" traversedAssocRole="../Training_Vocabulary.ecore#//Asset/inspection">
+        <referencedAttributes attribute="../Training_Vocabulary.ecore#//Inspection/tier1_total_raw"/>
+      </extension>
+      <referencedAttributes attribute="../Training_Vocabulary.ecore#//Asset/service_life"/>
+      <referencedAttributes attribute="../Training_Vocabulary.ecore#//Asset/unit_name"/>
+      <referencedAttributes attribute="../Training_Vocabulary.ecore#//Asset/equip_num"/>
+      <referencedAttributes attribute="../Training_Vocabulary.ecore#//Asset/name"/>
+      <referencedAttributes attribute="../Training_Vocabulary.ecore#//Asset/location"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Oil_Analysis.weight">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Oil_Analysis.weight" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Condition_Assessment.Oil_Analysis.weight">
+                <parentTerm text="Condition_Assessment.Oil_Analysis" datatype="Condition_Assessment.Oil_Analysis" termtype="ENTITY" fulltext="Condition_Assessment.Oil_Analysis" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Operation_History.weight">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Operation_History.weight" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Condition_Assessment.Operation_History.weight">
+                <parentTerm text="Condition_Assessment.Operation_History" datatype="Condition_Assessment.Operation_History" termtype="ENTITY" fulltext="Condition_Assessment.Operation_History" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Power_Factor_Analysis.weight">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Power_Factor_Analysis.weight" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Condition_Assessment.Power_Factor_Analysis.weight">
+                <parentTerm text="Condition_Assessment.Power_Factor_Analysis" datatype="Condition_Assessment.Power_Factor_Analysis" termtype="ENTITY" fulltext="Condition_Assessment.Power_Factor_Analysis" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Age.weight">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Age.weight" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Condition_Assessment.Age.weight">
+                <parentTerm text="Condition_Assessment.Age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Condition_Assessment.Age" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Asset.inspection.tier1_total_raw">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.tier1_total_raw" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="tier1_total_raw" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.tier1_total_raw">
+                <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.4/@extension.0">
+                  <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.4"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Asset.service_life">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.service_life" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="service_life" datatype="Integer" termtype="ATTRIBUTE" fulltext="Asset.service_life">
+                <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Asset.unit_name">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.unit_name" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="unit_name" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.unit_name">
+                <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.2">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.0"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.3">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.3/@referencedAttributes.0"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.4">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.4/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.4/@extension.0/@referencedAttributes.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.4/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.4/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.4/@referencedAttributes.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.4/@referencedAttributes.3"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.4/@referencedAttributes.4"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <conditionSection rowCount="50" columnWidthFactor="0.5"/>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="462" pRule="#//@ruleset/@rules.0">
+        <actionValueSetCellList valueSet="1.143">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Oil_Analysis.weight = 1.143" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Condition_Assessment.Oil_Analysis.weight">
+                <parentTerm text="Condition_Assessment.Oil_Analysis" datatype="Condition_Assessment.Oil_Analysis" termtype="ENTITY" fulltext="Condition_Assessment.Oil_Analysis"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Condition_Assessment.Oil_Analysis" datatype="Condition_Assessment.Oil_Analysis" termtype="ENTITY" fulltext="Condition_Assessment.Oil_Analysis"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet="0.762">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Operation_History.weight = 0.762" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Condition_Assessment.Operation_History.weight">
+                <parentTerm text="Condition_Assessment.Operation_History" datatype="Condition_Assessment.Operation_History" termtype="ENTITY" fulltext="Condition_Assessment.Operation_History"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Condition_Assessment.Operation_History" datatype="Condition_Assessment.Operation_History" termtype="ENTITY" fulltext="Condition_Assessment.Operation_History"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet="0.952">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Power_Factor_Analysis.weight = 0.952" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Condition_Assessment.Power_Factor_Analysis.weight">
+                <parentTerm text="Condition_Assessment.Power_Factor_Analysis" datatype="Condition_Assessment.Power_Factor_Analysis" termtype="ENTITY" fulltext="Condition_Assessment.Power_Factor_Analysis"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Condition_Assessment.Power_Factor_Analysis" datatype="Condition_Assessment.Power_Factor_Analysis" termtype="ENTITY" fulltext="Condition_Assessment.Power_Factor_Analysis"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet="0.476">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Age.weight = 0.476" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Condition_Assessment.Age.weight">
+                <parentTerm text="Condition_Assessment.Age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Condition_Assessment.Age"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Condition_Assessment.Age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Condition_Assessment.Age"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet="0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.tier1_total_raw = 0" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="tier1_total_raw" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.tier1_total_raw">
+                <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
+                  <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
+                <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet="Asset.in_service_date.yearsBetween(today)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.service_life = Asset.in_service_date.yearsBetween ( today )" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="service_life" datatype="Integer" termtype="ATTRIBUTE" fulltext="Asset.service_life">
+                <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
+              <terms text="yearsBetween" datatype="Integer" termtype="METHOD" fulltext="Asset.in_service_date.yearsBetween">
+                <parentTerm text="in_service_date" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Asset.in_service_date">
+                  <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet="Asset.equip_num.toString + ' ' +Asset.name + ' ' + Asset.location">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.unit_name = Asset.equip_num.toString + ' ' + Asset.name + ' ' + Asset.location" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="unit_name" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.unit_name">
+                <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.name">
+                <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
+              </terms>
+              <terms text="location" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.location">
+                <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
+              </terms>
+              <terms text="toString" datatype="String" termtype="METHOD" fulltext="Asset.equip_num.toString">
+                <parentTerm text="equip_num" datatype="Integer" termtype="ATTRIBUTE" fulltext="Asset.equip_num">
+                  <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
+                </parentTerm>
+              </terms>
+              <terms text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

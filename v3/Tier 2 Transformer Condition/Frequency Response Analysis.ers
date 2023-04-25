@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_Als5tOBNEe2i2P5-pzI62A" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_9lfRAeBMEe2i2P5-pzI62A" vocabulary="../Training_Vocabulary.ecore#/">
+    <rule/>
+    <rule>
+      <condition>
+        <opaqueExpression expression="Asset.inspection.frequency_Response_Analysis.measurement_result = 'No deviation compared to prior tests'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.frequency_Response_Analysis.measurement_result = 'No deviation compared to prior tests'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="measurement_result" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.inspection.frequency_Response_Analysis.measurement_result">
+                <parentTerm text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Asset.inspection.frequency_Response_Analysis.measurement_result" rhs="'No deviation compared to prior tests'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Asset.inspection.frequency_Response_Analysis.index_adjustment = 0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.frequency_Response_Analysis.index_adjustment = 0" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.frequency_Response_Analysis.index_adjustment">
+                <parentTerm text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="Asset.inspection.frequency_Response_Analysis.measurement_result = 'Minor deviation compared to prior tests'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.frequency_Response_Analysis.measurement_result = 'Minor deviation compared to prior tests'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="measurement_result" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.inspection.frequency_Response_Analysis.measurement_result">
+                <parentTerm text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Asset.inspection.frequency_Response_Analysis.measurement_result" rhs="'Minor deviation compared to prior tests'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Asset.inspection.frequency_Response_Analysis.index_adjustment = -2">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.frequency_Response_Analysis.index_adjustment = -2" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.frequency_Response_Analysis.index_adjustment">
+                <parentTerm text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="Asset.inspection.frequency_Response_Analysis.measurement_result = 'Moderate deviation compared to prior tests'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.frequency_Response_Analysis.measurement_result = 'Moderate deviation compared to prior tests'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="measurement_result" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.inspection.frequency_Response_Analysis.measurement_result">
+                <parentTerm text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Asset.inspection.frequency_Response_Analysis.measurement_result" rhs="'Moderate deviation compared to prior tests'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Asset.inspection.frequency_Response_Analysis.index_adjustment = -3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.frequency_Response_Analysis.index_adjustment = -3" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.frequency_Response_Analysis.index_adjustment">
+                <parentTerm text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="Asset.inspection.frequency_Response_Analysis.measurement_result = 'Significant deviation compared to prior tests'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.frequency_Response_Analysis.measurement_result = 'Significant deviation compared to prior tests'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="measurement_result" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.inspection.frequency_Response_Analysis.measurement_result">
+                <parentTerm text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Asset.inspection.frequency_Response_Analysis.measurement_result" rhs="'Significant deviation compared to prior tests'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Asset.inspection.frequency_Response_Analysis.index_adjustment = -4">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.frequency_Response_Analysis.index_adjustment = -4" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.frequency_Response_Analysis.index_adjustment">
+                <parentTerm text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="Asset.inspection.frequency_Response_Analysis.measurement_result = 'Severe deviation compared to prior tests'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.frequency_Response_Analysis.measurement_result = 'Severe deviation compared to prior tests'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="measurement_result" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.inspection.frequency_Response_Analysis.measurement_result">
+                <parentTerm text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Asset.inspection.frequency_Response_Analysis.measurement_result" rhs="'Severe deviation compared to prior tests'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Asset.inspection.frequency_Response_Analysis.index_adjustment = -5">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.frequency_Response_Analysis.index_adjustment = -5" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.frequency_Response_Analysis.index_adjustment">
+                <parentTerm text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Asset.inspection.frequency_Response_Analysis.note = 'May indicate serious problem requiring immediate evaluation, additional testing, consultation with experts, and remediation prior to re-energization.'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.frequency_Response_Analysis.note = 'May indicate serious problem requiring immediate evaluation, additional testing, consultation with experts, and remediation prior to re-energization.'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="note" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.inspection.frequency_Response_Analysis.note">
+                <parentTerm text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <logicalVariable entity="../Training_Vocabulary.ecore#//Asset">
+      <extension association="true" entity="../Training_Vocabulary.ecore#//Inspection" traversedAssocRole="../Training_Vocabulary.ecore#//Asset/inspection">
+        <extension association="true" entity="../Training_Vocabulary.ecore#//Condition_Assessment/Frequency_Response_Analysis" traversedAssocRole="../Training_Vocabulary.ecore#//Inspection/frequency_Response_Analysis">
+          <referencedAttributes attribute="../Training_Vocabulary.ecore#//Condition_Assessment/Frequency_Response_Analysis/measurement_result"/>
+          <referencedAttributes attribute="../Training_Vocabulary.ecore#//Condition_Assessment/Frequency_Response_Analysis/index_adjustment"/>
+          <referencedAttributes attribute="../Training_Vocabulary.ecore#//Condition_Assessment/Frequency_Response_Analysis/note"/>
+        </extension>
+      </extension>
+    </logicalVariable>
+    <logicalVariable entity="../Training_Vocabulary.ecore#//Condition_Assessment/Frequency_Response_Analysis">
+      <referencedAttributes attribute="../Training_Vocabulary.ecore#//Condition_Assessment/Frequency_Response_Analysis/note"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Asset.inspection.frequency_Response_Analysis.index_adjustment">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.frequency_Response_Analysis.index_adjustment" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.frequency_Response_Analysis.index_adjustment">
+                <parentTerm text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Asset.inspection.frequency_Response_Analysis.note">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.frequency_Response_Analysis.note" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="note" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.inspection.frequency_Response_Analysis.note">
+                <parentTerm text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@referencedAttributes.0"/>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@referencedAttributes.1"/>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@referencedAttributes.2"/>
+            </children>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="Asset.inspection.frequency_Response_Analysis.measurement_result">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.frequency_Response_Analysis.measurement_result" datatype="String" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="measurement_result" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.inspection.frequency_Response_Analysis.measurement_result">
+                <parentTerm text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20" scrollColumnLeft="2">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0"/>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="'No deviation compared to prior tests'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.frequency_Response_Analysis.measurement_result = 'No deviation compared to prior tests'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="measurement_result" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.inspection.frequency_Response_Analysis.measurement_result">
+                <parentTerm text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet="0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.frequency_Response_Analysis.index_adjustment = 0" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.frequency_Response_Analysis.index_adjustment">
+                <parentTerm text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis">
+                <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
+                  <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="'Minor deviation compared to prior tests'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.frequency_Response_Analysis.measurement_result = 'Minor deviation compared to prior tests'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="measurement_result" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.inspection.frequency_Response_Analysis.measurement_result">
+                <parentTerm text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet="-2">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.frequency_Response_Analysis.index_adjustment = -2" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.frequency_Response_Analysis.index_adjustment">
+                <parentTerm text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis">
+                <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
+                  <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="'Moderate deviation compared to prior tests'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.frequency_Response_Analysis.measurement_result = 'Moderate deviation compared to prior tests'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="measurement_result" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.inspection.frequency_Response_Analysis.measurement_result">
+                <parentTerm text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet="-3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.frequency_Response_Analysis.index_adjustment = -3" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.frequency_Response_Analysis.index_adjustment">
+                <parentTerm text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis">
+                <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
+                  <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="4" columnWidth="100" pRule="#//@ruleset/@rules.4">
+        <conditionValueSetCellList valueSet="'Significant deviation compared to prior tests'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.frequency_Response_Analysis.measurement_result = 'Significant deviation compared to prior tests'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="measurement_result" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.inspection.frequency_Response_Analysis.measurement_result">
+                <parentTerm text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet="-4">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.frequency_Response_Analysis.index_adjustment = -4" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.frequency_Response_Analysis.index_adjustment">
+                <parentTerm text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis">
+                <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
+                  <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="5" columnWidth="100" pRule="#//@ruleset/@rules.5">
+        <conditionValueSetCellList valueSet="'Severe deviation compared to prior tests'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.frequency_Response_Analysis.measurement_result = 'Severe deviation compared to prior tests'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="measurement_result" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.inspection.frequency_Response_Analysis.measurement_result">
+                <parentTerm text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet="-5">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.frequency_Response_Analysis.index_adjustment = -5" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.frequency_Response_Analysis.index_adjustment">
+                <parentTerm text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis">
+                <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
+                  <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet="'May indicate serious problem requiring immediate evaluation, additional testing, consultation with experts, and remediation prior to re-energization.'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.frequency_Response_Analysis.note = 'May indicate serious problem requiring immediate evaluation, additional testing, consultation with experts, and remediation prior to re-energization.'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="note" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.inspection.frequency_Response_Analysis.note">
+                <parentTerm text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis">
+                <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
+                  <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

@@ -736,7 +736,7 @@
       </filterItemList>
     </filterSection>
     <ruleStatementSection rowCount="44" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="1225" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
-    <conditionSection rowCount="50" scrollRowTop="3" columnWidthFactor="0.5">
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
       <conditionItemList rowHeight="101">
         <naturalLanguageText value="When the record that is given the alias 'injury_failure' has its 'observation' field with the following value ----->"/>
         <valueSetCell/>

@@ -216,7 +216,7 @@
       </extension>
     </logicalVariable>
   </ruleset>
-  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightConditionsActions="48">
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightScope="46" sashWeightConditionsActions="48">
     <actionSection rowCount="50" columnWidthFactor="0.5">
       <actionItemList rowHeight="97">
         <valueSetCell/>

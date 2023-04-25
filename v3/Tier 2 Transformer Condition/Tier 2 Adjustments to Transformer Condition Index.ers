@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_vjI4A-K6Ee2vkr7xzlqPwA" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_vin6keK6Ee2vkr7xzlqPwA" vocabulary="../Training_Vocabulary.ecore#/">
+    <rule>
+      <action>
+        <opaqueExpression expression="Asset.inspection.tier2_total = Asset.inspection.core_to_Ground_Resistance.index_adjustment + Asset.inspection.frequency_Response_Analysis.index_adjustment + Asset.inspection.internal_Inspection.index_adjustment + Asset.inspection.turns_Ratio.index_adjustment + Asset.inspection.short_Circuit_Impedence.index_adjustment + Asset.inspection.ultrasonic_and_Sonic_Fault_Detection.index_adjustment + Asset.inspection.winding_DC_Resistance.index_adjustment">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.tier2_total = Asset.inspection.core_to_Ground_Resistance.index_adjustment + Asset.inspection.frequency_Response_Analysis.index_adjustment + Asset.inspection.internal_Inspection.index_adjustment + Asset.inspection.turns_Ratio.index_adjustment + Asset.inspection.short_Circuit_Impedence.index_adjustment + Asset.inspection.ultrasonic_and_Sonic_Fault_Detection.index_adjustment + Asset.inspection.winding_DC_Resistance.index_adjustment" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="tier2_total" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.tier2_total">
+                <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.turns_Ratio.index_adjustment">
+                <parentTerm text="turns_Ratio" datatype="Condition_Assessment.Turns_Ratio" termtype="ENTITY" fulltext="Asset.inspection.turns_Ratio">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.short_Circuit_Impedence.index_adjustment">
+                <parentTerm text="short_Circuit_Impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="Asset.inspection.short_Circuit_Impedence">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.winding_DC_Resistance.index_adjustment">
+                <parentTerm text="winding_DC_Resistance" datatype="Condition_Assessment.Winding_DC_Resistance" termtype="ENTITY" fulltext="Asset.inspection.winding_DC_Resistance">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.internal_Inspection.index_adjustment">
+                <parentTerm text="internal_Inspection" datatype="Condition_Assessment.Internal_Inspection" termtype="ENTITY" fulltext="Asset.inspection.internal_Inspection">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.frequency_Response_Analysis.index_adjustment">
+                <parentTerm text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.core_to_Ground_Resistance.index_adjustment">
+                <parentTerm text="core_to_Ground_Resistance" datatype="Condition_Assessment.Core_to_Ground_Resistance" termtype="ENTITY" fulltext="Asset.inspection.core_to_Ground_Resistance" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.ultrasonic_and_Sonic_Fault_Detection.index_adjustment">
+                <parentTerm text="ultrasonic_and_Sonic_Fault_Detection" datatype="Condition_Assessment.Ultrasonic_and_Sonic_Fault_Detection" termtype="ENTITY" fulltext="Asset.inspection.ultrasonic_and_Sonic_Fault_Detection">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Asset.inspection.net_condition_index = Asset.inspection.tier1_total_raw_weighted + Asset.inspection.tier2_total">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.net_condition_index = Asset.inspection.tier1_total_raw_weighted + Asset.inspection.tier2_total" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="net_condition_index" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.net_condition_index">
+                <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="tier1_total_raw_weighted" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.tier1_total_raw_weighted">
+                <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="tier2_total" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.tier2_total">
+                <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <action/>
+      <action/>
+    </rule>
+    <rule>
+      <action/>
+      <action/>
+    </rule>
+    <rule>
+      <action/>
+      <action/>
+    </rule>
+    <rule>
+      <action/>
+      <action/>
+    </rule>
+    <rule>
+      <action/>
+      <action/>
+    </rule>
+    <rule>
+      <action/>
+      <action/>
+    </rule>
+    <rule>
+      <action/>
+      <action/>
+    </rule>
+    <logicalVariable entity="../Training_Vocabulary.ecore#//Asset">
+      <extension association="true" entity="../Training_Vocabulary.ecore#//Inspection" traversedAssocRole="../Training_Vocabulary.ecore#//Asset/inspection">
+        <extension association="true" entity="../Training_Vocabulary.ecore#//Condition_Assessment/Core_to_Ground_Resistance" traversedAssocRole="../Training_Vocabulary.ecore#//Inspection/core_to_Ground_Resistance">
+          <referencedAttributes attribute="../Training_Vocabulary.ecore#//Condition_Assessment/Core_to_Ground_Resistance/index_adjustment"/>
+        </extension>
+        <referencedAttributes attribute="../Training_Vocabulary.ecore#//Inspection/net_condition_index"/>
+        <referencedAttributes attribute="../Training_Vocabulary.ecore#//Inspection/tier2_total"/>
+        <referencedAttributes attribute="../Training_Vocabulary.ecore#//Inspection/recommendation"/>
+        <referencedAttributes attribute="../Training_Vocabulary.ecore#//Inspection/tier2_data_quality"/>
+        <referencedAttributes attribute="../Training_Vocabulary.ecore#//Inspection/tier2_data_quality_string"/>
+      </extension>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" sashWeightConditionsActions="15" sashWeightConditionsIf="31">
+    <actionSection rowCount="50" scrollRowTop="1" columnWidthFactor="0.5">
+      <actionItemList rowHeight="164">
+        <valueSetCell/>
+        <expressionCell external="Asset.inspection.tier2_total">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.tier2_total" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="tier2_total" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.tier2_total">
+                <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList rowHeight="178">
+        <valueSetCell/>
+        <expressionCell external="Asset.inspection.net_condition_index">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.net_condition_index" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="net_condition_index" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.net_condition_index">
+                <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.1"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.2"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@referencedAttributes.0"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.3"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.4"/>
+          </children>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <conditionSection rowCount="60" scrollRowTop="3" columnWidthFactor="0.5"/>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="174" pRule="#//@ruleset/@rules.0">
+        <actionValueSetCellList valueSet="Asset.inspection.core_to_Ground_Resistance.index_adjustment + Asset.inspection.frequency_Response_Analysis.index_adjustment + Asset.inspection.internal_Inspection.index_adjustment + Asset.inspection.turns_Ratio.index_adjustment + Asset.inspection.short_Circuit_Impedence.index_adjustment + Asset.inspection.ultrasonic_and_Sonic_Fault_Detection.index_adjustment + Asset.inspection.winding_DC_Resistance.index_adjustment">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.tier2_total = Asset.inspection.core_to_Ground_Resistance.index_adjustment + Asset.inspection.frequency_Response_Analysis.index_adjustment + Asset.inspection.internal_Inspection.index_adjustment + Asset.inspection.turns_Ratio.index_adjustment + Asset.inspection.short_Circuit_Impedence.index_adjustment + Asset.inspection.ultrasonic_and_Sonic_Fault_Detection.index_adjustment + Asset.inspection.winding_DC_Resistance.index_adjustment" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="tier2_total" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.tier2_total">
+                <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
+                  <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.turns_Ratio.index_adjustment">
+                <parentTerm text="turns_Ratio" datatype="Condition_Assessment.Turns_Ratio" termtype="ENTITY" fulltext="Asset.inspection.turns_Ratio">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.short_Circuit_Impedence.index_adjustment">
+                <parentTerm text="short_Circuit_Impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="Asset.inspection.short_Circuit_Impedence">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.winding_DC_Resistance.index_adjustment">
+                <parentTerm text="winding_DC_Resistance" datatype="Condition_Assessment.Winding_DC_Resistance" termtype="ENTITY" fulltext="Asset.inspection.winding_DC_Resistance">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.internal_Inspection.index_adjustment">
+                <parentTerm text="internal_Inspection" datatype="Condition_Assessment.Internal_Inspection" termtype="ENTITY" fulltext="Asset.inspection.internal_Inspection">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
+                <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
+              </terms>
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.frequency_Response_Analysis.index_adjustment">
+                <parentTerm text="frequency_Response_Analysis" datatype="Condition_Assessment.Frequency_Response_Analysis" termtype="ENTITY" fulltext="Asset.inspection.frequency_Response_Analysis">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.core_to_Ground_Resistance.index_adjustment">
+                <parentTerm text="core_to_Ground_Resistance" datatype="Condition_Assessment.Core_to_Ground_Resistance" termtype="ENTITY" fulltext="Asset.inspection.core_to_Ground_Resistance">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.ultrasonic_and_Sonic_Fault_Detection.index_adjustment">
+                <parentTerm text="ultrasonic_and_Sonic_Fault_Detection" datatype="Condition_Assessment.Ultrasonic_and_Sonic_Fault_Detection" termtype="ENTITY" fulltext="Asset.inspection.ultrasonic_and_Sonic_Fault_Detection">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet="Asset.inspection.tier1_total_raw_weighted + Asset.inspection.tier2_total">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.net_condition_index = Asset.inspection.tier1_total_raw_weighted + Asset.inspection.tier2_total" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="net_condition_index" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.net_condition_index">
+                <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
+                  <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="tier1_total_raw_weighted" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.tier1_total_raw_weighted">
+                <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
+                  <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
+                </parentTerm>
+              </terms>
+              <terms text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
+                <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
+              </terms>
+              <terms text="tier2_total" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.tier2_total">
+                <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
+                  <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="69" pRule="#//@ruleset/@rules.1">
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="75" pRule="#//@ruleset/@rules.2">
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="4" columnWidth="100" pRule="#//@ruleset/@rules.4">
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="5" columnWidth="100" pRule="#//@ruleset/@rules.5">
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="6" columnWidth="100" pRule="#//@ruleset/@rules.6">
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="7" columnWidth="100" pRule="#//@ruleset/@rules.7">
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>
