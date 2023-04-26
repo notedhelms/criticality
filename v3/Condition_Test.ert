@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_Qrkt4eK6Ee2vkr7xzlqPwA" externalChecksum="3391387159:507989954" studioType="Java">
-  <testsheetAssets majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_bFj1_-K5Ee2vkr7xzlqPwA" externalChecksum="3391387159:507989954">
-    <testsheet ruleActivityUpdateStamp="_bFj1_eK5Ee2vkr7xzlqPwA" ruleActivity="Condition%20Index%20Flow.erf#//@ruleflow" locale="">
+  <testsheetAssets majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_pxShEORaEe2xuLnI-gPt6w" externalChecksum="3391387159:507989954">
+    <testsheet ruleActivityUpdateStamp="_jWGmWeRaEe2xuLnI-gPt6w" ruleActivity="Condition%20Index%20Flow.erf#//@ruleflow" locale="">
       <input/>
       <output>
         <PostedMessage severity="Info" text="[Oil Analysis,5] 2 FAL Furans ≥ 200 and &lt; 250 ppb."/>
@@ -65,13 +65,20 @@
             </children>
           </children>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10/18/1996" eAttribute="Training_Vocabulary.ecore#//Asset/in_service_date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="123" eAttribute="Training_Vocabulary.ecore#//Asset/equip_num"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Asset X" eAttribute="Training_Vocabulary.ecore#//Asset/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Site A" eAttribute="Training_Vocabulary.ecore#//Asset/location"/>
         </children>
       </inputRoot>
       <outputRoot newOrModified="true">
         <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="Training_Vocabulary.ecore#//Asset">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="123 Asset X Site A" eAttribute="Training_Vocabulary.ecore#//Asset/unit_name"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="26" eAttribute="Training_Vocabulary.ecore#//Asset/service_life"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="123" eAttribute="Training_Vocabulary.ecore#//Asset/equip_num"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Asset X" eAttribute="Training_Vocabulary.ecore#//Asset/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Site A" eAttribute="Training_Vocabulary.ecore#//Asset/location"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10/18/1996" eAttribute="Training_Vocabulary.ecore#//Asset/in_service_date"/>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" expanded="false" eReference="Training_Vocabulary.ecore#//Asset/inspection" eClass="Training_Vocabulary.ecore#//Inspection">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" eReference="Training_Vocabulary.ecore#//Asset/inspection" eClass="Training_Vocabulary.ecore#//Inspection">
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" expanded="false" eReference="Training_Vocabulary.ecore#//Inspection/frequency_Response_Analysis" eClass="Training_Vocabulary.ecore#//Condition_Assessment/Frequency_Response_Analysis">
               <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.000" eAttribute="Training_Vocabulary.ecore#//Condition_Assessment/Frequency_Response_Analysis/index_adjustment"/>
               <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="Training_Vocabulary.ecore#//Condition_Assessment/Frequency_Response_Analysis/note"/>
@@ -97,6 +104,7 @@
               <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="Training_Vocabulary.ecore#//Condition_Assessment/Power_Factor_Analysis/raw_score"/>
             </children>
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2.047" eAttribute="Training_Vocabulary.ecore#//Inspection/net_condition_index"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Poor" eAttribute="Training_Vocabulary.ecore#//Inspection/condition_classification"/>
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" expanded="false" eReference="Training_Vocabulary.ecore#//Inspection/core_to_Ground_Resistance" eClass="Training_Vocabulary.ecore#//Condition_Assessment/Core_to_Ground_Resistance">
               <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="-0.500" eAttribute="Training_Vocabulary.ecore#//Condition_Assessment/Core_to_Ground_Resistance/index_adjustment"/>
               <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="Training_Vocabulary.ecore#//Condition_Assessment/Core_to_Ground_Resistance/note"/>
@@ -132,13 +140,13 @@
               <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Minimal degradation" eAttribute="Training_Vocabulary.ecore#//Condition_Assessment/Internal_Inspection/measurement_result"/>
             </children>
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="5.047" eAttribute="Training_Vocabulary.ecore#//Inspection/tier1_total_raw_weighted"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" expanded="false" eReference="Training_Vocabulary.ecore#//Inspection/age" eClass="Training_Vocabulary.ecore#//Condition_Assessment/Age">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" eReference="Training_Vocabulary.ecore#//Inspection/age" eClass="Training_Vocabulary.ecore#//Condition_Assessment/Age">
               <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1.428" eAttribute="Training_Vocabulary.ecore#//Condition_Assessment/Age/weighted_score"/>
               <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.476" eAttribute="Training_Vocabulary.ecore#//Condition_Assessment/Age/weight"/>
               <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Under 30 years" eAttribute="Training_Vocabulary.ecore#//Condition_Assessment/Age/band"/>
               <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="3" eAttribute="Training_Vocabulary.ecore#//Condition_Assessment/Age/raw_score"/>
             </children>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" expanded="false" eReference="Training_Vocabulary.ecore#//Inspection/short_Circuit_Impedence" eClass="Training_Vocabulary.ecore#//Condition_Assessment/Short_Circuit_Impedence">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" eReference="Training_Vocabulary.ecore#//Inspection/short_Circuit_Impedence" eClass="Training_Vocabulary.ecore#//Condition_Assessment/Short_Circuit_Impedence">
               <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="-1.000" eAttribute="Training_Vocabulary.ecore#//Condition_Assessment/Short_Circuit_Impedence/index_adjustment"/>
               <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="Training_Vocabulary.ecore#//Condition_Assessment/Short_Circuit_Impedence/note"/>
               <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3% to 5% difference from nameplate impedance (significant degradation)" eAttribute="Training_Vocabulary.ecore#//Condition_Assessment/Short_Circuit_Impedence/measurement_result"/>
@@ -147,14 +155,14 @@
         </children>
       </outputRoot>
       <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
-        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2/@children.9"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.6/@children.10"/>
       </outputMessageSection>
       <expectedRoot/>
       <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
       <outputRuleTraceSection/>
     </testsheetViewList>
   </testsheetAssets>
-  <ruletest vocabularyUpdateStamp="_2eJ-weK5Ee2vkr7xzlqPwA" testsheets="#//@testsheetAssets.0/@testsheet" vocabulary="Training_Vocabulary.ecore#/"/>
+  <ruletest vocabularyUpdateStamp="_J362guK_Ee2vkr7xzlqPwA" testsheets="#//@testsheetAssets.0/@testsheet" vocabulary="Training_Vocabulary.ecore#/"/>
   <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
     <testTabList name="untitled_1"/>
   </ruletestViewList>
