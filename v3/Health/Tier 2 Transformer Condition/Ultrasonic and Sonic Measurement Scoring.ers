@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_wyjfN-BOEe2i2P5-pzI62A" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_LjUeJuSQEe2xuLnI-gPt6w" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
   <languageCode>en_US</languageCode>
-  <ruleset vocabularyUpdateStamp="_i70Y0OBOEe2i2P5-pzI62A" vocabulary="../Training_Vocabulary.ecore#/">
+  <ruleset vocabularyUpdateStamp="_0gXf0OSPEe2xuLnI-gPt6w" vocabulary="../../Training_Vocabulary.ecore#/">
     <rule/>
     <rule>
       <condition>
@@ -163,11 +163,11 @@
         </opaqueExpression>
       </action>
     </rule>
-    <logicalVariable entity="../Training_Vocabulary.ecore#//Asset">
-      <extension association="true" entity="../Training_Vocabulary.ecore#//Inspection" traversedAssocRole="../Training_Vocabulary.ecore#//Asset/inspection">
-        <extension association="true" entity="../Training_Vocabulary.ecore#//Condition_Assessment/Ultrasonic_and_Sonic_Fault_Detection" traversedAssocRole="../Training_Vocabulary.ecore#//Inspection/ultrasonic_and_Sonic_Fault_Detection">
-          <referencedAttributes attribute="../Training_Vocabulary.ecore#//Condition_Assessment/Ultrasonic_and_Sonic_Fault_Detection/measurement_result"/>
-          <referencedAttributes attribute="../Training_Vocabulary.ecore#//Condition_Assessment/Ultrasonic_and_Sonic_Fault_Detection/index_adjustment"/>
+    <logicalVariable entity="../../Training_Vocabulary.ecore#//Asset">
+      <extension association="true" entity="../../Training_Vocabulary.ecore#//Inspection" traversedAssocRole="../../Training_Vocabulary.ecore#//Asset/inspection">
+        <extension association="true" entity="../../Training_Vocabulary.ecore#//Condition_Assessment/Ultrasonic_and_Sonic_Fault_Detection" traversedAssocRole="../../Training_Vocabulary.ecore#//Inspection/ultrasonic_and_Sonic_Fault_Detection">
+          <referencedAttributes attribute="../../Training_Vocabulary.ecore#//Condition_Assessment/Ultrasonic_and_Sonic_Fault_Detection/measurement_result"/>
+          <referencedAttributes attribute="../../Training_Vocabulary.ecore#//Condition_Assessment/Ultrasonic_and_Sonic_Fault_Detection/index_adjustment"/>
         </extension>
       </extension>
     </logicalVariable>

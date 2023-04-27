@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_mg34I-K4Ee2vkr7xzlqPwA" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_KrjIq-SQEe2xuLnI-gPt6w" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
   <languageCode>en_US</languageCode>
-  <ruleset vocabularyUpdateStamp="_auAHAeK4Ee2vkr7xzlqPwA" vocabulary="../Training_Vocabulary.ecore#/">
+  <ruleset vocabularyUpdateStamp="_0gXf0OSPEe2xuLnI-gPt6w" vocabulary="../../Training_Vocabulary.ecore#/">
     <rule>
       <action>
         <opaqueExpression expression="Asset.inspection.tier1_total_raw = Asset.inspection.age.raw_score + Asset.inspection.oil_Analysis.raw_score + Asset.inspection.power_Factor_Analysis.raw_score + Asset.inspection.operation_History.raw_score">
@@ -240,28 +240,28 @@
         </opaqueExpression>
       </action>
     </rule>
-    <logicalVariable entity="../Training_Vocabulary.ecore#//Asset">
-      <extension association="true" entity="../Training_Vocabulary.ecore#//Inspection" traversedAssocRole="../Training_Vocabulary.ecore#//Asset/inspection">
-        <extension association="true" entity="../Training_Vocabulary.ecore#//Condition_Assessment/Age" traversedAssocRole="../Training_Vocabulary.ecore#//Inspection/age">
-          <referencedAttributes attribute="../Training_Vocabulary.ecore#//Condition_Assessment/Age/raw_score"/>
-          <referencedAttributes attribute="../Training_Vocabulary.ecore#//Condition_Assessment/Age/weighted_score"/>
+    <logicalVariable entity="../../Training_Vocabulary.ecore#//Asset">
+      <extension association="true" entity="../../Training_Vocabulary.ecore#//Inspection" traversedAssocRole="../../Training_Vocabulary.ecore#//Asset/inspection">
+        <extension association="true" entity="../../Training_Vocabulary.ecore#//Condition_Assessment/Age" traversedAssocRole="../../Training_Vocabulary.ecore#//Inspection/age">
+          <referencedAttributes attribute="../../Training_Vocabulary.ecore#//Condition_Assessment/Age/raw_score"/>
+          <referencedAttributes attribute="../../Training_Vocabulary.ecore#//Condition_Assessment/Age/weighted_score"/>
         </extension>
-        <extension association="true" entity="../Training_Vocabulary.ecore#//Condition_Assessment/Oil_Analysis" traversedAssocRole="../Training_Vocabulary.ecore#//Inspection/oil_Analysis">
-          <referencedAttributes attribute="../Training_Vocabulary.ecore#//Condition_Assessment/Oil_Analysis/raw_score"/>
-          <referencedAttributes attribute="../Training_Vocabulary.ecore#//Condition_Assessment/Oil_Analysis/weighted_score"/>
+        <extension association="true" entity="../../Training_Vocabulary.ecore#//Condition_Assessment/Oil_Analysis" traversedAssocRole="../../Training_Vocabulary.ecore#//Inspection/oil_Analysis">
+          <referencedAttributes attribute="../../Training_Vocabulary.ecore#//Condition_Assessment/Oil_Analysis/raw_score"/>
+          <referencedAttributes attribute="../../Training_Vocabulary.ecore#//Condition_Assessment/Oil_Analysis/weighted_score"/>
         </extension>
-        <extension association="true" entity="../Training_Vocabulary.ecore#//Condition_Assessment/Power_Factor_Analysis" traversedAssocRole="../Training_Vocabulary.ecore#//Inspection/power_Factor_Analysis">
-          <referencedAttributes attribute="../Training_Vocabulary.ecore#//Condition_Assessment/Power_Factor_Analysis/raw_score"/>
-          <referencedAttributes attribute="../Training_Vocabulary.ecore#//Condition_Assessment/Power_Factor_Analysis/weighted_score"/>
+        <extension association="true" entity="../../Training_Vocabulary.ecore#//Condition_Assessment/Power_Factor_Analysis" traversedAssocRole="../../Training_Vocabulary.ecore#//Inspection/power_Factor_Analysis">
+          <referencedAttributes attribute="../../Training_Vocabulary.ecore#//Condition_Assessment/Power_Factor_Analysis/raw_score"/>
+          <referencedAttributes attribute="../../Training_Vocabulary.ecore#//Condition_Assessment/Power_Factor_Analysis/weighted_score"/>
         </extension>
-        <extension association="true" entity="../Training_Vocabulary.ecore#//Condition_Assessment/Operation_History" traversedAssocRole="../Training_Vocabulary.ecore#//Inspection/operation_History">
-          <referencedAttributes attribute="../Training_Vocabulary.ecore#//Condition_Assessment/Operation_History/raw_score"/>
-          <referencedAttributes attribute="../Training_Vocabulary.ecore#//Condition_Assessment/Operation_History/weighted_score"/>
+        <extension association="true" entity="../../Training_Vocabulary.ecore#//Condition_Assessment/Operation_History" traversedAssocRole="../../Training_Vocabulary.ecore#//Inspection/operation_History">
+          <referencedAttributes attribute="../../Training_Vocabulary.ecore#//Condition_Assessment/Operation_History/raw_score"/>
+          <referencedAttributes attribute="../../Training_Vocabulary.ecore#//Condition_Assessment/Operation_History/weighted_score"/>
         </extension>
-        <referencedAttributes attribute="../Training_Vocabulary.ecore#//Inspection/tier1_total_raw"/>
-        <referencedAttributes attribute="../Training_Vocabulary.ecore#//Inspection/tier1_total_raw_weighted"/>
-        <referencedAttributes attribute="../Training_Vocabulary.ecore#//Inspection/tier1_data_quality"/>
-        <referencedAttributes attribute="../Training_Vocabulary.ecore#//Inspection/tier1_data_quality_string"/>
+        <referencedAttributes attribute="../../Training_Vocabulary.ecore#//Inspection/tier1_total_raw"/>
+        <referencedAttributes attribute="../../Training_Vocabulary.ecore#//Inspection/tier1_total_raw_weighted"/>
+        <referencedAttributes attribute="../../Training_Vocabulary.ecore#//Inspection/tier1_data_quality"/>
+        <referencedAttributes attribute="../../Training_Vocabulary.ecore#//Inspection/tier1_data_quality_string"/>
       </extension>
     </logicalVariable>
   </ruleset>
