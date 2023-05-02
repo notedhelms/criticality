@@ -1,0 +1,216 @@
+{
+    "name": "Combined Criticality and Health",
+    "major version": "1",
+    "minor version": "0",
+    "effectiveTimeStamp": "4/7/2022 7:30:00 AM",
+{
+    "__metadataRoot": {"#locale": ""},
+    "Objects": [{
+        "equip_num": 123,
+        "name": "Asset X",
+        "location": "Site A",
+        "in_service_date": "10/18/1996",
+        "__metadata": {
+            "#type": "Asset",
+            "#id": "Asset_id_1"
+        },
+        "inspection": {
+            "spares_Availability": {
+                "description": "Parts available within 7 days",
+                "__metadata": {
+                    "#type": "Criticality_Assessment.Spares_Availability",
+                    "#id": "Criticality_Assessment.Spares_Availability_id_1"
+                }
+            },
+            "safety_Inj_During_Failure": {
+                "description": "Low Risk (First Aid/Minor Medical Aid)",
+                "__metadata": {
+                    "#type": "Criticality_Assessment.Safety_Inj_During_Repair",
+                    "#id": "Criticality_Assessment.Safety_Inj_During_Repair_id_1"
+                }
+            },
+            "reliability_Frequency_Failure": {
+                "description": "Moderate \u2013 Once every 2 years",
+                "__metadata": {
+                    "#type": "Criticality_Assessment.Reliability_Frequency_Failure",
+                    "#id": "Criticality_Assessment.Reliability_Frequency_Failure_id_1"
+                }
+            },
+            "ultrasonic_and_Sonic_Fault_Detection": {
+                "index_adjustment": null,
+                "measurement_result": "Low-level fault indication",
+                "__metadata": {
+                    "#type": "Condition_Assessment.Ultrasonic_and_Sonic_Fault_Detection",
+                    "#id": "Condition_Assessment.Ultrasonic_and_Sonic_Fault_Detection_id_1"
+                }
+            },
+            "reliability_Customer_Impact_Circuit_Priority": {
+                "description": "Moderate impact",
+                "__metadata": {
+                    "#type": "Criticality_Assessment.Reliability_Customer_Impact_Circuit_Priority",
+                    "#id": "Criticality_Assessment.Reliability_Customer_Impact_Circuit_Priority_id_1"
+                }
+            },
+            "power_Factor_Analysis": {
+                "excitation_current_deviation": "Significant",
+                "power_factor_results": "Good",
+                "__metadata": {
+                    "#type": "Condition_Assessment.Power_Factor_Analysis",
+                    "#id": "Condition_Assessment.Power_Factor_Analysis_id_1"
+                }
+            },
+            "reliability_Metrics": {
+                "description": "1 min SAIDI, SAIFI, MAIFIE",
+                "__metadata": {
+                    "#type": "Criticality_Assessment.Reliability_Metrics",
+                    "#id": "Criticality_Assessment.Reliability_Metrics_id_1"
+                }
+            },
+            "reliability_Transmission_Grid": {
+                "description": "Medium Impact (Down Time => 2 Hours < 24 Hours)",
+                "__metadata": {
+                    "#type": "Criticality_Assessment.Reliability_Transmission_Grid",
+                    "#id": "Criticality_Assessment.Reliability_Transmission_Grid_id_1"
+                }
+            },
+            "compliance_Other": {
+                "description": "Non-reportable",
+                "__metadata": {
+                    "#type": "Criticality_Assessment.Compliance_Other",
+                    "#id": "Criticality_Assessment.Compliance_Other_id_1"
+                }
+            },
+            "safety_Inj_From_Failure": {
+                "description": "Fatality or Permanent Disability",
+                "__metadata": {
+                    "#type": "Criticality_Assessment.Safety_Inj_From_Failure",
+                    "#id": "Criticality_Assessment.Safety_Inj_From_Failure_id_1"
+                }
+            },
+            "core_to_Ground_Resistance": {
+                "index_adjustment": null,
+                "note": null,
+                "measurement_result": "600 to 900 megohms",
+                "__metadata": {
+                    "#type": "Condition_Assessment.Core_to_Ground_Resistance",
+                    "#id": "Condition_Assessment.Core_to_Ground_Resistance_id_1"
+                }
+            },
+            "operation_History": {
+                "__metadata": {
+                    "#type": "Condition_Assessment.Operation_History",
+                    "#id": "Condition_Assessment.Operation_History_id_1"
+                },
+                "history_scoring": "Some abnormal operating conditions experienced and/or additional maintenance above normal are occurring."
+            },
+            "winding_DC_Resistance": {
+                "index_adjustment": null,
+                "note": null,
+                "measurement_result": "5% to 7% difference between phases or from factory tests",
+                "__metadata": {
+                    "#type": "Condition_Assessment.Winding_DC_Resistance",
+                    "#id": "Condition_Assessment.Winding_DC_Resistance_id_1"
+                }
+            },
+            "maintenance_Mean_Time_Repair": {
+                "description": "Significant 2-8 Hours",
+                "__metadata": {
+                    "#type": "Criticality_Assessment.Maintenance_Mean_Time_Repair",
+                    "#id": "Criticality_Assessment.Maintenance_Mean_Time_Repair_id_1"
+                }
+            },
+            "__metadata": {
+                "#type": "Inspection",
+                "#id": "Inspection_id_1"
+            },
+            "internal_Inspection": {
+                "index_adjustment": null,
+                "note": null,
+                "measurement_result": "Minimal degradation",
+                "__metadata": {
+                    "#type": "Condition_Assessment.Internal_Inspection",
+                    "#id": "Condition_Assessment.Internal_Inspection_id_1"
+                }
+            },
+            "maintenance_Repair_Costs": {
+                "description": "Minimal Impact ($0 - $1000)",
+                "__metadata": {
+                    "#type": "Criticality_Assessment.Maintenance_Repair_Costs",
+                    "#id": "Criticality_Assessment.Maintenance_Repair_Costs_id_1"
+                }
+            },
+            "compliance_Environmental": {
+                "description": "None",
+                "__metadata": {
+                    "#type": "Criticality_Assessment.Compliance_Environmental",
+                    "#id": "Criticality_Assessment.Compliance_Environmental_id_1"
+                }
+            },
+            "compliance_NERC": {
+                "description": "Reportable",
+                "__metadata": {
+                    "#type": "Criticality_Assessment.Compliance_NERC",
+                    "#id": "Criticality_Assessment.Compliance_NERC_id_1"
+                }
+            },
+            "frequency_Response_Analysis": {
+                "index_adjustment": null,
+                "note": null,
+                "measurement_result": "No deviation compared to prior tests",
+                "__metadata": {
+                    "#type": "Condition_Assessment.Frequency_Response_Analysis",
+                    "#id": "Condition_Assessment.Frequency_Response_Analysis_id_1"
+                }
+            },
+            "turns_Ratio": {
+                "index_adjustment": null,
+                "note": null,
+                "measurement_result": "Less than 0.20% difference from nameplate V1/V2 and compared to previous readings",
+                "__metadata": {
+                    "#type": "Condition_Assessment.Turns_Ratio",
+                    "#id": "Condition_Assessment.Turns_Ratio_id_1"
+                }
+            },
+            "reliability_Redundancy": {
+                "description": "In Line Spare, Automatic Switch Over",
+                "__metadata": {
+                    "#type": "Criticality_Assessment.Reliability_Redundancy",
+                    "#id": "Criticality_Assessment.Reliability_Redundancy_id_1"
+                }
+            },
+            "maintenance_Schedule_Compliance": {
+                "description": "Low Impact \u2013 Anytime Work",
+                "__metadata": {
+                    "#type": "Criticality_Assessment.Maintenance_Schedule_Compliance",
+                    "#id": "Criticality_Assessment.Maintenance_Schedule_Compliance_id_1"
+                }
+            },
+            "oil_Analysis": {
+                "hydrogen_ppm_per_month": 41,
+                "ethylene_ppm_per_month": 21,
+                "_2FAL_furans_ppb": 210,
+                "ethane_ppm_per_month": 20,
+                "acetylene_ppm_per_month": 0,
+                "__metadata": {
+                    "#type": "Condition_Assessment.Oil_Analysis",
+                    "#id": "Condition_Assessment.Oil_Analysis_id_1"
+                },
+                "carbon_monoxide_ppm_per_month": 50,
+                "methane_ppm_per_month": 19
+            },
+            "age": {"__metadata": {
+                "#type": "Condition_Assessment.Age",
+                "#id": "Condition_Assessment.Age_id_1"
+            }},
+            "short_Circuit_Impedence": {
+                "index_adjustment": null,
+                "note": null,
+                "measurement_result": "3% to 5% difference from nameplate impedance (significant degradation)",
+                "__metadata": {
+                    "#type": "Condition_Assessment.Short_Circuit_Impedence",
+                    "#id": "Condition_Assessment.Short_Circuit_Impedence_id_1"
+                }
+            }
+        }
+    }]
+}
