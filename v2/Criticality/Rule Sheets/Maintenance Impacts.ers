@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_Z_xBYc_HEe2LEtDvaI9KVA" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_wDalQekiEe2fWruWlJFEMg" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
   <languageCode>en_US</languageCode>
-  <ruleset vocabularyUpdateStamp="_EeJpocctEe26oNkFwxsVAA" vocabulary="../../Rule%20Vocabulary/Training_Vocabulary.ecore#/">
+  <ruleset vocabularyUpdateStamp="_H_dPAekgEe2fWruWlJFEMg" vocabulary="../../Rule%20Vocabulary/Training_Vocabulary.ecore#/">
     <rule>
       <condition/>
       <condition/>
@@ -102,6 +102,56 @@
                 </parentTerm>
               </terms>
               <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="timeRepair.raw_score">
+                <parentTerm text="timeRepair" datatype="Measure" termtype="ENTITY" fulltext="timeRepair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="Maintenance_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Maintenance_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action>
+        <opaqueExpression expression="Maintenance_Component.criticality_component_net_score = schedule_compliance.weighted_value + repair_costs.weighted_value + timeRepair.weighted_value">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Maintenance_Component.criticality_component_net_score = schedule_compliance.weighted_value + repair_costs.weighted_value + timeRepair.weighted_value" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="criticality_component_net_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Maintenance_Component.criticality_component_net_score">
+                <parentTerm text="Maintenance_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Maintenance_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="weighted_value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="repair_costs.weighted_value">
+                <parentTerm text="repair_costs" datatype="Measure" termtype="ENTITY" fulltext="repair_costs" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
+                  <parentTerm text="Maintenance_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Maintenance_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="Maintenance_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Maintenance_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="weighted_value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="schedule_compliance.weighted_value">
+                <parentTerm text="schedule_compliance" datatype="Measure" termtype="ENTITY" fulltext="schedule_compliance" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.2">
+                  <parentTerm text="Maintenance_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Maintenance_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="weighted_value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="timeRepair.weighted_value">
                 <parentTerm text="timeRepair" datatype="Measure" termtype="ENTITY" fulltext="timeRepair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
                   <parentTerm text="Maintenance_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Maintenance_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                     <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
@@ -1064,8 +1114,21 @@
         </parserOutput>
       </opaqueExpression>
     </filter>
-    <logicalVariable entity="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Assessment" filters="#//@ruleset/@filters.0 #//@ruleset/@filters.1 #//@ruleset/@filters.2 #//@ruleset/@filters.3 #//@ruleset/@filters.4">
-      <extension association="true" entity="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index" traversedAssocRole="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Assessment/index" filters="#//@ruleset/@filters.0 #//@ruleset/@filters.4 #//@ruleset/@filters.3 #//@ruleset/@filters.2">
+    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.0">
+      <opaqueExpression expression="Assessment.index.index_name = 'Criticality'">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Assessment.index.index_name = 'Criticality'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+          <referencedTermList>
+            <terms text="index_name" datatype="String" termtype="ATTRIBUTE" fulltext="Assessment.index.index_name">
+              <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <logicalVariable entity="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Assessment" filters="#//@ruleset/@filters.0 #//@ruleset/@filters.1 #//@ruleset/@filters.2 #//@ruleset/@filters.3 #//@ruleset/@filters.4 #//@ruleset/@filters.5">
+      <extension association="true" entity="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index" traversedAssocRole="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Assessment/index" filters="#//@ruleset/@filters.0 #//@ruleset/@filters.4 #//@ruleset/@filters.3 #//@ruleset/@filters.2 #//@ruleset/@filters.5">
         <extension explicit="true" association="true" entity="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component" traversedAssocRole="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index/index_Component" filters="#//@ruleset/@filters.0 #//@ruleset/@filters.4 #//@ruleset/@filters.3 #//@ruleset/@filters.2">
           <alias value="Maintenance_Component"/>
           <extension explicit="true" association="true" entity="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure" traversedAssocRole="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/measure" filters="#//@ruleset/@filters.4">
@@ -1090,14 +1153,16 @@
             <referencedAttributes attribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/measure_name"/>
           </extension>
           <referencedAttributes attribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/criticality_component_name"/>
+          <referencedAttributes attribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/criticality_component_net_score"/>
         </extension>
+        <referencedAttributes attribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index/index_name"/>
       </extension>
     </logicalVariable>
     <logicalVariable entity="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component">
       <referencedAttributes attribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/health_component_weight"/>
     </logicalVariable>
   </ruleset>
-  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="30" sashWeightScope="63" sashWeightConditionsActions="37" sashWeightConditionsIf="25">
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="30" sashWeightScope="63" sashWeightConditionsActions="10" sashWeightConditionsIf="25">
     <actionSection rowCount="49" columnWidthFactor="0.5">
       <actionItemList>
         <valueSetCell/>
@@ -1207,6 +1272,26 @@
           </parserOutput>
         </expressionCell>
       </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell/>
+      </actionItemList>
+      <actionItemList rowHeight="128">
+        <valueSetCell/>
+        <expressionCell external="Maintenance_Component.criticality_component_net_score">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Maintenance_Component.criticality_component_net_score" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="criticality_component_net_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Maintenance_Component.criticality_component_net_score">
+                <parentTerm text="Maintenance_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Maintenance_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
     </actionSection>
     <scopeSection>
       <rootNode>
@@ -1216,6 +1301,7 @@
             <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="schedule_compliance.measure_name = 'Maintenance schedule compliance'" filter="#//@ruleset/@filters.2"/>
             <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="repair_costs.measure_name= 'Repair costs'" filter="#//@ruleset/@filters.3"/>
             <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="timeRepair.measure_name = 'Mean time to repair'" filter="#//@ruleset/@filters.4"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Assessment.index.index_name = 'Criticality'" filter="#//@ruleset/@filters.5"/>
           </children>
           <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
             <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
@@ -1223,6 +1309,7 @@
               <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="schedule_compliance.measure_name = 'Maintenance schedule compliance'" filter="#//@ruleset/@filters.2"/>
               <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="repair_costs.measure_name= 'Repair costs'" filter="#//@ruleset/@filters.3"/>
               <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="timeRepair.measure_name = 'Mean time to repair'" filter="#//@ruleset/@filters.4"/>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Assessment.index.index_name = 'Criticality'" filter="#//@ruleset/@filters.5"/>
             </children>
             <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
               <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
@@ -1259,7 +1346,9 @@
                 <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.2/@referencedAttributes.2"/>
                 <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.2/@referencedAttributes.3"/>
               </children>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@referencedAttributes.1"/>
             </children>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
           </children>
         </children>
         <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
@@ -1331,6 +1420,19 @@
                       <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
                     </parentTerm>
                   </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+      <filterItemList filter="#//@ruleset/@filters.5">
+        <expressionCell external="Assessment.index.index_name = 'Criticality'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Assessment.index.index_name = 'Criticality'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="index_name" datatype="String" termtype="ATTRIBUTE" fulltext="Assessment.index.index_name">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
                 </parentTerm>
               </terms>
             </referencedTermList>
@@ -1491,6 +1593,54 @@
                 </parentTerm>
               </terms>
               <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="timeRepair.raw_score">
+                <parentTerm text="timeRepair" datatype="Measure" termtype="ENTITY" fulltext="timeRepair">
+                  <parentTerm text="Maintenance_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Maintenance_Component">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="schedule_compliance.weighted_value + repair_costs.weighted_value + timeRepair.weighted_value">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Maintenance_Component.criticality_component_net_score = schedule_compliance.weighted_value + repair_costs.weighted_value + timeRepair.weighted_value" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="criticality_component_net_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Maintenance_Component.criticality_component_net_score">
+                <parentTerm text="Maintenance_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Maintenance_Component">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="weighted_value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="repair_costs.weighted_value">
+                <parentTerm text="repair_costs" datatype="Measure" termtype="ENTITY" fulltext="repair_costs">
+                  <parentTerm text="Maintenance_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Maintenance_Component">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="Maintenance_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Maintenance_Component">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+                </parentTerm>
+              </terms>
+              <terms text="weighted_value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="schedule_compliance.weighted_value">
+                <parentTerm text="schedule_compliance" datatype="Measure" termtype="ENTITY" fulltext="schedule_compliance">
+                  <parentTerm text="Maintenance_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Maintenance_Component">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="weighted_value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="timeRepair.weighted_value">
                 <parentTerm text="timeRepair" datatype="Measure" termtype="ENTITY" fulltext="timeRepair">
                   <parentTerm text="Maintenance_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Maintenance_Component">
                     <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">

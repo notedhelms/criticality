@@ -1,0 +1,450 @@
+{
+    "__metadataRoot": {"#locale": ""},
+    "Objects": [{
+        "index": [
+            {
+                "index_Component": [
+                    {
+                        "measure": [
+                            {
+                                "observation": "Reportable",
+                                "measure_name": "Air emissions",
+                                "__metadata": {
+                                    "#type": "Measure",
+                                    "#id": "Measure_id_16"
+                                }
+                            },
+                            {
+                                "observation": "Reportable",
+                                "measure_name": "Chemical spills",
+                                "__metadata": {
+                                    "#type": "Measure",
+                                    "#id": "Measure_id_17"
+                                }
+                            },
+                            {
+                                "observation": "Reportable",
+                                "measure_name": "Water and Process Water Impacts",
+                                "__metadata": {
+                                    "#type": "Measure",
+                                    "#id": "Measure_id_18"
+                                }
+                            },
+                            {
+                                "observation": "Reportable",
+                                "measure_name": "Solid and Hazardous Waste",
+                                "__metadata": {
+                                    "#type": "Measure",
+                                    "#id": "Measure_id_19"
+                                }
+                            }
+                        ],
+                        "criticality_component_name": "Environmental Impact",
+                        "__metadata": {
+                            "#type": "Index_Component",
+                            "#id": "Index_Component_id_13"
+                        }
+                    },
+                    {
+                        "measure": [
+                            {
+                                "observation": "Significant 2-8 Hours",
+                                "measure_name": "Mean time to repair",
+                                "__metadata": {
+                                    "#type": "Measure",
+                                    "#id": "Measure_id_22"
+                                }
+                            },
+                            {
+                                "observation": "Low Impact \u2013 Anytime Work",
+                                "measure_name": "Maintenance schedule compliance",
+                                "__metadata": {
+                                    "#type": "Measure",
+                                    "#id": "Measure_id_23"
+                                }
+                            },
+                            {
+                                "observation": "Medium ($10k - < $50k)",
+                                "measure_name": "Repair costs",
+                                "__metadata": {
+                                    "#type": "Measure",
+                                    "#id": "Measure_id_24"
+                                }
+                            }
+                        ],
+                        "criticality_component_name": "Maintenance Impact",
+                        "__metadata": {
+                            "#type": "Index_Component",
+                            "#id": "Index_Component_id_15"
+                        }
+                    },
+                    {
+                        "measure": [
+                            {
+                                "observation": "Ten % Reduction",
+                                "measure_name": "Capacity Impact",
+                                "__metadata": {
+                                    "#type": "Measure",
+                                    "#id": "Measure_id_25"
+                                }
+                            },
+                            {
+                                "observation": "Medium Impact (Down Time => 2 Hours < 24 Hours)",
+                                "measure_name": "Downtime Impact",
+                                "__metadata": {
+                                    "#type": "Measure",
+                                    "#id": "Measure_id_26"
+                                }
+                            },
+                            {
+                                "observation": "Equipment is used > 25 % and < 70 % of the Time",
+                                "measure_name": "Equpment Utilization",
+                                "__metadata": {
+                                    "#type": "Measure",
+                                    "#id": "Measure_id_27"
+                                }
+                            },
+                            {
+                                "observation": "Moderate \u2013 Once every 2 years",
+                                "measure_name": "Frequency of Failure",
+                                "__metadata": {
+                                    "#type": "Measure",
+                                    "#id": "Measure_id_28"
+                                }
+                            },
+                            {
+                                "observation": "In Line Spare Automatic Switch Over",
+                                "measure_name": "Equipment Redundancy",
+                                "__metadata": {
+                                    "#type": "Measure",
+                                    "#id": "Measure_id_29"
+                                }
+                            }
+                        ],
+                        "criticality_component_name": "Generation Impact",
+                        "__metadata": {
+                            "#type": "Index_Component",
+                            "#id": "Index_Component_id_16"
+                        }
+                    },
+                    {
+                        "measure": {
+                            "observation": "Parts available within 7 days",
+                            "measure_name": "Spares availability",
+                            "__metadata": {
+                                "#type": "Measure",
+                                "#id": "Measure_id_30"
+                            }
+                        },
+                        "criticality_component_name": "Spares availability",
+                        "__metadata": {
+                            "#type": "Index_Component",
+                            "#id": "Index_Component_id_17"
+                        }
+                    },
+                    {
+                        "measure": [
+                            {
+                                "observation": "None",
+                                "measure_name": "Injury during repair",
+                                "__metadata": {
+                                    "#type": "Measure",
+                                    "#id": "Measure_id_54"
+                                }
+                            },
+                            {
+                                "observation": "Fatality or Permanent Disability",
+                                "measure_name": "Injury from failure",
+                                "__metadata": {
+                                    "#type": "Measure",
+                                    "#id": "Measure_id_55"
+                                }
+                            }
+                        ],
+                        "criticality_component_name": "Safety Impact",
+                        "__metadata": {
+                            "#type": "Index_Component",
+                            "#id": "Index_Component_id_31"
+                        }
+                    }
+                ],
+                "__metadata": {
+                    "#type": "Index",
+                    "#id": "Index_id_2"
+                },
+                "index_name": "Criticality"
+            },
+            {
+                "index_Component": [
+                    {
+                        "measure": [
+                            {
+                                "observation": "Power factor results normal. (Good \u2013 G)",
+                                "measure_name": "Power Factor",
+                                "__metadata": {
+                                    "#type": "Measure",
+                                    "#id": "Measure_id_32"
+                                }
+                            },
+                            {
+                                "observation": "Normal excitation current values and patterns compared to other phases and prior tests.",
+                                "measure_name": "Excitation Current",
+                                "__metadata": {
+                                    "#type": "Measure",
+                                    "#id": "Measure_id_33"
+                                }
+                            }
+                        ],
+                        "health_component_name": "Power Factor and Excitation Current Tests",
+                        "__metadata": {
+                            "#type": "Index_Component",
+                            "#id": "Index_Component_id_19"
+                        }
+                    },
+                    {
+                        "measure": {
+                            "observation": "Some abnormal operating conditions experienced and/or additional maintenance above normal occurring.",
+                            "__metadata": {
+                                "#type": "Measure",
+                                "#id": "Measure_id_34"
+                            }
+                        },
+                        "health_component_name": "Operation and Maintenance History",
+                        "__metadata": {
+                            "#type": "Index_Component",
+                            "#id": "Index_Component_id_20"
+                        }
+                    },
+                    {
+                        "measure": {
+                            "measure_value": 45,
+                            "__metadata": {
+                                "#type": "Measure",
+                                "#id": "Measure_id_35"
+                            }
+                        },
+                        "health_component_name": "Age",
+                        "__metadata": {
+                            "#type": "Index_Component",
+                            "#id": "Index_Component_id_21"
+                        }
+                    },
+                    {
+                        "measure": [
+                            {
+                                "measure_value": 0.1,
+                                "measure_name": "Last Assessment Diff",
+                                "__metadata": {
+                                    "#type": "Measure",
+                                    "#id": "Measure_id_36"
+                                }
+                            },
+                            {
+                                "measure_value": 0.2,
+                                "measure_name": "Nameplate Diff",
+                                "__metadata": {
+                                    "#type": "Measure",
+                                    "#id": "Measure_id_37"
+                                }
+                            }
+                        ],
+                        "health_test_name": "Turns Ratio Test",
+                        "__metadata": {
+                            "#type": "Index_Component",
+                            "#id": "Index_Component_id_22"
+                        }
+                    },
+                    {
+                        "measure": {
+                            "observation": "3% to 5% difference from nameplate impedance (significant degradation)",
+                            "__metadata": {
+                                "#type": "Measure",
+                                "#id": "Measure_id_38"
+                            }
+                        },
+                        "health_test_name": "Short Circuit Impedance Test",
+                        "__metadata": {
+                            "#type": "Index_Component",
+                            "#id": "Index_Component_id_23"
+                        }
+                    },
+                    {
+                        "measure": {
+                            "observation": "200 to 500 megohms",
+                            "__metadata": {
+                                "#type": "Measure",
+                                "#id": "Measure_id_39"
+                            }
+                        },
+                        "health_test_name": "Core-to-Ground Resistance (Megger) Test",
+                        "__metadata": {
+                            "#type": "Index_Component",
+                            "#id": "Index_Component_id_24"
+                        }
+                    },
+                    {
+                        "measure": {
+                            "observation": "7% to 10% difference between phases or from factory tests",
+                            "__metadata": {
+                                "#type": "Measure",
+                                "#id": "Measure_id_40"
+                            }
+                        },
+                        "health_test_name": "Ultrasonic and Sonic Fault Detection",
+                        "__metadata": {
+                            "#type": "Index_Component",
+                            "#id": "Index_Component_id_25"
+                        }
+                    },
+                    {
+                        "measure": [
+                            {
+                                "observation": "Results normal",
+                                "__metadata": {
+                                    "#type": "Measure",
+                                    "#id": "Measure_id_41"
+                                }
+                            },
+                            {
+                                "observation": "Minor deviation compared to prior tests",
+                                "__metadata": {
+                                    "#type": "Measure",
+                                    "#id": "Measure_id_42"
+                                }
+                            }
+                        ],
+                        "health_test_name": "Vibration Analysis",
+                        "__metadata": {
+                            "#type": "Index_Component",
+                            "#id": "Index_Component_id_26"
+                        }
+                    },
+                    {
+                        "measure": {
+                            "observation": "Minor deviation compared to prior tests",
+                            "__metadata": {
+                                "#type": "Measure",
+                                "#id": "Measure_id_43"
+                            }
+                        },
+                        "health_test_name": "Frequency Response Analysis",
+                        "__metadata": {
+                            "#type": "Index_Component",
+                            "#id": "Index_Component_id_27"
+                        }
+                    },
+                    {
+                        "measure": {
+                            "observation": "Minimal degradation",
+                            "__metadata": {
+                                "#type": "Measure",
+                                "#id": "Measure_id_44"
+                            }
+                        },
+                        "health_test_name": "Internal Inspection",
+                        "__metadata": {
+                            "#type": "Index_Component",
+                            "#id": "Index_Component_id_28"
+                        }
+                    },
+                    {
+                        "measure": {
+                            "observation": "600-300 (moderate polymerization decrease)",
+                            "__metadata": {
+                                "#type": "Measure",
+                                "#id": "Measure_id_45"
+                            }
+                        },
+                        "health_test_name": "Degree of Polymerization",
+                        "__metadata": {
+                            "#type": "Index_Component",
+                            "#id": "Index_Component_id_29"
+                        }
+                    },
+                    {
+                        "measure": [
+                            {
+                                "measure_value": 160,
+                                "gas_measure": "2FAL Furans PPB",
+                                "__metadata": {
+                                    "#type": "Measure",
+                                    "#id": "Measure_id_46"
+                                }
+                            },
+                            {
+                                "measure_value": 1,
+                                "gas_measure": "H PPM",
+                                "__metadata": {
+                                    "#type": "Measure",
+                                    "#id": "Measure_id_47"
+                                }
+                            },
+                            {
+                                "measure_value": 5,
+                                "gas_measure": "CO2 PPM",
+                                "__metadata": {
+                                    "#type": "Measure",
+                                    "#id": "Measure_id_48"
+                                }
+                            },
+                            {
+                                "measure_value": 0,
+                                "gas_measure": "CH4 PPM",
+                                "__metadata": {
+                                    "#type": "Measure",
+                                    "#id": "Measure_id_49"
+                                }
+                            },
+                            {
+                                "measure_value": 2,
+                                "gas_measure": "C2H6 PPM",
+                                "__metadata": {
+                                    "#type": "Measure",
+                                    "#id": "Measure_id_50"
+                                }
+                            },
+                            {
+                                "measure_value": 30,
+                                "gas_measure": "C2H4 PPM",
+                                "__metadata": {
+                                    "#type": "Measure",
+                                    "#id": "Measure_id_51"
+                                }
+                            },
+                            {
+                                "measure_value": 60,
+                                "gas_measure": "CO PPM",
+                                "__metadata": {
+                                    "#type": "Measure",
+                                    "#id": "Measure_id_52"
+                                }
+                            },
+                            {
+                                "measure_value": 0,
+                                "gas_measure": "C2H2 PPM",
+                                "__metadata": {
+                                    "#type": "Measure",
+                                    "#id": "Measure_id_53"
+                                }
+                            }
+                        ],
+                        "health_component_name": "DGA",
+                        "__metadata": {
+                            "#type": "Index_Component",
+                            "#id": "Index_Component_id_30"
+                        }
+                    }
+                ],
+                "__metadata": {
+                    "#type": "Index",
+                    "#id": "Index_id_3"
+                },
+                "index_name": "Health"
+            }
+        ],
+        "__metadata": {
+            "#type": "Assessment",
+            "#id": "Assessment_id_1"
+        }
+    }]
+}

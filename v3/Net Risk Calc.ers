@@ -64,7 +64,7 @@
     <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
     <conditionSection rowCount="50" columnWidthFactor="0.5"/>
     <ruleSection columnCount="20">
-      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+      <ruleColumnList ruleId="0" columnWidth="700" pRule="#//@ruleset/@rules.0">
         <actionValueSetCellList valueSet="Inspection.net_condition_index*Inspection.criticality_score">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.net_risk = Inspection.net_condition_index * Inspection.criticality_score" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>

@@ -5,7 +5,7 @@
     <rule/>
   </ruleset>
   <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
-    <actionSection rowCount="50" columnWidthFactor="0.5"/>
+    <actionSection rowCount="50" scrollRowTop="17" columnWidthFactor="0.5"/>
     <scopeSection>
       <rootNode/>
     </scopeSection>

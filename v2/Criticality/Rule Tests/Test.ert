@@ -30,7 +30,7 @@
                 <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Reportable" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/observation"/>
               </children>
             </children>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" manuallyCreated="true" expanded="false" eReference="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index/index_Component" eClass="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" manuallyCreated="true" eReference="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index/index_Component" eClass="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component">
               <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Safety Impact" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/criticality_component_name"/>
               <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/risk_component_name"/>
               <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/measure" eClass="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure">
@@ -80,7 +80,7 @@
                 <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="In Line Spare Automatic Switch Over" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/observation"/>
               </children>
             </children>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="14" manuallyCreated="true" expanded="false" eReference="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index/index_Component" eClass="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="14" manuallyCreated="true" eReference="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index/index_Component" eClass="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component">
               <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Spares availability" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/criticality_component_name"/>
               <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="29" manuallyCreated="true" eReference="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/measure" eClass="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure">
                 <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Spares availability" eAttribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/measure_name"/>
