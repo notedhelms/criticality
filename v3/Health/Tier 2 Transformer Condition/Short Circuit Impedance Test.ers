@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_JtgzHOSQEe2xuLnI-gPt6w" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_U-wb0u2mEe2KsKz9ni_Hog" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
   <languageCode>en_US</languageCode>
   <ruleset vocabularyUpdateStamp="_0gXf0OSPEe2xuLnI-gPt6w" vocabulary="../../Training_Vocabulary.ecore#/">
     <rule/>
-    <rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
       <condition>
-        <opaqueExpression expression="Asset.inspection.short_Circuit_Impedence.measurement_result = 'Less than 1% difference from nameplate impedance'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.short_Circuit_Impedence.measurement_result = 'Less than 1% difference from nameplate impedance'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+        <opaqueExpression expression="impedence.measurement_result = 'Less than 1% difference from nameplate impedance'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="impedence.measurement_result = 'Less than 1% difference from nameplate impedance'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
             <referencedTermList>
-              <terms text="measurement_result" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.inspection.short_Circuit_Impedence.measurement_result">
-                <parentTerm text="short_Circuit_Impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="Asset.inspection.short_Circuit_Impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="measurement_result" datatype="String" termtype="ATTRIBUTE" fulltext="impedence.measurement_result">
+                <parentTerm text="impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
@@ -18,14 +18,14 @@
             </referencedTermList>
           </parserOutput>
         </opaqueExpression>
-        <viewExpressions lhs="Asset.inspection.short_Circuit_Impedence.measurement_result" rhs="'Less than 1% difference from nameplate impedance'"/>
+        <viewExpressions lhs="impedence.measurement_result" rhs="'Less than 1% difference from nameplate impedance'"/>
       </condition>
       <action>
-        <opaqueExpression expression="Asset.inspection.short_Circuit_Impedence.index_adjustment = 0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.short_Circuit_Impedence.index_adjustment = 0" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="impedence.index_adjustment = 0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="impedence.index_adjustment = 0" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.short_Circuit_Impedence.index_adjustment">
-                <parentTerm text="short_Circuit_Impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="Asset.inspection.short_Circuit_Impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="impedence.index_adjustment">
+                <parentTerm text="impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
@@ -33,7 +33,7 @@
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="short_Circuit_Impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="Asset.inspection.short_Circuit_Impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                 <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                   <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                 </parentTerm>
@@ -43,13 +43,13 @@
         </opaqueExpression>
       </action>
     </rule>
-    <rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
       <condition>
-        <opaqueExpression expression="Asset.inspection.short_Circuit_Impedence.measurement_result = '1% to 3% difference from nameplate impedance (minor degradation)'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.short_Circuit_Impedence.measurement_result = '1% to 3% difference from nameplate impedance (minor degradation)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+        <opaqueExpression expression="impedence.measurement_result = '1% to 3% difference from nameplate impedance (minor degradation)'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="impedence.measurement_result = '1% to 3% difference from nameplate impedance (minor degradation)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
             <referencedTermList>
-              <terms text="measurement_result" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.inspection.short_Circuit_Impedence.measurement_result">
-                <parentTerm text="short_Circuit_Impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="Asset.inspection.short_Circuit_Impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="measurement_result" datatype="String" termtype="ATTRIBUTE" fulltext="impedence.measurement_result">
+                <parentTerm text="impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
@@ -58,14 +58,14 @@
             </referencedTermList>
           </parserOutput>
         </opaqueExpression>
-        <viewExpressions lhs="Asset.inspection.short_Circuit_Impedence.measurement_result" rhs="'1% to 3% difference from nameplate impedance (minor degradation)'"/>
+        <viewExpressions lhs="impedence.measurement_result" rhs="'1% to 3% difference from nameplate impedance (minor degradation)'"/>
       </condition>
       <action>
-        <opaqueExpression expression="Asset.inspection.short_Circuit_Impedence.index_adjustment = -.5">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.short_Circuit_Impedence.index_adjustment = -0.5" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="impedence.index_adjustment = -.5">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="impedence.index_adjustment = -0.5" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.short_Circuit_Impedence.index_adjustment">
-                <parentTerm text="short_Circuit_Impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="Asset.inspection.short_Circuit_Impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="impedence.index_adjustment">
+                <parentTerm text="impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
@@ -73,7 +73,7 @@
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="short_Circuit_Impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="Asset.inspection.short_Circuit_Impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                 <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                   <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                 </parentTerm>
@@ -83,13 +83,13 @@
         </opaqueExpression>
       </action>
     </rule>
-    <rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
       <condition>
-        <opaqueExpression expression="Asset.inspection.short_Circuit_Impedence.measurement_result = '3% to 5% difference from nameplate impedance (significant degradation)'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.short_Circuit_Impedence.measurement_result = '3% to 5% difference from nameplate impedance (significant degradation)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+        <opaqueExpression expression="impedence.measurement_result = '3% to 5% difference from nameplate impedance (significant degradation)'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="impedence.measurement_result = '3% to 5% difference from nameplate impedance (significant degradation)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
             <referencedTermList>
-              <terms text="measurement_result" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.inspection.short_Circuit_Impedence.measurement_result">
-                <parentTerm text="short_Circuit_Impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="Asset.inspection.short_Circuit_Impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="measurement_result" datatype="String" termtype="ATTRIBUTE" fulltext="impedence.measurement_result">
+                <parentTerm text="impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
@@ -98,14 +98,14 @@
             </referencedTermList>
           </parserOutput>
         </opaqueExpression>
-        <viewExpressions lhs="Asset.inspection.short_Circuit_Impedence.measurement_result" rhs="'3% to 5% difference from nameplate impedance (significant degradation)'"/>
+        <viewExpressions lhs="impedence.measurement_result" rhs="'3% to 5% difference from nameplate impedance (significant degradation)'"/>
       </condition>
       <action>
-        <opaqueExpression expression="Asset.inspection.short_Circuit_Impedence.index_adjustment = -1">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.short_Circuit_Impedence.index_adjustment = -1" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="impedence.index_adjustment = -1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="impedence.index_adjustment = -1" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.short_Circuit_Impedence.index_adjustment">
-                <parentTerm text="short_Circuit_Impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="Asset.inspection.short_Circuit_Impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="impedence.index_adjustment">
+                <parentTerm text="impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
@@ -113,7 +113,7 @@
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="short_Circuit_Impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="Asset.inspection.short_Circuit_Impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                 <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                   <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                 </parentTerm>
@@ -123,13 +123,13 @@
         </opaqueExpression>
       </action>
     </rule>
-    <rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
       <condition>
-        <opaqueExpression expression="Asset.inspection.short_Circuit_Impedence.measurement_result = 'Greater than 5% difference from nameplate impedance (severe degradation)'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.short_Circuit_Impedence.measurement_result = 'Greater than 5% difference from nameplate impedance (severe degradation)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+        <opaqueExpression expression="impedence.measurement_result = 'Greater than 5% difference from nameplate impedance (severe degradation)'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="impedence.measurement_result = 'Greater than 5% difference from nameplate impedance (severe degradation)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
             <referencedTermList>
-              <terms text="measurement_result" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.inspection.short_Circuit_Impedence.measurement_result">
-                <parentTerm text="short_Circuit_Impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="Asset.inspection.short_Circuit_Impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="measurement_result" datatype="String" termtype="ATTRIBUTE" fulltext="impedence.measurement_result">
+                <parentTerm text="impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
@@ -138,14 +138,14 @@
             </referencedTermList>
           </parserOutput>
         </opaqueExpression>
-        <viewExpressions lhs="Asset.inspection.short_Circuit_Impedence.measurement_result" rhs="'Greater than 5% difference from nameplate impedance (severe degradation)'"/>
+        <viewExpressions lhs="impedence.measurement_result" rhs="'Greater than 5% difference from nameplate impedance (severe degradation)'"/>
       </condition>
       <action>
-        <opaqueExpression expression="Asset.inspection.short_Circuit_Impedence.index_adjustment = -5">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.short_Circuit_Impedence.index_adjustment = -5" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="impedence.index_adjustment = -5">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="impedence.index_adjustment = -5" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.short_Circuit_Impedence.index_adjustment">
-                <parentTerm text="short_Circuit_Impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="Asset.inspection.short_Circuit_Impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="impedence.index_adjustment">
+                <parentTerm text="impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
@@ -153,7 +153,7 @@
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="short_Circuit_Impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="Asset.inspection.short_Circuit_Impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                 <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                   <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                 </parentTerm>
@@ -163,11 +163,11 @@
         </opaqueExpression>
       </action>
       <action>
-        <opaqueExpression expression="Asset.inspection.short_Circuit_Impedence.note = 'May indicate serious problem requiring immediate evaluation, additional testing, consultation with experts, and remediation prior to re-energization.'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.short_Circuit_Impedence.note = 'May indicate serious problem requiring immediate evaluation, additional testing, consultation with experts, and remediation prior to re-energization.'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="impedence.note = 'May indicate serious problem requiring immediate evaluation, additional testing, consultation with experts, and remediation prior to re-energization.'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="impedence.note = 'May indicate serious problem requiring immediate evaluation, additional testing, consultation with experts, and remediation prior to re-energization.'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="note" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.inspection.short_Circuit_Impedence.note">
-                <parentTerm text="short_Circuit_Impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="Asset.inspection.short_Circuit_Impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="note" datatype="String" termtype="ATTRIBUTE" fulltext="impedence.note">
+                <parentTerm text="impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
@@ -175,7 +175,7 @@
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="short_Circuit_Impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="Asset.inspection.short_Circuit_Impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                 <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                   <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                 </parentTerm>
@@ -185,9 +185,32 @@
         </opaqueExpression>
       </action>
     </rule>
-    <logicalVariable entity="../../Training_Vocabulary.ecore#//Asset">
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1 #//@ruleset/@rules.2 #//@ruleset/@rules.3 #//@ruleset/@rules.4" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Short Circuit Impedence Test Result: {impedence.measurement_result}; Adjustment to Transformer Condition Index: {impedence.index_adjustment}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Short Circuit Impedence Test Result:  + impedence.measurement_result + ; Adjustment to Transformer Condition Index:  + impedence.index_adjustment" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="impedence.index_adjustment">
+              <parentTerm text="impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </parentTerm>
+            </terms>
+            <terms text="measurement_result" datatype="String" termtype="ATTRIBUTE" fulltext="impedence.measurement_result">
+              <parentTerm text="impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable entity="../../Training_Vocabulary.ecore#//Asset" ruleStatements="#//@ruleset/@ruleStatements.0">
       <extension association="true" entity="../../Training_Vocabulary.ecore#//Inspection" traversedAssocRole="../../Training_Vocabulary.ecore#//Asset/inspection">
-        <extension association="true" entity="../../Training_Vocabulary.ecore#//Condition_Assessment/Short_Circuit_Impedence" traversedAssocRole="../../Training_Vocabulary.ecore#//Inspection/short_Circuit_Impedence">
+        <extension explicit="true" association="true" entity="../../Training_Vocabulary.ecore#//Condition_Assessment/Short_Circuit_Impedence" traversedAssocRole="../../Training_Vocabulary.ecore#//Inspection/short_Circuit_Impedence">
+          <alias value="impedence"/>
           <referencedAttributes attribute="../../Training_Vocabulary.ecore#//Condition_Assessment/Short_Circuit_Impedence/measurement_result"/>
           <referencedAttributes attribute="../../Training_Vocabulary.ecore#//Condition_Assessment/Short_Circuit_Impedence/index_adjustment"/>
           <referencedAttributes attribute="../../Training_Vocabulary.ecore#//Condition_Assessment/Short_Circuit_Impedence/note"/>
@@ -195,15 +218,15 @@
       </extension>
     </logicalVariable>
   </ruleset>
-  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="30" sashWeightConditionsIf="21">
     <actionSection rowCount="50" columnWidthFactor="0.5">
-      <actionItemList>
+      <actionItemList rowHeight="129">
         <valueSetCell/>
-        <expressionCell external="Asset.inspection.short_Circuit_Impedence.index_adjustment">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.short_Circuit_Impedence.index_adjustment" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <expressionCell external="impedence.index_adjustment">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="impedence.index_adjustment" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.short_Circuit_Impedence.index_adjustment">
-                <parentTerm text="short_Circuit_Impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="Asset.inspection.short_Circuit_Impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="impedence.index_adjustment">
+                <parentTerm text="impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
@@ -213,13 +236,13 @@
           </parserOutput>
         </expressionCell>
       </actionItemList>
-      <actionItemList>
+      <actionItemList rowHeight="78">
         <valueSetCell/>
-        <expressionCell external="Asset.inspection.short_Circuit_Impedence.note">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.short_Circuit_Impedence.note" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <expressionCell external="impedence.note">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="impedence.note" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="note" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.inspection.short_Circuit_Impedence.note">
-                <parentTerm text="short_Circuit_Impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="Asset.inspection.short_Circuit_Impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="note" datatype="String" termtype="ATTRIBUTE" fulltext="impedence.note">
+                <parentTerm text="impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
@@ -232,9 +255,9 @@
     </actionSection>
     <scopeSection>
       <rootNode>
-        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
-          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
-            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
               <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@referencedAttributes.0"/>
               <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@referencedAttributes.1"/>
               <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@referencedAttributes.2"/>
@@ -244,15 +267,39 @@
       </rootNode>
     </scopeSection>
     <filterSection rowCount="50"/>
-    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList rowHeight="141" ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1:4"/>
+        <text external="Short Circuit Impedence Test Result: {impedence.measurement_result}; Adjustment to Transformer Condition Index: {impedence.index_adjustment}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Short Circuit Impedence Test Result:  + impedence.measurement_result + ; Adjustment to Transformer Condition Index:  + impedence.index_adjustment" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="impedence.index_adjustment">
+                <parentTerm text="impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="measurement_result" datatype="String" termtype="ATTRIBUTE" fulltext="impedence.measurement_result">
+                <parentTerm text="impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
     <conditionSection rowCount="50" columnWidthFactor="0.5">
       <conditionItemList>
         <valueSetCell/>
-        <expressionCell external="Asset.inspection.short_Circuit_Impedence.measurement_result">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.short_Circuit_Impedence.measurement_result" datatype="String" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+        <expressionCell external="impedence.measurement_result">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="impedence.measurement_result" datatype="String" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
             <referencedTermList>
-              <terms text="measurement_result" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.inspection.short_Circuit_Impedence.measurement_result">
-                <parentTerm text="short_Circuit_Impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="Asset.inspection.short_Circuit_Impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="measurement_result" datatype="String" termtype="ATTRIBUTE" fulltext="impedence.measurement_result">
+                <parentTerm text="impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
@@ -267,10 +314,10 @@
       <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0"/>
       <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
         <conditionValueSetCellList valueSet="'Less than 1% difference from nameplate impedance'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.short_Circuit_Impedence.measurement_result = 'Less than 1% difference from nameplate impedance'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="impedence.measurement_result = 'Less than 1% difference from nameplate impedance'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
             <referencedTermList>
-              <terms text="measurement_result" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.inspection.short_Circuit_Impedence.measurement_result">
-                <parentTerm text="short_Circuit_Impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="Asset.inspection.short_Circuit_Impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="measurement_result" datatype="String" termtype="ATTRIBUTE" fulltext="impedence.measurement_result">
+                <parentTerm text="impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
@@ -280,10 +327,10 @@
           </parserOutput>
         </conditionValueSetCellList>
         <actionValueSetCellList valueSet="0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.short_Circuit_Impedence.index_adjustment = 0" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="impedence.index_adjustment = 0" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.short_Circuit_Impedence.index_adjustment">
-                <parentTerm text="short_Circuit_Impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="Asset.inspection.short_Circuit_Impedence">
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="impedence.index_adjustment">
+                <parentTerm text="impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="impedence">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
                   </parentTerm>
@@ -291,7 +338,7 @@
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="short_Circuit_Impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="Asset.inspection.short_Circuit_Impedence">
+              <terms text="impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="impedence">
                 <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
                   <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
                 </parentTerm>
@@ -302,10 +349,10 @@
       </ruleColumnList>
       <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
         <conditionValueSetCellList valueSet="'1% to 3% difference from nameplate impedance (minor degradation)'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.short_Circuit_Impedence.measurement_result = '1% to 3% difference from nameplate impedance (minor degradation)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="impedence.measurement_result = '1% to 3% difference from nameplate impedance (minor degradation)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
             <referencedTermList>
-              <terms text="measurement_result" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.inspection.short_Circuit_Impedence.measurement_result">
-                <parentTerm text="short_Circuit_Impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="Asset.inspection.short_Circuit_Impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="measurement_result" datatype="String" termtype="ATTRIBUTE" fulltext="impedence.measurement_result">
+                <parentTerm text="impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
@@ -315,10 +362,10 @@
           </parserOutput>
         </conditionValueSetCellList>
         <actionValueSetCellList valueSet="-.5">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.short_Circuit_Impedence.index_adjustment = -0.5" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="impedence.index_adjustment = -0.5" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.short_Circuit_Impedence.index_adjustment">
-                <parentTerm text="short_Circuit_Impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="Asset.inspection.short_Circuit_Impedence">
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="impedence.index_adjustment">
+                <parentTerm text="impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="impedence">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
                   </parentTerm>
@@ -326,7 +373,7 @@
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="short_Circuit_Impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="Asset.inspection.short_Circuit_Impedence">
+              <terms text="impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="impedence">
                 <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
                   <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
                 </parentTerm>
@@ -337,10 +384,10 @@
       </ruleColumnList>
       <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
         <conditionValueSetCellList valueSet="'3% to 5% difference from nameplate impedance (significant degradation)'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.short_Circuit_Impedence.measurement_result = '3% to 5% difference from nameplate impedance (significant degradation)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="impedence.measurement_result = '3% to 5% difference from nameplate impedance (significant degradation)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
             <referencedTermList>
-              <terms text="measurement_result" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.inspection.short_Circuit_Impedence.measurement_result">
-                <parentTerm text="short_Circuit_Impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="Asset.inspection.short_Circuit_Impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="measurement_result" datatype="String" termtype="ATTRIBUTE" fulltext="impedence.measurement_result">
+                <parentTerm text="impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
@@ -350,10 +397,10 @@
           </parserOutput>
         </conditionValueSetCellList>
         <actionValueSetCellList valueSet="-1">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.short_Circuit_Impedence.index_adjustment = -1" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="impedence.index_adjustment = -1" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.short_Circuit_Impedence.index_adjustment">
-                <parentTerm text="short_Circuit_Impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="Asset.inspection.short_Circuit_Impedence">
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="impedence.index_adjustment">
+                <parentTerm text="impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="impedence">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
                   </parentTerm>
@@ -361,7 +408,7 @@
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="short_Circuit_Impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="Asset.inspection.short_Circuit_Impedence">
+              <terms text="impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="impedence">
                 <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
                   <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
                 </parentTerm>
@@ -372,10 +419,10 @@
       </ruleColumnList>
       <ruleColumnList ruleId="4" columnWidth="100" pRule="#//@ruleset/@rules.4">
         <conditionValueSetCellList valueSet="'Greater than 5% difference from nameplate impedance (severe degradation)'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.short_Circuit_Impedence.measurement_result = 'Greater than 5% difference from nameplate impedance (severe degradation)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="impedence.measurement_result = 'Greater than 5% difference from nameplate impedance (severe degradation)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
             <referencedTermList>
-              <terms text="measurement_result" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.inspection.short_Circuit_Impedence.measurement_result">
-                <parentTerm text="short_Circuit_Impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="Asset.inspection.short_Circuit_Impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="measurement_result" datatype="String" termtype="ATTRIBUTE" fulltext="impedence.measurement_result">
+                <parentTerm text="impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="impedence" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
@@ -385,10 +432,10 @@
           </parserOutput>
         </conditionValueSetCellList>
         <actionValueSetCellList valueSet="-5">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.short_Circuit_Impedence.index_adjustment = -5" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="impedence.index_adjustment = -5" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.short_Circuit_Impedence.index_adjustment">
-                <parentTerm text="short_Circuit_Impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="Asset.inspection.short_Circuit_Impedence">
+              <terms text="index_adjustment" datatype="Decimal" termtype="ATTRIBUTE" fulltext="impedence.index_adjustment">
+                <parentTerm text="impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="impedence">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
                   </parentTerm>
@@ -396,7 +443,7 @@
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="short_Circuit_Impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="Asset.inspection.short_Circuit_Impedence">
+              <terms text="impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="impedence">
                 <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
                   <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
                 </parentTerm>
@@ -405,10 +452,10 @@
           </parserOutput>
         </actionValueSetCellList>
         <actionValueSetCellList valueSet="'May indicate serious problem requiring immediate evaluation, additional testing, consultation with experts, and remediation prior to re-energization.'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.short_Circuit_Impedence.note = 'May indicate serious problem requiring immediate evaluation, additional testing, consultation with experts, and remediation prior to re-energization.'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="impedence.note = 'May indicate serious problem requiring immediate evaluation, additional testing, consultation with experts, and remediation prior to re-energization.'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="note" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.inspection.short_Circuit_Impedence.note">
-                <parentTerm text="short_Circuit_Impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="Asset.inspection.short_Circuit_Impedence">
+              <terms text="note" datatype="String" termtype="ATTRIBUTE" fulltext="impedence.note">
+                <parentTerm text="impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="impedence">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
                   </parentTerm>
@@ -416,7 +463,7 @@
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="short_Circuit_Impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="Asset.inspection.short_Circuit_Impedence">
+              <terms text="impedence" datatype="Condition_Assessment.Short_Circuit_Impedence" termtype="ENTITY" fulltext="impedence">
                 <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
                   <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
                 </parentTerm>

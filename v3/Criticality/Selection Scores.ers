@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_i3vU5OSSEe2xuLnI-gPt6w" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_1aDCdO2mEe2H0bnFBoowIg" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
   <languageCode>en_US</languageCode>
   <ruleset vocabularyUpdateStamp="_0gXf0OSPEe2xuLnI-gPt6w" vocabulary="../Training_Vocabulary.ecore#/">
     <rule>
@@ -5712,8 +5712,8 @@
       <action/>
     </rule>
     <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1 #//@ruleset/@rules.2 #//@ruleset/@rules.3" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
-      <text expression="Criticality compliance Environmental given description of [{criticality.compliance_Environmental.description}], score for selection set to [{criticality.compliance_Environmental.selection}]">
-        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality compliance Environmental given description of [ + criticality_compliance_Environmental.description + ], score for selection set to [ + criticality_compliance_Environmental.selection + ]" expressiontype="BRSTATEMENT">
+      <text expression="Criticality compliance Environmental component observation: [{criticality.compliance_Environmental.description}], score for selection set to [{criticality.compliance_Environmental.selection}]">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality compliance Environmental component observation: [ + criticality_compliance_Environmental.description + ], score for selection set to [ + criticality_compliance_Environmental.selection + ]" expressiontype="BRSTATEMENT">
           <referencedTermList>
             <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="criticality.compliance_Environmental.selection">
               <parentTerm text="compliance_Environmental" datatype="Criticality_Assessment.Compliance_Environmental" termtype="ENTITY" fulltext="criticality.compliance_Environmental" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
@@ -5734,8 +5734,8 @@
       </text>
     </ruleStatement>
     <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.4 #//@ruleset/@rules.5 #//@ruleset/@rules.6" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
-      <text expression="Criticality compliance NERC given description of [{criticality.compliance_NERC.description}], score for selection set to [{criticality.compliance_NERC.selection}]">
-        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality compliance NERC given description of [ + criticality_compliance_NERC.description + ], score for selection set to [ + criticality_compliance_NERC.selection + ]" expressiontype="BRSTATEMENT">
+      <text expression="Criticality compliance NERC component observation: [{criticality.compliance_NERC.description}], score for selection set to [{criticality.compliance_NERC.selection}]">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality compliance NERC component observation: [ + criticality_compliance_NERC.description + ], score for selection set to [ + criticality_compliance_NERC.selection + ]" expressiontype="BRSTATEMENT">
           <referencedTermList>
             <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="criticality.compliance_NERC.description">
               <parentTerm text="compliance_NERC" datatype="Criticality_Assessment.Compliance_NERC" termtype="ENTITY" fulltext="criticality.compliance_NERC" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
@@ -5756,8 +5756,8 @@
       </text>
     </ruleStatement>
     <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.7 #//@ruleset/@rules.8 #//@ruleset/@rules.9" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.2">
-      <text expression="Criticality compliance Other given description of [{criticality.compliance_Other.description}], score for selection set to [{criticality.compliance_Other.selection}]">
-        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality compliance Other given description of [ + criticality_compliance_Other.description + ], score for selection set to [ + criticality_compliance_Other.selection + ]" expressiontype="BRSTATEMENT">
+      <text expression="Criticality compliance Other component observation: [{criticality.compliance_Other.description}], score for selection set to [{criticality.compliance_Other.selection}]">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality compliance Other component observation: [ + criticality_compliance_Other.description + ], score for selection set to [ + criticality_compliance_Other.selection + ]" expressiontype="BRSTATEMENT">
           <referencedTermList>
             <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="criticality.compliance_Other.selection">
               <parentTerm text="compliance_Other" datatype="Criticality_Assessment.Compliance_Other" termtype="ENTITY" fulltext="criticality.compliance_Other" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.2">
@@ -5778,8 +5778,8 @@
       </text>
     </ruleStatement>
     <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.10 #//@ruleset/@rules.11 #//@ruleset/@rules.12 #//@ruleset/@rules.13 #//@ruleset/@rules.14 #//@ruleset/@rules.15" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.3">
-      <text expression="Criticality maintenance Mean Time Repair given description of [{criticality.maintenance_Mean_Time_Repair.description}], score for selection set to [{criticality.maintenance_Mean_Time_Repair.selection}]">
-        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality maintenance Mean Time Repair given description of [ + criticality_maintenance_Mean_Time_Repair.description + ], score for selection set to [ + criticality_maintenance_Mean_Time_Repair.selection + ]" expressiontype="BRSTATEMENT">
+      <text expression="Criticality maintenance Mean Time Repair component observation: [{criticality.maintenance_Mean_Time_Repair.description}], score for selection set to [{criticality.maintenance_Mean_Time_Repair.selection}]">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality maintenance Mean Time Repair component observation: [ + criticality_maintenance_Mean_Time_Repair.description + ], score for selection set to [ + criticality_maintenance_Mean_Time_Repair.selection + ]" expressiontype="BRSTATEMENT">
           <referencedTermList>
             <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="criticality.maintenance_Mean_Time_Repair.selection">
               <parentTerm text="maintenance_Mean_Time_Repair" datatype="Criticality_Assessment.Maintenance_Mean_Time_Repair" termtype="ENTITY" fulltext="criticality.maintenance_Mean_Time_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.3">
@@ -5800,8 +5800,8 @@
       </text>
     </ruleStatement>
     <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.16 #//@ruleset/@rules.17 #//@ruleset/@rules.18 #//@ruleset/@rules.19 #//@ruleset/@rules.20 #//@ruleset/@rules.21" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.4">
-      <text expression="Criticality maintenance Repair Costs given description of [{criticality.maintenance_Repair_Costs.description}], score for selection set to [{criticality.maintenance_Repair_Costs.selection}]">
-        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality maintenance Repair Costs given description of [ + criticality_maintenance_Repair_Costs.description + ], score for selection set to [ + criticality_maintenance_Repair_Costs.selection + ]" expressiontype="BRSTATEMENT">
+      <text expression="Criticality maintenance Repair Costs component observation: [{criticality.maintenance_Repair_Costs.description}], score for selection set to [{criticality.maintenance_Repair_Costs.selection}]">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality maintenance Repair Costs component observation: [ + criticality_maintenance_Repair_Costs.description + ], score for selection set to [ + criticality_maintenance_Repair_Costs.selection + ]" expressiontype="BRSTATEMENT">
           <referencedTermList>
             <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="criticality.maintenance_Repair_Costs.selection">
               <parentTerm text="maintenance_Repair_Costs" datatype="Criticality_Assessment.Maintenance_Repair_Costs" termtype="ENTITY" fulltext="criticality.maintenance_Repair_Costs" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.4">
@@ -5822,8 +5822,8 @@
       </text>
     </ruleStatement>
     <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.22 #//@ruleset/@rules.23 #//@ruleset/@rules.24 #//@ruleset/@rules.25 #//@ruleset/@rules.26 #//@ruleset/@rules.27" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.5">
-      <text expression="Criticality maintenance Schedule Compliance given description of [{criticality.maintenance_Schedule_Compliance.description}], score for selection set to [{criticality.maintenance_Schedule_Compliance.selection}]">
-        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality maintenance Schedule Compliance given description of [ + criticality_maintenance_Schedule_Compliance.description + ], score for selection set to [ + criticality_maintenance_Schedule_Compliance.selection + ]" expressiontype="BRSTATEMENT">
+      <text expression="Criticality maintenance Schedule Compliance component observation: [{criticality.maintenance_Schedule_Compliance.description}], score for selection set to [{criticality.maintenance_Schedule_Compliance.selection}]">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality maintenance Schedule Compliance component observation: [ + criticality_maintenance_Schedule_Compliance.description + ], score for selection set to [ + criticality_maintenance_Schedule_Compliance.selection + ]" expressiontype="BRSTATEMENT">
           <referencedTermList>
             <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="criticality.maintenance_Schedule_Compliance.selection">
               <parentTerm text="maintenance_Schedule_Compliance" datatype="Criticality_Assessment.Maintenance_Schedule_Compliance" termtype="ENTITY" fulltext="criticality.maintenance_Schedule_Compliance" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.5">
@@ -5844,8 +5844,8 @@
       </text>
     </ruleStatement>
     <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.28 #//@ruleset/@rules.29 #//@ruleset/@rules.30" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.6">
-      <text expression="Criticality reliability Customer Impact Circuit Priority given description of [{criticality.reliability_Customer_Impact_Circuit_Priority.description}], score for selection set to [{criticality.reliability_Customer_Impact_Circuit_Priority.selection}]">
-        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality reliability Customer Impact Circuit Priority given description of [ + criticality_reliability_Customer_Impact_Circuit_Priority.description + ], score for selection set to [ + criticality_reliability_Customer_Impact_Circuit_Priority.selection + ]" expressiontype="BRSTATEMENT">
+      <text expression="Criticality reliability Customer Impact Circuit Priority component observation: [{criticality.reliability_Customer_Impact_Circuit_Priority.description}], score for selection set to [{criticality.reliability_Customer_Impact_Circuit_Priority.selection}]">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality reliability Customer Impact Circuit Priority component observation: [ + criticality_reliability_Customer_Impact_Circuit_Priority.description + ], score for selection set to [ + criticality_reliability_Customer_Impact_Circuit_Priority.selection + ]" expressiontype="BRSTATEMENT">
           <referencedTermList>
             <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="criticality.reliability_Customer_Impact_Circuit_Priority.selection">
               <parentTerm text="reliability_Customer_Impact_Circuit_Priority" datatype="Criticality_Assessment.Reliability_Customer_Impact_Circuit_Priority" termtype="ENTITY" fulltext="criticality.reliability_Customer_Impact_Circuit_Priority" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.6">
@@ -5866,8 +5866,8 @@
       </text>
     </ruleStatement>
     <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.31 #//@ruleset/@rules.32 #//@ruleset/@rules.33 #//@ruleset/@rules.34" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.7">
-      <text expression="Criticality reliability Frequency Failure given description of [{criticality.reliability_Frequency_Failure.description}], score for selection set to [{criticality.reliability_Frequency_Failure.selection}]">
-        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality reliability Frequency Failure given description of [ + criticality_reliability_Frequency_Failure.description + ], score for selection set to [ + criticality_reliability_Frequency_Failure.selection + ]" expressiontype="BRSTATEMENT">
+      <text expression="Criticality reliability Frequency Failure component observation: [{criticality.reliability_Frequency_Failure.description}], score for selection set to [{criticality.reliability_Frequency_Failure.selection}]">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality reliability Frequency Failure component observation: [ + criticality_reliability_Frequency_Failure.description + ], score for selection set to [ + criticality_reliability_Frequency_Failure.selection + ]" expressiontype="BRSTATEMENT">
           <referencedTermList>
             <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="criticality.reliability_Frequency_Failure.description">
               <parentTerm text="reliability_Frequency_Failure" datatype="Criticality_Assessment.Reliability_Frequency_Failure" termtype="ENTITY" fulltext="criticality.reliability_Frequency_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.7">
@@ -5888,8 +5888,8 @@
       </text>
     </ruleStatement>
     <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.35 #//@ruleset/@rules.36 #//@ruleset/@rules.37 #//@ruleset/@rules.38 #//@ruleset/@rules.39" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.8">
-      <text expression="Criticality reliability Metrics given description of [{criticality.reliability_Metrics.description}], score for selection set to [{criticality.reliability_Metrics.selection}]">
-        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality reliability Metrics given description of [ + criticality_reliability_Metrics.description + ], score for selection set to [ + criticality_reliability_Metrics.selection + ]" expressiontype="BRSTATEMENT">
+      <text expression="Criticality reliability Metrics component observation: [{criticality.reliability_Metrics.description}], score for selection set to [{criticality.reliability_Metrics.selection}]">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality reliability Metrics component observation: [ + criticality_reliability_Metrics.description + ], score for selection set to [ + criticality_reliability_Metrics.selection + ]" expressiontype="BRSTATEMENT">
           <referencedTermList>
             <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="criticality.reliability_Metrics.description">
               <parentTerm text="reliability_Metrics" datatype="Criticality_Assessment.Reliability_Metrics" termtype="ENTITY" fulltext="criticality.reliability_Metrics" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.8">
@@ -5910,8 +5910,8 @@
       </text>
     </ruleStatement>
     <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.40 #//@ruleset/@rules.41 #//@ruleset/@rules.42 #//@ruleset/@rules.43 #//@ruleset/@rules.44" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.9">
-      <text expression="Criticality reliability Redundancy given description of [{criticality.reliability_Redundancy.description}], score for selection set to [{criticality.reliability_Redundancy.selection}]">
-        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality reliability Redundancy given description of [ + criticality_reliability_Redundancy.description + ], score for selection set to [ + criticality_reliability_Redundancy.selection + ]" expressiontype="BRSTATEMENT">
+      <text expression="Criticality reliability Redundancy component observation: [{criticality.reliability_Redundancy.description}], score for selection set to [{criticality.reliability_Redundancy.selection}]">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality reliability Redundancy component observation: [ + criticality_reliability_Redundancy.description + ], score for selection set to [ + criticality_reliability_Redundancy.selection + ]" expressiontype="BRSTATEMENT">
           <referencedTermList>
             <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="criticality.reliability_Redundancy.selection">
               <parentTerm text="reliability_Redundancy" datatype="Criticality_Assessment.Reliability_Redundancy" termtype="ENTITY" fulltext="criticality.reliability_Redundancy" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.9">
@@ -5932,8 +5932,8 @@
       </text>
     </ruleStatement>
     <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.45 #//@ruleset/@rules.46 #//@ruleset/@rules.47 #//@ruleset/@rules.48" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.10">
-      <text expression="Criticality reliability Transmission Grid given description of [{criticality.reliability_Transmission_Grid.description}], score for selection set to [{criticality.reliability_Transmission_Grid.selection}]">
-        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality reliability Transmission Grid given description of [ + criticality_reliability_Transmission_Grid.description + ], score for selection set to [ + criticality_reliability_Transmission_Grid.selection + ]" expressiontype="BRSTATEMENT">
+      <text expression="Criticality reliability Transmission Grid component observation: [{criticality.reliability_Transmission_Grid.description}], score for selection set to [{criticality.reliability_Transmission_Grid.selection}]">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality reliability Transmission Grid component observation: [ + criticality_reliability_Transmission_Grid.description + ], score for selection set to [ + criticality_reliability_Transmission_Grid.selection + ]" expressiontype="BRSTATEMENT">
           <referencedTermList>
             <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="criticality.reliability_Transmission_Grid.description">
               <parentTerm text="reliability_Transmission_Grid" datatype="Criticality_Assessment.Reliability_Transmission_Grid" termtype="ENTITY" fulltext="criticality.reliability_Transmission_Grid" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.10">
@@ -5954,8 +5954,8 @@
       </text>
     </ruleStatement>
     <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.49 #//@ruleset/@rules.50 #//@ruleset/@rules.51 #//@ruleset/@rules.52" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.13">
-      <text expression="Criticality safety Inj During Failure given description of [{criticality.safety_Inj_During_Failure.description}], score for selection set to [{criticality.safety_Inj_During_Failure.selection}]">
-        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality safety Inj During Failure given description of [ + criticality_safety_Inj_During_Failure.description + ], score for selection set to [ + criticality_safety_Inj_During_Failure.selection + ]" expressiontype="BRSTATEMENT">
+      <text expression="Criticality safety Inj During Failure component observation: [{criticality.safety_Inj_During_Failure.description}], score for selection set to [{criticality.safety_Inj_During_Failure.selection}]">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality safety Inj During Failure component observation: [ + criticality_safety_Inj_During_Failure.description + ], score for selection set to [ + criticality_safety_Inj_During_Failure.selection + ]" expressiontype="BRSTATEMENT">
           <referencedTermList>
             <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="criticality.safety_Inj_During_Failure.selection">
               <parentTerm text="safety_Inj_During_Failure" datatype="Criticality_Assessment.Safety_Inj_During_Repair" termtype="ENTITY" fulltext="criticality.safety_Inj_During_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.13">
@@ -5976,8 +5976,8 @@
       </text>
     </ruleStatement>
     <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.53 #//@ruleset/@rules.54 #//@ruleset/@rules.55 #//@ruleset/@rules.56" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.11">
-      <text expression="Criticality safety Inj From Failure given description of [{criticality.safety_Inj_From_Failure.description}], score for selection set to [{criticality.safety_Inj_From_Failure.selection}]">
-        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality safety Inj From Failure given description of [ + criticality_safety_Inj_From_Failure.description + ], score for selection set to [ + criticality_safety_Inj_From_Failure.selection + ]" expressiontype="BRSTATEMENT">
+      <text expression="Criticality safety Inj From Failure component observation: [{criticality.safety_Inj_From_Failure.description}], score for selection set to [{criticality.safety_Inj_From_Failure.selection}]">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality safety Inj From Failure component observation: [ + criticality_safety_Inj_From_Failure.description + ], score for selection set to [ + criticality_safety_Inj_From_Failure.selection + ]" expressiontype="BRSTATEMENT">
           <referencedTermList>
             <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="criticality.safety_Inj_From_Failure.selection">
               <parentTerm text="safety_Inj_From_Failure" datatype="Criticality_Assessment.Safety_Inj_From_Failure" termtype="ENTITY" fulltext="criticality.safety_Inj_From_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.11">
@@ -5998,8 +5998,8 @@
       </text>
     </ruleStatement>
     <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.57 #//@ruleset/@rules.58 #//@ruleset/@rules.59 #//@ruleset/@rules.60 #//@ruleset/@rules.61" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.12">
-      <text expression="Criticality spares Availability given description of [{criticality.spares_Availability.description}], score for selection set to [{criticality.spares_Availability.selection}]">
-        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality spares Availability given description of [ + criticality_spares_Availability.description + ], score for selection set to [ + criticality_spares_Availability.selection + ]" expressiontype="BRSTATEMENT">
+      <text expression="Criticality spares Availability component observation: [{criticality.spares_Availability.description}], score for selection set to [{criticality.spares_Availability.selection}]">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality spares Availability component observation: [ + criticality_spares_Availability.description + ], score for selection set to [ + criticality_spares_Availability.selection + ]" expressiontype="BRSTATEMENT">
           <referencedTermList>
             <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="criticality.spares_Availability.selection">
               <parentTerm text="spares_Availability" datatype="Criticality_Assessment.Spares_Availability" termtype="ENTITY" fulltext="criticality.spares_Availability" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.12">
@@ -6652,8 +6652,8 @@
     <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="190" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
       <ruleStatementItemList rowHeight="21" ruleStatement="#//@ruleset/@ruleStatements.0">
         <reference external="1:3"/>
-        <text external="Criticality compliance Environmental given description of [{criticality.compliance_Environmental.description}], score for selection set to [{criticality.compliance_Environmental.selection}]">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality compliance Environmental given description of [ + criticality_compliance_Environmental.description + ], score for selection set to [ + criticality_compliance_Environmental.selection + ]" expressiontype="BRSTATEMENT">
+        <text external="Criticality compliance Environmental component observation: [{criticality.compliance_Environmental.description}], score for selection set to [{criticality.compliance_Environmental.selection}]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality compliance Environmental component observation: [ + criticality_compliance_Environmental.description + ], score for selection set to [ + criticality_compliance_Environmental.selection + ]" expressiontype="BRSTATEMENT">
             <referencedTermList>
               <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="criticality.compliance_Environmental.selection">
                 <parentTerm text="compliance_Environmental" datatype="Criticality_Assessment.Compliance_Environmental" termtype="ENTITY" fulltext="criticality.compliance_Environmental" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
@@ -6675,8 +6675,8 @@
       </ruleStatementItemList>
       <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
         <reference external="4:6"/>
-        <text external="Criticality compliance NERC given description of [{criticality.compliance_NERC.description}], score for selection set to [{criticality.compliance_NERC.selection}]">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality compliance NERC given description of [ + criticality_compliance_NERC.description + ], score for selection set to [ + criticality_compliance_NERC.selection + ]" expressiontype="BRSTATEMENT">
+        <text external="Criticality compliance NERC component observation: [{criticality.compliance_NERC.description}], score for selection set to [{criticality.compliance_NERC.selection}]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality compliance NERC component observation: [ + criticality_compliance_NERC.description + ], score for selection set to [ + criticality_compliance_NERC.selection + ]" expressiontype="BRSTATEMENT">
             <referencedTermList>
               <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="criticality.compliance_NERC.description">
                 <parentTerm text="compliance_NERC" datatype="Criticality_Assessment.Compliance_NERC" termtype="ENTITY" fulltext="criticality.compliance_NERC" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
@@ -6698,8 +6698,8 @@
       </ruleStatementItemList>
       <ruleStatementItemList rowHeight="26" ruleStatement="#//@ruleset/@ruleStatements.2">
         <reference external="7:9"/>
-        <text external="Criticality compliance Other given description of [{criticality.compliance_Other.description}], score for selection set to [{criticality.compliance_Other.selection}]">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality compliance Other given description of [ + criticality_compliance_Other.description + ], score for selection set to [ + criticality_compliance_Other.selection + ]" expressiontype="BRSTATEMENT">
+        <text external="Criticality compliance Other component observation: [{criticality.compliance_Other.description}], score for selection set to [{criticality.compliance_Other.selection}]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality compliance Other component observation: [ + criticality_compliance_Other.description + ], score for selection set to [ + criticality_compliance_Other.selection + ]" expressiontype="BRSTATEMENT">
             <referencedTermList>
               <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="criticality.compliance_Other.selection">
                 <parentTerm text="compliance_Other" datatype="Criticality_Assessment.Compliance_Other" termtype="ENTITY" fulltext="criticality.compliance_Other" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.2">
@@ -6721,8 +6721,8 @@
       </ruleStatementItemList>
       <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.3">
         <reference external="10:15"/>
-        <text external="Criticality maintenance Mean Time Repair given description of [{criticality.maintenance_Mean_Time_Repair.description}], score for selection set to [{criticality.maintenance_Mean_Time_Repair.selection}]">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality maintenance Mean Time Repair given description of [ + criticality_maintenance_Mean_Time_Repair.description + ], score for selection set to [ + criticality_maintenance_Mean_Time_Repair.selection + ]" expressiontype="BRSTATEMENT">
+        <text external="Criticality maintenance Mean Time Repair component observation: [{criticality.maintenance_Mean_Time_Repair.description}], score for selection set to [{criticality.maintenance_Mean_Time_Repair.selection}]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality maintenance Mean Time Repair component observation: [ + criticality_maintenance_Mean_Time_Repair.description + ], score for selection set to [ + criticality_maintenance_Mean_Time_Repair.selection + ]" expressiontype="BRSTATEMENT">
             <referencedTermList>
               <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="criticality.maintenance_Mean_Time_Repair.selection">
                 <parentTerm text="maintenance_Mean_Time_Repair" datatype="Criticality_Assessment.Maintenance_Mean_Time_Repair" termtype="ENTITY" fulltext="criticality.maintenance_Mean_Time_Repair" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.3">
@@ -6744,8 +6744,8 @@
       </ruleStatementItemList>
       <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.4">
         <reference external="16:21"/>
-        <text external="Criticality maintenance Repair Costs given description of [{criticality.maintenance_Repair_Costs.description}], score for selection set to [{criticality.maintenance_Repair_Costs.selection}]">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality maintenance Repair Costs given description of [ + criticality_maintenance_Repair_Costs.description + ], score for selection set to [ + criticality_maintenance_Repair_Costs.selection + ]" expressiontype="BRSTATEMENT">
+        <text external="Criticality maintenance Repair Costs component observation: [{criticality.maintenance_Repair_Costs.description}], score for selection set to [{criticality.maintenance_Repair_Costs.selection}]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality maintenance Repair Costs component observation: [ + criticality_maintenance_Repair_Costs.description + ], score for selection set to [ + criticality_maintenance_Repair_Costs.selection + ]" expressiontype="BRSTATEMENT">
             <referencedTermList>
               <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="criticality.maintenance_Repair_Costs.selection">
                 <parentTerm text="maintenance_Repair_Costs" datatype="Criticality_Assessment.Maintenance_Repair_Costs" termtype="ENTITY" fulltext="criticality.maintenance_Repair_Costs" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.4">
@@ -6767,8 +6767,8 @@
       </ruleStatementItemList>
       <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.5">
         <reference external="22:27"/>
-        <text external="Criticality maintenance Schedule Compliance given description of [{criticality.maintenance_Schedule_Compliance.description}], score for selection set to [{criticality.maintenance_Schedule_Compliance.selection}]">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality maintenance Schedule Compliance given description of [ + criticality_maintenance_Schedule_Compliance.description + ], score for selection set to [ + criticality_maintenance_Schedule_Compliance.selection + ]" expressiontype="BRSTATEMENT">
+        <text external="Criticality maintenance Schedule Compliance component observation: [{criticality.maintenance_Schedule_Compliance.description}], score for selection set to [{criticality.maintenance_Schedule_Compliance.selection}]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality maintenance Schedule Compliance component observation: [ + criticality_maintenance_Schedule_Compliance.description + ], score for selection set to [ + criticality_maintenance_Schedule_Compliance.selection + ]" expressiontype="BRSTATEMENT">
             <referencedTermList>
               <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="criticality.maintenance_Schedule_Compliance.selection">
                 <parentTerm text="maintenance_Schedule_Compliance" datatype="Criticality_Assessment.Maintenance_Schedule_Compliance" termtype="ENTITY" fulltext="criticality.maintenance_Schedule_Compliance" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.5">
@@ -6790,8 +6790,8 @@
       </ruleStatementItemList>
       <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.6">
         <reference external="28:30"/>
-        <text external="Criticality reliability Customer Impact Circuit Priority given description of [{criticality.reliability_Customer_Impact_Circuit_Priority.description}], score for selection set to [{criticality.reliability_Customer_Impact_Circuit_Priority.selection}]">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality reliability Customer Impact Circuit Priority given description of [ + criticality_reliability_Customer_Impact_Circuit_Priority.description + ], score for selection set to [ + criticality_reliability_Customer_Impact_Circuit_Priority.selection + ]" expressiontype="BRSTATEMENT">
+        <text external="Criticality reliability Customer Impact Circuit Priority component observation: [{criticality.reliability_Customer_Impact_Circuit_Priority.description}], score for selection set to [{criticality.reliability_Customer_Impact_Circuit_Priority.selection}]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality reliability Customer Impact Circuit Priority component observation: [ + criticality_reliability_Customer_Impact_Circuit_Priority.description + ], score for selection set to [ + criticality_reliability_Customer_Impact_Circuit_Priority.selection + ]" expressiontype="BRSTATEMENT">
             <referencedTermList>
               <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="criticality.reliability_Customer_Impact_Circuit_Priority.selection">
                 <parentTerm text="reliability_Customer_Impact_Circuit_Priority" datatype="Criticality_Assessment.Reliability_Customer_Impact_Circuit_Priority" termtype="ENTITY" fulltext="criticality.reliability_Customer_Impact_Circuit_Priority" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.6">
@@ -6813,8 +6813,8 @@
       </ruleStatementItemList>
       <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.7">
         <reference external="31:34"/>
-        <text external="Criticality reliability Frequency Failure given description of [{criticality.reliability_Frequency_Failure.description}], score for selection set to [{criticality.reliability_Frequency_Failure.selection}]">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality reliability Frequency Failure given description of [ + criticality_reliability_Frequency_Failure.description + ], score for selection set to [ + criticality_reliability_Frequency_Failure.selection + ]" expressiontype="BRSTATEMENT">
+        <text external="Criticality reliability Frequency Failure component observation: [{criticality.reliability_Frequency_Failure.description}], score for selection set to [{criticality.reliability_Frequency_Failure.selection}]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality reliability Frequency Failure component observation: [ + criticality_reliability_Frequency_Failure.description + ], score for selection set to [ + criticality_reliability_Frequency_Failure.selection + ]" expressiontype="BRSTATEMENT">
             <referencedTermList>
               <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="criticality.reliability_Frequency_Failure.description">
                 <parentTerm text="reliability_Frequency_Failure" datatype="Criticality_Assessment.Reliability_Frequency_Failure" termtype="ENTITY" fulltext="criticality.reliability_Frequency_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.7">
@@ -6836,8 +6836,8 @@
       </ruleStatementItemList>
       <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.8">
         <reference external="35:39"/>
-        <text external="Criticality reliability Metrics given description of [{criticality.reliability_Metrics.description}], score for selection set to [{criticality.reliability_Metrics.selection}]">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality reliability Metrics given description of [ + criticality_reliability_Metrics.description + ], score for selection set to [ + criticality_reliability_Metrics.selection + ]" expressiontype="BRSTATEMENT">
+        <text external="Criticality reliability Metrics component observation: [{criticality.reliability_Metrics.description}], score for selection set to [{criticality.reliability_Metrics.selection}]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality reliability Metrics component observation: [ + criticality_reliability_Metrics.description + ], score for selection set to [ + criticality_reliability_Metrics.selection + ]" expressiontype="BRSTATEMENT">
             <referencedTermList>
               <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="criticality.reliability_Metrics.description">
                 <parentTerm text="reliability_Metrics" datatype="Criticality_Assessment.Reliability_Metrics" termtype="ENTITY" fulltext="criticality.reliability_Metrics" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.8">
@@ -6859,8 +6859,8 @@
       </ruleStatementItemList>
       <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.9">
         <reference external="40:44"/>
-        <text external="Criticality reliability Redundancy given description of [{criticality.reliability_Redundancy.description}], score for selection set to [{criticality.reliability_Redundancy.selection}]">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality reliability Redundancy given description of [ + criticality_reliability_Redundancy.description + ], score for selection set to [ + criticality_reliability_Redundancy.selection + ]" expressiontype="BRSTATEMENT">
+        <text external="Criticality reliability Redundancy component observation: [{criticality.reliability_Redundancy.description}], score for selection set to [{criticality.reliability_Redundancy.selection}]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality reliability Redundancy component observation: [ + criticality_reliability_Redundancy.description + ], score for selection set to [ + criticality_reliability_Redundancy.selection + ]" expressiontype="BRSTATEMENT">
             <referencedTermList>
               <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="criticality.reliability_Redundancy.selection">
                 <parentTerm text="reliability_Redundancy" datatype="Criticality_Assessment.Reliability_Redundancy" termtype="ENTITY" fulltext="criticality.reliability_Redundancy" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.9">
@@ -6882,8 +6882,8 @@
       </ruleStatementItemList>
       <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.10">
         <reference external="45:48"/>
-        <text external="Criticality reliability Transmission Grid given description of [{criticality.reliability_Transmission_Grid.description}], score for selection set to [{criticality.reliability_Transmission_Grid.selection}]">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality reliability Transmission Grid given description of [ + criticality_reliability_Transmission_Grid.description + ], score for selection set to [ + criticality_reliability_Transmission_Grid.selection + ]" expressiontype="BRSTATEMENT">
+        <text external="Criticality reliability Transmission Grid component observation: [{criticality.reliability_Transmission_Grid.description}], score for selection set to [{criticality.reliability_Transmission_Grid.selection}]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality reliability Transmission Grid component observation: [ + criticality_reliability_Transmission_Grid.description + ], score for selection set to [ + criticality_reliability_Transmission_Grid.selection + ]" expressiontype="BRSTATEMENT">
             <referencedTermList>
               <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="criticality.reliability_Transmission_Grid.description">
                 <parentTerm text="reliability_Transmission_Grid" datatype="Criticality_Assessment.Reliability_Transmission_Grid" termtype="ENTITY" fulltext="criticality.reliability_Transmission_Grid" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.10">
@@ -6905,8 +6905,8 @@
       </ruleStatementItemList>
       <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.11">
         <reference external="49:52"/>
-        <text external="Criticality safety Inj During Failure given description of [{criticality.safety_Inj_During_Failure.description}], score for selection set to [{criticality.safety_Inj_During_Failure.selection}]">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality safety Inj During Failure given description of [ + criticality_safety_Inj_During_Failure.description + ], score for selection set to [ + criticality_safety_Inj_During_Failure.selection + ]" expressiontype="BRSTATEMENT">
+        <text external="Criticality safety Inj During Failure component observation: [{criticality.safety_Inj_During_Failure.description}], score for selection set to [{criticality.safety_Inj_During_Failure.selection}]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality safety Inj During Failure component observation: [ + criticality_safety_Inj_During_Failure.description + ], score for selection set to [ + criticality_safety_Inj_During_Failure.selection + ]" expressiontype="BRSTATEMENT">
             <referencedTermList>
               <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="criticality.safety_Inj_During_Failure.selection">
                 <parentTerm text="safety_Inj_During_Failure" datatype="Criticality_Assessment.Safety_Inj_During_Repair" termtype="ENTITY" fulltext="criticality.safety_Inj_During_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.13">
@@ -6928,8 +6928,8 @@
       </ruleStatementItemList>
       <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.12">
         <reference external="53:56"/>
-        <text external="Criticality safety Inj From Failure given description of [{criticality.safety_Inj_From_Failure.description}], score for selection set to [{criticality.safety_Inj_From_Failure.selection}]">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality safety Inj From Failure given description of [ + criticality_safety_Inj_From_Failure.description + ], score for selection set to [ + criticality_safety_Inj_From_Failure.selection + ]" expressiontype="BRSTATEMENT">
+        <text external="Criticality safety Inj From Failure component observation: [{criticality.safety_Inj_From_Failure.description}], score for selection set to [{criticality.safety_Inj_From_Failure.selection}]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality safety Inj From Failure component observation: [ + criticality_safety_Inj_From_Failure.description + ], score for selection set to [ + criticality_safety_Inj_From_Failure.selection + ]" expressiontype="BRSTATEMENT">
             <referencedTermList>
               <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="criticality.safety_Inj_From_Failure.selection">
                 <parentTerm text="safety_Inj_From_Failure" datatype="Criticality_Assessment.Safety_Inj_From_Failure" termtype="ENTITY" fulltext="criticality.safety_Inj_From_Failure" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.11">
@@ -6951,8 +6951,8 @@
       </ruleStatementItemList>
       <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.13">
         <reference external="57:61"/>
-        <text external="Criticality spares Availability given description of [{criticality.spares_Availability.description}], score for selection set to [{criticality.spares_Availability.selection}]">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality spares Availability given description of [ + criticality_spares_Availability.description + ], score for selection set to [ + criticality_spares_Availability.selection + ]" expressiontype="BRSTATEMENT">
+        <text external="Criticality spares Availability component observation: [{criticality.spares_Availability.description}], score for selection set to [{criticality.spares_Availability.selection}]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Criticality spares Availability component observation: [ + criticality_spares_Availability.description + ], score for selection set to [ + criticality_spares_Availability.selection + ]" expressiontype="BRSTATEMENT">
             <referencedTermList>
               <terms text="selection" datatype="Integer" termtype="ATTRIBUTE" fulltext="criticality.spares_Availability.selection">
                 <parentTerm text="spares_Availability" datatype="Criticality_Assessment.Spares_Availability" termtype="ENTITY" fulltext="criticality.spares_Availability" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.12">
@@ -6973,7 +6973,7 @@
         </text>
       </ruleStatementItemList>
     </ruleStatementSection>
-    <conditionSection rowCount="60" scrollRowTop="9" columnWidthFactor="0.12815533980582525">
+    <conditionSection rowCount="60" columnWidthFactor="0.12815533980582525">
       <conditionItemList>
         <valueSetCell/>
         <expressionCell external="criticality.compliance_Environmental.description">

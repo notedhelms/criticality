@@ -1357,7 +1357,7 @@
       </conditionItemList>
     </conditionSection>
     <ruleSection columnCount="24">
-      <ruleColumnList ruleId="0" columnWidth="405" pRule="#//@ruleset/@rules.0">
+      <ruleColumnList ruleId="0" columnWidth="215" pRule="#//@ruleset/@rules.0">
         <actionValueSetCellList valueSet="DGA.hydrogen_ppm_per_month + DGA.methane_ppm_per_month + DGA.ethane_ppm_per_month + DGA.acetylene_ppm_per_month + DGA.carbon_monoxide_ppm_per_month + DGA.ethylene_ppm_per_month">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="DGA.TDCG_ppm_month = DGA.hydrogen_ppm_per_month + DGA.methane_ppm_per_month + DGA.ethane_ppm_per_month + DGA.acetylene_ppm_per_month + DGA.carbon_monoxide_ppm_per_month + DGA.ethylene_ppm_per_month" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>

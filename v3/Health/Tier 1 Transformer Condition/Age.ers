@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_KD3dq-SQEe2xuLnI-gPt6w" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_3tHGsu2lEe2KsKz9ni_Hog" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
   <languageCode>en_US</languageCode>
   <ruleset vocabularyUpdateStamp="_0gXf0OSPEe2xuLnI-gPt6w" vocabulary="../../Training_Vocabulary.ecore#/">
     <rule>
@@ -7,11 +7,11 @@
       <action/>
       <action/>
       <action>
-        <opaqueExpression expression="Asset.inspection.age.weighted_score = Asset.inspection.age.raw_score*Asset.inspection.age.weight">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.age.weighted_score = Asset.inspection.age.raw_score * Asset.inspection.age.weight" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="asset_service_life.weighted_score = asset_service_life.raw_score*asset_service_life.weight">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="asset_service_life.weighted_score = asset_service_life.raw_score * asset_service_life.weight" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="weighted_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.age.weighted_score">
-                <parentTerm text="age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Asset.inspection.age" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="weighted_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="asset_service_life.weighted_score">
+                <parentTerm text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
@@ -19,21 +19,21 @@
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.age.weight">
-                <parentTerm text="age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Asset.inspection.age" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="asset_service_life.raw_score">
+                <parentTerm text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
                 </parentTerm>
               </terms>
-              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="Asset.inspection.age.raw_score">
-                <parentTerm text="age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Asset.inspection.age" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="asset_service_life.weight">
+                <parentTerm text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
                 </parentTerm>
               </terms>
-              <terms text="age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Asset.inspection.age" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                 <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                   <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                 </parentTerm>
@@ -43,7 +43,7 @@
         </opaqueExpression>
       </action>
     </rule>
-    <rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
       <condition>
         <opaqueExpression expression="Asset.service_life &lt; 30">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.service_life &lt; 30" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
@@ -57,11 +57,11 @@
         <viewExpressions lhs="Asset.service_life" rhs="&lt; 30"/>
       </condition>
       <action>
-        <opaqueExpression expression="Asset.inspection.age.band = 'Under 30 years'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.age.band = 'Under 30 years'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="asset_service_life.band = 'Under 30 years'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="asset_service_life.band = 'Under 30 years'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="band" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.inspection.age.band">
-                <parentTerm text="age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Asset.inspection.age" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="band" datatype="String" termtype="ATTRIBUTE" fulltext="asset_service_life.band">
+                <parentTerm text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
@@ -69,7 +69,7 @@
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Asset.inspection.age" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                 <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                   <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                 </parentTerm>
@@ -79,11 +79,11 @@
         </opaqueExpression>
       </action>
       <action>
-        <opaqueExpression expression="Asset.inspection.age.raw_score = 3">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.age.raw_score = 3" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="asset_service_life.raw_score = 3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="asset_service_life.raw_score = 3" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="Asset.inspection.age.raw_score">
-                <parentTerm text="age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Asset.inspection.age" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="asset_service_life.raw_score">
+                <parentTerm text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
@@ -91,7 +91,7 @@
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Asset.inspection.age" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                 <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                   <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                 </parentTerm>
@@ -102,7 +102,7 @@
       </action>
       <action/>
     </rule>
-    <rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
       <condition>
         <opaqueExpression expression="Asset.service_life in [30..45)">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.service_life in [ 30 .. 45 )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
@@ -116,11 +116,11 @@
         <viewExpressions lhs="Asset.service_life" rhs="[30..45)"/>
       </condition>
       <action>
-        <opaqueExpression expression="Asset.inspection.age.band = '30 – 45 years'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.age.band = '30 – 45 years'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="asset_service_life.band = '30 – 45 years'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="asset_service_life.band = '30 – 45 years'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="band" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.inspection.age.band">
-                <parentTerm text="age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Asset.inspection.age" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="band" datatype="String" termtype="ATTRIBUTE" fulltext="asset_service_life.band">
+                <parentTerm text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
@@ -128,7 +128,7 @@
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Asset.inspection.age" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                 <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                   <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                 </parentTerm>
@@ -138,11 +138,11 @@
         </opaqueExpression>
       </action>
       <action>
-        <opaqueExpression expression="Asset.inspection.age.raw_score = 2">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.age.raw_score = 2" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="asset_service_life.raw_score = 2">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="asset_service_life.raw_score = 2" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="Asset.inspection.age.raw_score">
-                <parentTerm text="age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Asset.inspection.age" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="asset_service_life.raw_score">
+                <parentTerm text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
@@ -150,7 +150,7 @@
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Asset.inspection.age" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                 <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                   <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                 </parentTerm>
@@ -161,7 +161,7 @@
       </action>
       <action/>
     </rule>
-    <rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
       <condition>
         <opaqueExpression expression="Asset.service_life >= 45">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.service_life >= 45" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
@@ -175,11 +175,11 @@
         <viewExpressions lhs="Asset.service_life" rhs=">= 45"/>
       </condition>
       <action>
-        <opaqueExpression expression="Asset.inspection.age.band = 'Over 45 years'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.age.band = 'Over 45 years'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="asset_service_life.band = 'Over 45 years'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="asset_service_life.band = 'Over 45 years'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="band" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.inspection.age.band">
-                <parentTerm text="age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Asset.inspection.age" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="band" datatype="String" termtype="ATTRIBUTE" fulltext="asset_service_life.band">
+                <parentTerm text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
@@ -187,7 +187,7 @@
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Asset.inspection.age" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                 <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                   <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                 </parentTerm>
@@ -197,11 +197,11 @@
         </opaqueExpression>
       </action>
       <action>
-        <opaqueExpression expression="Asset.inspection.age.raw_score = 1">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.age.raw_score = 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="asset_service_life.raw_score = 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="asset_service_life.raw_score = 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="Asset.inspection.age.raw_score">
-                <parentTerm text="age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Asset.inspection.age" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="asset_service_life.raw_score">
+                <parentTerm text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
@@ -209,7 +209,7 @@
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Asset.inspection.age" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                 <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                   <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                 </parentTerm>
@@ -220,9 +220,35 @@
       </action>
       <action/>
     </rule>
-    <logicalVariable entity="../../Training_Vocabulary.ecore#//Asset">
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1 #//@ruleset/@rules.2 #//@ruleset/@rules.3" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Asset has been in service for {Asset.service_life} years, assigned to age band '{asset_service_life.band}' with raw score {asset_service_life.raw_score}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset has been in service for  + Asset.service_life +  years, assigned to age band ' + asset_service_life.band + ' with raw score  + asset_service_life.raw_score" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="asset_service_life.raw_score">
+              <parentTerm text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </parentTerm>
+            </terms>
+            <terms text="service_life" datatype="Integer" termtype="ATTRIBUTE" fulltext="Asset.service_life">
+              <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="band" datatype="String" termtype="ATTRIBUTE" fulltext="asset_service_life.band">
+              <parentTerm text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable entity="../../Training_Vocabulary.ecore#//Asset" ruleStatements="#//@ruleset/@ruleStatements.0">
       <extension association="true" entity="../../Training_Vocabulary.ecore#//Inspection" traversedAssocRole="../../Training_Vocabulary.ecore#//Asset/inspection">
-        <extension association="true" entity="../../Training_Vocabulary.ecore#//Condition_Assessment/Age" traversedAssocRole="../../Training_Vocabulary.ecore#//Inspection/age">
+        <extension explicit="true" association="true" entity="../../Training_Vocabulary.ecore#//Condition_Assessment/Age" traversedAssocRole="../../Training_Vocabulary.ecore#//Inspection/age">
+          <alias value="asset_service_life"/>
           <referencedAttributes attribute="../../Training_Vocabulary.ecore#//Condition_Assessment/Age/band"/>
           <referencedAttributes attribute="../../Training_Vocabulary.ecore#//Condition_Assessment/Age/raw_score"/>
           <referencedAttributes attribute="../../Training_Vocabulary.ecore#//Condition_Assessment/Age/weighted_score"/>
@@ -232,22 +258,16 @@
       <referencedAttributes attribute="../../Training_Vocabulary.ecore#//Asset/service_life"/>
       <referencedAttributes attribute="../../Training_Vocabulary.ecore#//Asset/in_service_date"/>
     </logicalVariable>
-    <logicalVariable entity="../../Training_Vocabulary.ecore#//Condition_Assessment/Age">
-      <referencedAttributes attribute="../../Training_Vocabulary.ecore#//Condition_Assessment/Age/band"/>
-      <referencedAttributes attribute="../../Training_Vocabulary.ecore#//Condition_Assessment/Age/raw_score"/>
-      <referencedAttributes attribute="../../Training_Vocabulary.ecore#//Condition_Assessment/Age/weighted_score"/>
-      <referencedAttributes attribute="../../Training_Vocabulary.ecore#//Condition_Assessment/Age/weight"/>
-    </logicalVariable>
   </ruleset>
-  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightConditionsIf="20">
     <actionSection rowCount="50" columnWidthFactor="0.5">
       <actionItemList>
         <valueSetCell/>
-        <expressionCell external="Asset.inspection.age.band">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.age.band" datatype="String" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+        <expressionCell external="asset_service_life.band">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="asset_service_life.band" datatype="String" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
             <referencedTermList>
-              <terms text="band" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.inspection.age.band">
-                <parentTerm text="age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Asset.inspection.age" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="band" datatype="String" termtype="ATTRIBUTE" fulltext="asset_service_life.band">
+                <parentTerm text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
@@ -259,11 +279,11 @@
       </actionItemList>
       <actionItemList>
         <valueSetCell/>
-        <expressionCell external="Asset.inspection.age.raw_score">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.age.raw_score" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <expressionCell external="asset_service_life.raw_score">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="asset_service_life.raw_score" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="Asset.inspection.age.raw_score">
-                <parentTerm text="age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Asset.inspection.age" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="asset_service_life.raw_score">
+                <parentTerm text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
@@ -275,11 +295,11 @@
       </actionItemList>
       <actionItemList rowHeight="161">
         <valueSetCell/>
-        <expressionCell external="Asset.inspection.age.weighted_score = Asset.inspection.age.raw_score*Asset.inspection.age.weight">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.age.weighted_score = Asset.inspection.age.raw_score * Asset.inspection.age.weight" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <expressionCell external="asset_service_life.weighted_score = asset_service_life.raw_score*asset_service_life.weight">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="asset_service_life.weighted_score = asset_service_life.raw_score * asset_service_life.weight" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="weighted_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.age.weighted_score">
-                <parentTerm text="age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Asset.inspection.age" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="weighted_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="asset_service_life.weighted_score">
+                <parentTerm text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
@@ -287,21 +307,21 @@
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Asset.inspection.age.weight">
-                <parentTerm text="age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Asset.inspection.age" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="asset_service_life.raw_score">
+                <parentTerm text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
                 </parentTerm>
               </terms>
-              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="Asset.inspection.age.raw_score">
-                <parentTerm text="age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Asset.inspection.age" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="asset_service_life.weight">
+                <parentTerm text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
                 </parentTerm>
               </terms>
-              <terms text="age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Asset.inspection.age" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <terms text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
                 <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
                   <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
                 </parentTerm>
@@ -313,10 +333,10 @@
     </actionSection>
     <scopeSection>
       <rootNode>
-        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
           <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
           <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
-          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
             <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
               <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@referencedAttributes.0"/>
               <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@referencedAttributes.1"/>
@@ -325,16 +345,37 @@
             </children>
           </children>
         </children>
-        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
-          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
-          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.1"/>
-          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.2"/>
-          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.3"/>
-        </children>
       </rootNode>
     </scopeSection>
     <filterSection rowCount="50"/>
-    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList rowHeight="106" ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1:3"/>
+        <text external="Asset has been in service for {Asset.service_life} years, assigned to age band '{asset_service_life.band}' with raw score {asset_service_life.raw_score}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset has been in service for  + Asset.service_life +  years, assigned to age band ' + asset_service_life.band + ' with raw score  + asset_service_life.raw_score" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="asset_service_life.raw_score">
+                <parentTerm text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="service_life" datatype="Integer" termtype="ATTRIBUTE" fulltext="Asset.service_life">
+                <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="band" datatype="String" termtype="ATTRIBUTE" fulltext="asset_service_life.band">
+                <parentTerm text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
     <conditionSection rowCount="50" columnWidthFactor="0.5">
       <conditionItemList>
         <valueSetCell/>
@@ -367,10 +408,10 @@
           </parserOutput>
         </conditionValueSetCellList>
         <actionValueSetCellList valueSet="'Under 30 years'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.age.band = 'Under 30 years'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="asset_service_life.band = 'Under 30 years'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="band" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.inspection.age.band">
-                <parentTerm text="age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Asset.inspection.age">
+              <terms text="band" datatype="String" termtype="ATTRIBUTE" fulltext="asset_service_life.band">
+                <parentTerm text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
                   </parentTerm>
@@ -378,7 +419,7 @@
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Asset.inspection.age">
+              <terms text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life">
                 <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
                   <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
                 </parentTerm>
@@ -387,10 +428,10 @@
           </parserOutput>
         </actionValueSetCellList>
         <actionValueSetCellList valueSet="3">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.age.raw_score = 3" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="asset_service_life.raw_score = 3" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="Asset.inspection.age.raw_score">
-                <parentTerm text="age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Asset.inspection.age">
+              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="asset_service_life.raw_score">
+                <parentTerm text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
                   </parentTerm>
@@ -398,7 +439,7 @@
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Asset.inspection.age">
+              <terms text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life">
                 <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
                   <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
                 </parentTerm>
@@ -419,10 +460,10 @@
           </parserOutput>
         </conditionValueSetCellList>
         <actionValueSetCellList valueSet="'30 – 45 years'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.age.band = '30 – 45 years'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="asset_service_life.band = '30 – 45 years'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="band" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.inspection.age.band">
-                <parentTerm text="age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Asset.inspection.age">
+              <terms text="band" datatype="String" termtype="ATTRIBUTE" fulltext="asset_service_life.band">
+                <parentTerm text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
                   </parentTerm>
@@ -430,7 +471,7 @@
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Asset.inspection.age">
+              <terms text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life">
                 <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
                   <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
                 </parentTerm>
@@ -439,10 +480,10 @@
           </parserOutput>
         </actionValueSetCellList>
         <actionValueSetCellList valueSet="2">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.age.raw_score = 2" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="asset_service_life.raw_score = 2" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="Asset.inspection.age.raw_score">
-                <parentTerm text="age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Asset.inspection.age">
+              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="asset_service_life.raw_score">
+                <parentTerm text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
                   </parentTerm>
@@ -450,7 +491,7 @@
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Asset.inspection.age">
+              <terms text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life">
                 <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
                   <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
                 </parentTerm>
@@ -471,10 +512,10 @@
           </parserOutput>
         </conditionValueSetCellList>
         <actionValueSetCellList valueSet="'Over 45 years'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.age.band = 'Over 45 years'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="asset_service_life.band = 'Over 45 years'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="band" datatype="String" termtype="ATTRIBUTE" fulltext="Asset.inspection.age.band">
-                <parentTerm text="age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Asset.inspection.age">
+              <terms text="band" datatype="String" termtype="ATTRIBUTE" fulltext="asset_service_life.band">
+                <parentTerm text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
                   </parentTerm>
@@ -482,7 +523,7 @@
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Asset.inspection.age">
+              <terms text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life">
                 <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
                   <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
                 </parentTerm>
@@ -491,10 +532,10 @@
           </parserOutput>
         </actionValueSetCellList>
         <actionValueSetCellList valueSet="1">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Asset.inspection.age.raw_score = 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="asset_service_life.raw_score = 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
-              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="Asset.inspection.age.raw_score">
-                <parentTerm text="age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Asset.inspection.age">
+              <terms text="raw_score" datatype="Integer" termtype="ATTRIBUTE" fulltext="asset_service_life.raw_score">
+                <parentTerm text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life">
                   <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
                     <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
                   </parentTerm>
@@ -502,7 +543,7 @@
               </terms>
             </modifiedTermList>
             <referencedTermList>
-              <terms text="age" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="Asset.inspection.age">
+              <terms text="asset_service_life" datatype="Condition_Assessment.Age" termtype="ENTITY" fulltext="asset_service_life">
                 <parentTerm text="inspection" datatype="Inspection" termtype="ENTITY" fulltext="Asset.inspection">
                   <parentTerm text="Asset" datatype="Asset" termtype="ENTITY" fulltext="Asset"/>
                 </parentTerm>
