@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_Baz1csciEe26oNkFwxsVAA" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_LT1pgekjEe2fWruWlJFEMg" vocabulary="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#/">
+    <rule>
+      <action/>
+      <action>
+        <opaqueExpression expression="Op_History_Component.health_component_weight = .762">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Op_History_Component.health_component_weight = 0.762" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="health_component_weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Op_History_Component.health_component_weight">
+                <parentTerm text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Op_History_Component.health_component_score = Op_History_Component.health_component_raw_score * Op_History_Component.health_component_weight">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Op_History_Component.health_component_score = Op_History_Component.health_component_raw_score * Op_History_Component.health_component_weight" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="health_component_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Op_History_Component.health_component_score">
+                <parentTerm text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="health_component_raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Op_History_Component.health_component_raw_score">
+                <parentTerm text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="health_component_weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Op_History_Component.health_component_weight">
+                <parentTerm text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="OpMaintenace.observation = 'Operation and Maintenance are normal.'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="OpMaintenace.observation = 'Operation and Maintenance are normal.'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="observation" datatype="String" termtype="ATTRIBUTE" fulltext="OpMaintenace.observation">
+                <parentTerm text="OpMaintenace" datatype="Measure" termtype="ENTITY" fulltext="OpMaintenace" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="OpMaintenace.observation" rhs="'Operation and Maintenance are normal.'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Op_History_Component.health_component_raw_score = 3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Op_History_Component.health_component_raw_score = 3" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="health_component_raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Op_History_Component.health_component_raw_score">
+                <parentTerm text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="OpMaintenace.observation = 'Some abnormal operating conditions experienced and/or additional maintenance above normal occurring.'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="OpMaintenace.observation = 'Some abnormal operating conditions experienced and/or additional maintenance above normal occurring.'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="observation" datatype="String" termtype="ATTRIBUTE" fulltext="OpMaintenace.observation">
+                <parentTerm text="OpMaintenace" datatype="Measure" termtype="ENTITY" fulltext="OpMaintenace" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="OpMaintenace.observation" rhs="'Some abnormal operating conditions experienced and/or additional maintenance above normal occurring.'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Op_History_Component.health_component_raw_score = 2">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Op_History_Component.health_component_raw_score = 2" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="health_component_raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Op_History_Component.health_component_raw_score">
+                <parentTerm text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="OpMaintenace.observation = 'Significant operation outside normal and/or significant additional maintenance is required; or forced outage occurs; or outages are regularly extended due to maintenance problems; or similar units are problematic.'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="OpMaintenace.observation = 'Significant operation outside normal and/or significant additional maintenance is required; or forced outage occurs; or outages are regularly extended due to maintenance problems; or similar units are problematic.'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="observation" datatype="String" termtype="ATTRIBUTE" fulltext="OpMaintenace.observation">
+                <parentTerm text="OpMaintenace" datatype="Measure" termtype="ENTITY" fulltext="OpMaintenace" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="OpMaintenace.observation" rhs="'Significant operation outside normal and/or significant additional maintenance is required; or forced outage occurs; or outages are regularly extended due to maintenance problems; or similar units are problematic.'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Op_History_Component.health_component_raw_score = 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Op_History_Component.health_component_raw_score = 1" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="health_component_raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Op_History_Component.health_component_raw_score">
+                <parentTerm text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="OpMaintenace.observation = 'Repeated forced outages; maintenance not cost effective; or major oil leaks and/or severe mechanical problems; or similar units have failed.'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="OpMaintenace.observation = 'Repeated forced outages; maintenance not cost effective; or major oil leaks and/or severe mechanical problems; or similar units have failed.'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="observation" datatype="String" termtype="ATTRIBUTE" fulltext="OpMaintenace.observation">
+                <parentTerm text="OpMaintenace" datatype="Measure" termtype="ENTITY" fulltext="OpMaintenace" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="OpMaintenace.observation" rhs="'Repeated forced outages; maintenance not cost effective; or major oil leaks and/or severe mechanical problems; or similar units have failed.'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Op_History_Component.health_component_raw_score = 0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Op_History_Component.health_component_raw_score = 0" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="health_component_raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Op_History_Component.health_component_raw_score">
+                <parentTerm text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+    </rule>
+    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.0">
+      <opaqueExpression expression="Assessment.index.index_name = 'Health'">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Assessment.index.index_name = 'Health'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+          <referencedTermList>
+            <terms text="index_name" datatype="String" termtype="ATTRIBUTE" fulltext="Assessment.index.index_name">
+              <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.0 #//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+      <opaqueExpression expression="Op_History_Component.health_component_name =  'Operation and Maintenance History'">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Op_History_Component.health_component_name = 'Operation and Maintenance History'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="health_component_name" datatype="String" termtype="ATTRIBUTE" fulltext="Op_History_Component.health_component_name">
+              <parentTerm text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <logicalVariable entity="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Assessment" filters="#//@ruleset/@filters.0 #//@ruleset/@filters.1">
+      <extension association="true" entity="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index" traversedAssocRole="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Assessment/index" filters="#//@ruleset/@filters.0 #//@ruleset/@filters.1">
+        <extension explicit="true" association="true" entity="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component" traversedAssocRole="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index/index_Component" filters="#//@ruleset/@filters.1">
+          <alias value="Op_History_Component"/>
+          <extension explicit="true" association="true" entity="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure" traversedAssocRole="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/measure">
+            <alias value="OpMaintenace"/>
+            <referencedAttributes attribute="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/measure_name"/>
+            <referencedAttributes attribute="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/raw_score"/>
+            <referencedAttributes attribute="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/weight"/>
+            <referencedAttributes attribute="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/weighted_value"/>
+            <referencedAttributes attribute="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/observation"/>
+          </extension>
+          <referencedAttributes attribute="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/health_component_name"/>
+          <referencedAttributes attribute="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/health_component_score"/>
+          <referencedAttributes attribute="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/health_component_raw_score"/>
+          <referencedAttributes attribute="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/health_component_weight"/>
+        </extension>
+        <referencedAttributes attribute="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index/index_name"/>
+      </extension>
+    </logicalVariable>
+    <logicalVariable entity="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component">
+      <referencedAttributes attribute="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/health_component_raw_score"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="41" sashWeightScope="59" sashWeightConditionsIf="28">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Op_History_Component.health_component_raw_score">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Op_History_Component.health_component_raw_score" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="health_component_raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Op_History_Component.health_component_raw_score">
+                <parentTerm text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Op_History_Component.health_component_weight">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Op_History_Component.health_component_weight" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="health_component_weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Op_History_Component.health_component_weight">
+                <parentTerm text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList rowHeight="192">
+        <valueSetCell/>
+        <expressionCell external="Op_History_Component.health_component_score">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Op_History_Component.health_component_score" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="health_component_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Op_History_Component.health_component_score">
+                <parentTerm text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Assessment.index.index_name = 'Health'" filter="#//@ruleset/@filters.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Op_History_Component.health_component_name =  'Operation and Maintenance History'" filter="#//@ruleset/@filters.1"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Assessment.index.index_name = 'Health'" filter="#//@ruleset/@filters.0"/>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Op_History_Component.health_component_name =  'Operation and Maintenance History'" filter="#//@ruleset/@filters.1"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Op_History_Component.health_component_name =  'Operation and Maintenance History'" filter="#//@ruleset/@filters.1"/>
+              </children>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0/@referencedAttributes.0"/>
+                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0/@referencedAttributes.1"/>
+                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0/@referencedAttributes.2"/>
+                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0/@referencedAttributes.3"/>
+                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0/@referencedAttributes.4"/>
+              </children>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@referencedAttributes.0"/>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@referencedAttributes.1"/>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@referencedAttributes.2"/>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@referencedAttributes.3"/>
+            </children>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50">
+      <filterItemList filter="#//@ruleset/@filters.0">
+        <expressionCell external="Assessment.index.index_name = 'Health'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Assessment.index.index_name = 'Health'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="index_name" datatype="String" termtype="ATTRIBUTE" fulltext="Assessment.index.index_name">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+      <filterItemList filter="#//@ruleset/@filters.1">
+        <expressionCell external="Op_History_Component.health_component_name =  'Operation and Maintenance History'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Op_History_Component.health_component_name = 'Operation and Maintenance History'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="health_component_name" datatype="String" termtype="ATTRIBUTE" fulltext="Op_History_Component.health_component_name">
+                <parentTerm text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+    </filterSection>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList rowHeight="274">
+        <valueSetCell/>
+        <expressionCell external="OpMaintenace.observation">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="OpMaintenace.observation" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="observation" datatype="String" termtype="ATTRIBUTE" fulltext="OpMaintenace.observation">
+                <parentTerm text="OpMaintenace" datatype="Measure" termtype="ENTITY" fulltext="OpMaintenace" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="213" pRule="#//@ruleset/@rules.0">
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet=".762">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Op_History_Component.health_component_weight = 0.762" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="health_component_weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Op_History_Component.health_component_weight">
+                <parentTerm text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet="Op_History_Component.health_component_raw_score * Op_History_Component.health_component_weight">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Op_History_Component.health_component_score = Op_History_Component.health_component_raw_score * Op_History_Component.health_component_weight" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="health_component_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Op_History_Component.health_component_score">
+                <parentTerm text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="health_component_raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Op_History_Component.health_component_raw_score">
+                <parentTerm text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+                </parentTerm>
+              </terms>
+              <terms text="health_component_weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Op_History_Component.health_component_weight">
+                <parentTerm text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="'Operation and Maintenance are normal.'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="OpMaintenace.observation = 'Operation and Maintenance are normal.'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="observation" datatype="String" termtype="ATTRIBUTE" fulltext="OpMaintenace.observation">
+                <parentTerm text="OpMaintenace" datatype="Measure" termtype="ENTITY" fulltext="OpMaintenace" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet="3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Op_History_Component.health_component_raw_score = 3" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="health_component_raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Op_History_Component.health_component_raw_score">
+                <parentTerm text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="'Some abnormal operating conditions experienced and/or additional maintenance above normal occurring.'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="OpMaintenace.observation = 'Some abnormal operating conditions experienced and/or additional maintenance above normal occurring.'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="observation" datatype="String" termtype="ATTRIBUTE" fulltext="OpMaintenace.observation">
+                <parentTerm text="OpMaintenace" datatype="Measure" termtype="ENTITY" fulltext="OpMaintenace" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet="2">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Op_History_Component.health_component_raw_score = 2" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="health_component_raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Op_History_Component.health_component_raw_score">
+                <parentTerm text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="'Significant operation outside normal and/or significant additional maintenance is required; or forced outage occurs; or outages are regularly extended due to maintenance problems; or similar units are problematic.'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="OpMaintenace.observation = 'Significant operation outside normal and/or significant additional maintenance is required; or forced outage occurs; or outages are regularly extended due to maintenance problems; or similar units are problematic.'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="observation" datatype="String" termtype="ATTRIBUTE" fulltext="OpMaintenace.observation">
+                <parentTerm text="OpMaintenace" datatype="Measure" termtype="ENTITY" fulltext="OpMaintenace" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet="1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Op_History_Component.health_component_raw_score = 1" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="health_component_raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Op_History_Component.health_component_raw_score">
+                <parentTerm text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="4" columnWidth="100" pRule="#//@ruleset/@rules.4">
+        <conditionValueSetCellList valueSet="'Repeated forced outages; maintenance not cost effective; or major oil leaks and/or severe mechanical problems; or similar units have failed.'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="OpMaintenace.observation = 'Repeated forced outages; maintenance not cost effective; or major oil leaks and/or severe mechanical problems; or similar units have failed.'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="observation" datatype="String" termtype="ATTRIBUTE" fulltext="OpMaintenace.observation">
+                <parentTerm text="OpMaintenace" datatype="Measure" termtype="ENTITY" fulltext="OpMaintenace" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet="0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Op_History_Component.health_component_raw_score = 0" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="health_component_raw_score" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Op_History_Component.health_component_raw_score">
+                <parentTerm text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component">
+                  <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                    <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Op_History_Component" datatype="Index_Component" termtype="ENTITY" fulltext="Op_History_Component">
+                <parentTerm text="index" datatype="Index" termtype="ENTITY" fulltext="Assessment.index">
+                  <parentTerm text="Assessment" datatype="Assessment" termtype="ENTITY" fulltext="Assessment"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>
