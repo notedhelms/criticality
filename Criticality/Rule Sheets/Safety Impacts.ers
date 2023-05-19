@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_9ZzSTu8vEe2XmNqsXNfOTg" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
   <languageCode>en_US</languageCode>
-  <ruleset vocabularyUpdateStamp="_LT1pgekjEe2fWruWlJFEMg" vocabulary="../../Rule%20Vocabulary/Training_Vocabulary.ecore#/">
+  <ruleset vocabularyUpdateStamp="__4mSc_WdEe2Xd_vkfa_nPw" vocabulary="../../Rule%20Vocabulary/Training_Vocabulary.ecore#/">
     <rule>
       <condition/>
       <condition/>
@@ -612,7 +612,7 @@
       <referencedAttributes attribute="../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/criticality_component_net_score"/>
     </logicalVariable>
   </ruleset>
-  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" sashWeightAdvancedView="29" sashWeightScope="40" sashWeightConditionsActions="56" sashWeightConditionsIf="34">
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="24" sashWeightScope="40" sashWeightConditionsActions="56" sashWeightConditionsIf="24">
     <actionSection rowCount="49" columnWidthFactor="0.5">
       <actionItemList>
         <naturalLanguageText value="Set the raw_score field of 'injury_failure' to ---------->"/>
@@ -652,7 +652,7 @@
           </parserOutput>
         </expressionCell>
       </actionItemList>
-      <actionItemList rowHeight="31">
+      <actionItemList rowHeight="21">
         <naturalLanguageText value="Set the weighted_value field of 'injury_failure' to ---------->"/>
         <valueSetCell/>
         <expressionCell external="injury_failure.weighted_value">
@@ -694,7 +694,7 @@
         <valueSetCell/>
         <expressionCell/>
       </actionItemList>
-      <actionItemList>
+      <actionItemList rowHeight="69">
         <valueSetCell/>
         <expressionCell external="safety_component.criticality_component_net_score">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="safety_component.criticality_component_net_score" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
@@ -877,8 +877,8 @@
         </expressionCell>
       </conditionItemList>
     </conditionSection>
-    <ruleSection columnCount="20" scrollColumnLeft="4">
-      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="216" pRule="#//@ruleset/@rules.0">
         <conditionValueSetCellList/>
         <conditionValueSetCellList/>
         <actionValueSetCellList/>

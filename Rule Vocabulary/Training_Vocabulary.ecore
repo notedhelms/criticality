@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.canonicalvocabularymodel="http:///com/corticon/rulesemf/canonicalvocabularymodel.ecore" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="root" nsURI="http://root/1.0" nsPrefix="root">
   <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
-    <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:RootExtension" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_LT1pgekjEe2fWruWlJFEMg" externalChecksum="3391387159:507989954" studioType="Java" customDataTypeDisplayCount="49">
+    <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:RootExtension" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="__4mSc_WdEe2Xd_vkfa_nPw" externalChecksum="3391387159:507989954" studioType="Java" customDataTypeDisplayCount="48">
       <languageCode>en_US</languageCode>
       <databaseAccess databasePropertyDisplayCount="50"/>
       <customDataTypeList enumerationDisplayCount="50" eDataType="#//risk_assessment_type">
@@ -15,8 +15,8 @@
           <value manuallyCreated="true" value="'Health'"/>
         </enumerationElements>
       </customDataTypeList>
-      <customDataTypeList enumerationDisplayCount="50" eDataType="#//criticality_components">
-        <dataTypeName manuallyCreated="true" value="criticality_components"/>
+      <customDataTypeList enumerationDisplayCount="50" eDataType="#//criticality_component_name">
+        <dataTypeName manuallyCreated="true" value="criticality_component_name"/>
         <baseDataType manuallyCreated="true" value="String"/>
         <enumeration value="true"/>
         <enumerationElements>
@@ -85,23 +85,6 @@
           <value manuallyCreated="true" value="'Spares availability'"/>
         </enumerationElements>
       </customDataTypeList>
-      <customDataTypeList enumerationDisplayCount="50" eDataType="#//tier_1_indicator">
-        <dataTypeName manuallyCreated="true" value="tier_1_indicator"/>
-        <baseDataType manuallyCreated="true" value="String"/>
-        <enumeration value="true"/>
-        <enumerationElements>
-          <value manuallyCreated="true" value="'Oil Analysis'"/>
-        </enumerationElements>
-        <enumerationElements>
-          <value manuallyCreated="true" value="'Power Factor and Excitation Current Tests'"/>
-        </enumerationElements>
-        <enumerationElements>
-          <value manuallyCreated="true" value="'Operation and Maintenance History'"/>
-        </enumerationElements>
-        <enumerationElements>
-          <value manuallyCreated="true" value="'Age'"/>
-        </enumerationElements>
-      </customDataTypeList>
       <customDataTypeList enumerationDisplayCount="50" eDataType="#//gas_measure">
         <dataTypeName manuallyCreated="true" value="gas_measure"/>
         <baseDataType manuallyCreated="true" value="String"/>
@@ -148,8 +131,8 @@
           <value manuallyCreated="true" value="10"/>
         </enumerationElements>
       </customDataTypeList>
-      <customDataTypeList enumerationDisplayCount="50" eDataType="#//tier2_test">
-        <dataTypeName manuallyCreated="true" value="tier2_test"/>
+      <customDataTypeList enumerationDisplayCount="50" eDataType="#//health_test_name">
+        <dataTypeName manuallyCreated="true" value="health_test_name"/>
         <baseDataType manuallyCreated="true" value="String"/>
         <enumeration value="true"/>
         <enumerationElements>
@@ -190,6 +173,23 @@
         </enumerationElements>
         <enumerationElements>
           <value manuallyCreated="true" value="'Visual Inspection'"/>
+        </enumerationElements>
+      </customDataTypeList>
+      <customDataTypeList enumerationDisplayCount="50" eDataType="#//measure_type">
+        <dataTypeName manuallyCreated="true" value="measure_type"/>
+        <baseDataType manuallyCreated="true" value="String"/>
+        <enumeration value="true"/>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Gas Measurement'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Criticality Analysis'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Tier 1 Condition Indicator'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Tier 2 Condition Indicator'"/>
         </enumerationElements>
       </customDataTypeList>
     </contents>
@@ -412,12 +412,6 @@
     <eLiterals name="V13" value="13" literal="'Repair costs'"/>
     <eLiterals name="V14" value="14" literal="'Spares availability'"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="tier_1_indicator">
-    <eLiterals name="V0" literal="'Oil Analysis'"/>
-    <eLiterals name="V1" value="1" literal="'Power Factor and Excitation Current Tests'"/>
-    <eLiterals name="V2" value="2" literal="'Operation and Maintenance History'"/>
-    <eLiterals name="V3" value="3" literal="'Age'"/>
-  </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="gas_measure">
     <eLiterals name="V0" literal="'H PPM'"/>
     <eLiterals name="V1" value="1" literal="'CO2 PPM'"/>
@@ -428,7 +422,7 @@
     <eLiterals name="V6" value="6" literal="'CO PPM'"/>
     <eLiterals name="V7" value="7" literal="'2FAL Furans PPB'"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="criticality_components">
+  <eClassifiers xsi:type="ecore:EEnum" name="criticality_component_name">
     <eLiterals name="V0" literal="'Safety Impact'"/>
     <eLiterals name="V1" value="1" literal="'Environmental Impact'"/>
     <eLiterals name="V2" value="2" literal="'Generation Impact'"/>
@@ -452,7 +446,7 @@
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="gas_measure" eType="#//gas_measure">
       <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
-        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension" customDataType="#//%http:%2F%2F%2Fcom%2Fcorticon%2Frulesemf%2Fcanonicalvocabularymodel%2FVocabularyExtension%/@contents.0/@customDataTypeList.4">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension" customDataType="#//%http:%2F%2F%2Fcom%2Fcorticon%2Frulesemf%2Fcanonicalvocabularymodel%2FVocabularyExtension%/@contents.0/@customDataTypeList.3">
           <name manuallyCreated="true" value="gas_measure"/>
           <mode manuallyCreated="true" value="Base"/>
         </contents>
@@ -513,6 +507,14 @@
         </contents>
       </eAnnotations>
     </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="measure_type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="measure_type"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Index_Component">
     <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
@@ -522,18 +524,10 @@
         <datastoreCaching manuallyCreated="true" value="false"/>
       </contents>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="criticality_component_name" eType="#//criticality_components">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="criticality_component_name" eType="#//criticality_component_name">
       <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
         <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension" customDataType="#//%http:%2F%2F%2Fcom%2Fcorticon%2Frulesemf%2Fcanonicalvocabularymodel%2FVocabularyExtension%/@contents.0/@customDataTypeList.1">
           <name manuallyCreated="true" value="criticality_component_name"/>
-          <mode manuallyCreated="true" value="Base"/>
-        </contents>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="risk_component_name" eType="#//criticality_measures">
-      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
-        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension" customDataType="#//%http:%2F%2F%2Fcom%2Fcorticon%2Frulesemf%2Fcanonicalvocabularymodel%2FVocabularyExtension%/@contents.0/@customDataTypeList.2">
-          <name manuallyCreated="true" value="risk_component_name"/>
           <mode manuallyCreated="true" value="Base"/>
         </contents>
       </eAnnotations>
@@ -568,9 +562,9 @@
         </contents>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="health_test_name" eType="#//tier2_test">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="health_test_name" eType="#//health_test_name">
       <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
-        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension" customDataType="#//%http:%2F%2F%2Fcom%2Fcorticon%2Frulesemf%2Fcanonicalvocabularymodel%2FVocabularyExtension%/@contents.0/@customDataTypeList.6">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension" customDataType="#//%http:%2F%2F%2Fcom%2Fcorticon%2Frulesemf%2Fcanonicalvocabularymodel%2FVocabularyExtension%/@contents.0/@customDataTypeList.5">
           <name manuallyCreated="true" value="health_test_name"/>
           <mode manuallyCreated="true" value="Base"/>
         </contents>
@@ -622,7 +616,7 @@
     <eLiterals name="V2" value="2" literal="7"/>
     <eLiterals name="V3" value="3" literal="10"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="tier2_test">
+  <eClassifiers xsi:type="ecore:EEnum" name="health_test_name">
     <eLiterals name="V0" literal="'Turns Ratio Test'"/>
     <eLiterals name="V1" value="1" literal="'Short Circuit Impedance Test'"/>
     <eLiterals name="V2" value="2" literal="'Core-to-Ground Resistance (Megger) Test'"/>
@@ -636,5 +630,11 @@
     <eLiterals name="V10" value="10" literal="'Infrared'"/>
     <eLiterals name="V11" value="11" literal="'EMI Survey'"/>
     <eLiterals name="V12" value="12" literal="'Visual Inspection'"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="measure_type">
+    <eLiterals name="V0" literal="'Gas Measurement'"/>
+    <eLiterals name="V1" value="1" literal="'Criticality Analysis'"/>
+    <eLiterals name="V2" value="2" literal="'Tier 1 Condition Indicator'"/>
+    <eLiterals name="V3" value="3" literal="'Tier 2 Condition Indicator'"/>
   </eClassifiers>
 </ecore:EPackage>

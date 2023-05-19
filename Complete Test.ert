@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.canonicaltestmodel.testsheet="http:///com/corticon/rulesemf/canonicaltestmodel/testsheet.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_rq0fQOkgEe2fWruWlJFEMg" externalChecksum="3391387159:507989954" studioType="Java">
-  <testsheetAssets majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_1Tkxce8vEe2XmNqsXNfOTg" externalChecksum="3391387159:507989954">
-    <testsheet ruleActivityUpdateStamp="_IQmNYO82Ee2XmNqsXNfOTg" ruleActivity="Asset%20Hub%20Combined.erf#//@ruleflow" locale="">
+  <testsheetAssets majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_3vXSgfZCEe2hbN6Xo0bwJw" externalChecksum="3391387159:507989954">
+    <testsheet ruleActivityUpdateStamp="_8222YPW2Ee2Xd_vkfa_nPw" ruleActivity="Asset%20Hub%20Combined.erf#//@ruleflow" locale="">
       <input/>
       <output>
         <PostedMessage severity="Info" text="[Condition Indicator 2 – Power Factor and Excitation Current Tests,1] Power factor results normal. (Good – G) AND Normal excitation current values and patterns compared to other phases and prior tests."/>
@@ -87,7 +87,7 @@
     <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
       <inputRoot>
         <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Rule%20Vocabulary/Training_Vocabulary.ecore#//Assessment">
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" expanded="false" eReference="Rule%20Vocabulary/Training_Vocabulary.ecore#//Assessment/index" eClass="Rule%20Vocabulary/Training_Vocabulary.ecore#//Index">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="Rule%20Vocabulary/Training_Vocabulary.ecore#//Assessment/index" eClass="Rule%20Vocabulary/Training_Vocabulary.ecore#//Index">
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="13" manuallyCreated="true" eReference="Rule%20Vocabulary/Training_Vocabulary.ecore#//Index/index_Component" eClass="Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component">
               <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="16" manuallyCreated="true" eReference="Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/measure" eClass="Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure">
                 <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Reportable" eAttribute="Rule%20Vocabulary/Training_Vocabulary.ecore#//Measure/observation"/>
@@ -916,7 +916,7 @@
       </outputRuleTraceSection>
     </testsheetViewList>
   </testsheetAssets>
-  <ruletest vocabularyUpdateStamp="_LT1pgekjEe2fWruWlJFEMg" testsheets="#//@testsheetAssets.0/@testsheet" vocabulary="Rule%20Vocabulary/Training_Vocabulary.ecore#/"/>
+  <ruletest vocabularyUpdateStamp="__4mSc_WdEe2Xd_vkfa_nPw" testsheets="#//@testsheetAssets.0/@testsheet" vocabulary="Rule%20Vocabulary/Training_Vocabulary.ecore#/"/>
   <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
     <testTabList name="combined indicies"/>
   </ruletestViewList>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_kK1TTMcsEe26oNkFwxsVAA" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
   <languageCode>en_US</languageCode>
-  <ruleset vocabularyUpdateStamp="_LT1pgekjEe2fWruWlJFEMg" vocabulary="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#/">
+  <ruleset vocabularyUpdateStamp="__4mSc_WdEe2Xd_vkfa_nPw" vocabulary="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#/">
     <rule>
       <action/>
       <action/>
@@ -237,7 +237,7 @@
       <referencedAttributes attribute="../../../Rule%20Vocabulary/Training_Vocabulary.ecore#//Index_Component/health_adjustment"/>
     </logicalVariable>
   </ruleset>
-  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightConditionsIf="69">
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightConditionsIf="12">
     <actionSection rowCount="50" columnWidthFactor="0.5">
       <actionItemList rowHeight="84">
         <valueSetCell/>
@@ -255,7 +255,7 @@
           </parserOutput>
         </expressionCell>
       </actionItemList>
-      <actionItemList>
+      <actionItemList rowHeight="151">
         <valueSetCell/>
         <expressionCell external="notes+=Note.new[content = cellValue]">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="notes += Note.new [ Note.content = cellValue ]" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="true">
@@ -356,7 +356,7 @@
     </filterSection>
     <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
     <conditionSection rowCount="50" columnWidthFactor="0.5">
-      <conditionItemList>
+      <conditionItemList rowHeight="162">
         <valueSetCell/>
         <expressionCell external="Assessment.index.index_Component.measure.observation">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Assessment.index.index_Component.measure.observation" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
@@ -375,7 +375,7 @@
         </expressionCell>
       </conditionItemList>
     </conditionSection>
-    <ruleSection columnCount="20" scrollColumnLeft="4">
+    <ruleSection columnCount="20">
       <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
         <actionValueSetCellList/>
         <actionValueSetCellList/>
@@ -494,7 +494,7 @@
         </actionValueSetCellList>
         <actionValueSetCellList/>
       </ruleColumnList>
-      <ruleColumnList ruleId="4" columnWidth="100" pRule="#//@ruleset/@rules.4">
+      <ruleColumnList ruleId="4" columnWidth="268" pRule="#//@ruleset/@rules.4">
         <conditionValueSetCellList valueSet="'Greater than 5% difference from nameplate impedance (severe degradation)'">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Assessment.index.index_Component.measure.observation = 'Greater than 5% difference from nameplate impedance (severe degradation)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
